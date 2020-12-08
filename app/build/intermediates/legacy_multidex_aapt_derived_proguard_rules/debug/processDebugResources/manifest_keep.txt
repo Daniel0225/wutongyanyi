@@ -1,0 +1,2 @@
+# Referenced at D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:41
+-keep class com.yiheoline.qcloud.xiaozhibo.TCApplication { <init>(); }

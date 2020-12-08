@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\values-v19\\styles.xml",
+                    "from": {
+                        "startLines": "4,19,24",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "104,1033,1247",
+                        "endLines": "17,22,27",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "1027,1241,1458"
+                    },
+                    "to": {
+                        "startLines": "2,16,20",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,983,1196",
+                        "endLines": "15,19,23",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "978,1191,1407"
+                    }
+                }
+            ]
+        }
+    ]
+}
