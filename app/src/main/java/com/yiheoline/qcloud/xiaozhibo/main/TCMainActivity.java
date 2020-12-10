@@ -22,10 +22,12 @@ import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
 import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
-import com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.TCVideoListFragment;
+import com.yiheoline.qcloud.xiaozhibo.homepage.HomePageFragment;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheoline.qcloud.xiaozhibo.profile.TCUserInfoFragment;
+import com.yiheoline.qcloud.xiaozhibo.show.ShowFragment;
 import com.yiheoline.qcloud.xiaozhibo.utils.StatusBarUtil;
+import com.yiheoline.qcloud.xiaozhibo.video.VideoFragment;
 import com.yiheoline.qcloud.xiaozhibo.widgets.NoAnimationViewPager;
 
 import java.util.ArrayList;
@@ -82,9 +84,9 @@ public class TCMainActivity extends AppCompatActivity implements BottomNavigatio
         bottomNavigationView.inflateMenu(R.menu.home_page_tab);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setItemIconTintList(null);
-        fragments.add(new TCVideoListFragment());
-        fragments.add(new TCUserInfoFragment());
-        fragments.add(new TCUserInfoFragment());
+        fragments.add(HomePageFragment.newInstance("1","2"));
+        fragments.add(VideoFragment.newInstance("1","2"));
+        fragments.add(ShowFragment.newInstance("1","2"));
         fragments.add(new TCUserInfoFragment());
         viewPager.setAdapter(new ViewPageAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener(){
