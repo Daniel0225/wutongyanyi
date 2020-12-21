@@ -108,6 +108,10 @@ public abstract class MLVBLiveRoom {
      */
     public abstract void setSelfProfile(String userName, String avatarURL);
 
+    /**
+     * 初始化MLVB
+     */
+    public abstract void initMlvb(LoginInfo loginInfo);
     /// @}
 
     /////////////////////////////////////////////////////////////////////////////////
@@ -167,7 +171,7 @@ public abstract class MLVBLiveRoom {
      * @param callback 进入房间的结果回调
      *
      */
-    public abstract void enterRoom(final String roomID, final TXCloudVideoView view, final IMLVBLiveRoomListener.EnterRoomCallback callback);
+    public abstract void enterRoom(final String roomID,final String mixedPlayUrl, final TXCloudVideoView view, final IMLVBLiveRoomListener.EnterRoomCallback callback);
 
     /**
      * 离开房间

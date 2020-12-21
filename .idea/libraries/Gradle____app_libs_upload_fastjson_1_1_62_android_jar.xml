@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/upload/fastjson-1.1.62.android.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/upload/fastjson-1.1.62.android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

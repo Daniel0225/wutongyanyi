@@ -1,16 +1,17 @@
 package com.yiheoline.qcloud.xiaozhibo.common.widget;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.LinkedList;
 /**

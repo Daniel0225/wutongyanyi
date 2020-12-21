@@ -11,9 +11,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
@@ -25,7 +22,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.upload.TCUploadHelper;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
@@ -34,6 +34,7 @@ import com.yiheoline.qcloud.xiaozhibo.common.widget.TCActivityTitle;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheoline.qcloud.xiaozhibo.profile.view.TCLineControllerView;
 import com.yiheoline.qcloud.xiaozhibo.profile.view.TCLineEditTextView;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
 

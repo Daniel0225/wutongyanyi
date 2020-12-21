@@ -13,7 +13,8 @@ import android.view.animation.AnticipateOvershootInterpolator;
 import android.view.animation.LayoutAnimationController;
 import android.widget.RelativeLayout;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
+
 
 /**
  * Module:   TCSwipeAnimationController

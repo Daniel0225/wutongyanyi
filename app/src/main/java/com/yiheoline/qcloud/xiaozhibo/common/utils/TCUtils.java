@@ -28,24 +28,25 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.PermissionChecker;
-import android.support.v8.renderscript.Allocation;
-import android.support.v8.renderscript.Element;
-import android.support.v8.renderscript.RenderScript;
-import android.support.v8.renderscript.ScriptIntrinsicBlur;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.RenderScript;
+import android.renderscript.ScriptIntrinsicBlur;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.PermissionChecker;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 //import com.tencent.TIMFriendGenderType;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.login.TCLoginActivity;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -25,7 +25,6 @@ import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
@@ -41,6 +40,7 @@ import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatMsgListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.tencent.rtmp.TXLog;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -265,7 +265,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
                         .put("title", mTitle)
                         .put("frontCover", mCoverPicUrl)
                         .put("location", mLocation);
-                TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/upload_room", body, null);
+                TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/room/upload", body, null);
             } catch (JSONException e) {
                 e.printStackTrace();
             }

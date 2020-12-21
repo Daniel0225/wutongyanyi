@@ -18,8 +18,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

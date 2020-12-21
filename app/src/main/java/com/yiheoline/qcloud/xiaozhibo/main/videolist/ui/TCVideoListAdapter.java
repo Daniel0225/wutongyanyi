@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.main.videolist.utils.TCVideoInfo;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 

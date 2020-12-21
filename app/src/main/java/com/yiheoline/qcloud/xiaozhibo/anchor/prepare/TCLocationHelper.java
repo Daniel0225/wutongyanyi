@@ -15,13 +15,14 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.io.IOException;
 import java.util.List;

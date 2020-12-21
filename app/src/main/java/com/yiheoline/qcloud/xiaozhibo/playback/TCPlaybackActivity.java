@@ -5,8 +5,6 @@ import android.app.FragmentTransaction;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -17,7 +15,9 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.ui.ErrorDialogFragment;
@@ -31,6 +31,7 @@ import com.tencent.rtmp.TXLiveConstants;
 import com.tencent.rtmp.TXVodPlayConfig;
 import com.tencent.rtmp.TXVodPlayer;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -60,7 +61,7 @@ public class TCPlaybackActivity extends Activity implements View.OnClickListener
     private TextView                        mTvViewed;                          // 已观看数量
 
     //头像列表控件
-    private RecyclerView                    mRvAvatarList;
+    private RecyclerView mRvAvatarList;
     private TCUserAvatarListAdapter         mAvatarListAdapter;
 
     private ImageView                       mIvCover;                           // 封面图

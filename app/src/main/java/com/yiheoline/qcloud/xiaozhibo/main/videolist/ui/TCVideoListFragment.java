@@ -3,8 +3,6 @@ package com.yiheoline.qcloud.xiaozhibo.main.videolist.ui;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,13 +15,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
 import com.yiheoline.qcloud.xiaozhibo.main.videolist.utils.TCVideoInfo;
 import com.yiheoline.qcloud.xiaozhibo.main.videolist.utils.TCVideoListMgr;
 import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity;
 import com.yiheoline.qcloud.xiaozhibo.playback.TCPlaybackActivity;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 import java.util.List;

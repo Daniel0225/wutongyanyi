@@ -12,13 +12,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.anchor.TCBaseAnchorActivity;
 import com.yiheoline.qcloud.xiaozhibo.anchor.screen.widget.FloatingCameraView;
 import com.yiheoline.qcloud.xiaozhibo.anchor.screen.widget.FloatingView;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 /**
  * Module:   TCScreenAnchorActivity

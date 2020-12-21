@@ -3,7 +3,8 @@ package com.yiheoline.qcloud.xiaozhibo.anchor.music;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 public class MusicEntity implements Parcelable {
     //id标识

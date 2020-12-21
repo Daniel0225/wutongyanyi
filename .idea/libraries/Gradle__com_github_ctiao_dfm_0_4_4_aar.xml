@@ -1,8 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ctiao:dfm:0.4.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e47c8426a5178df58cbf77368d671ac6/dfm-0.4.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e47c8426a5178df58cbf77368d671ac6/dfm-0.4.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35652acf3486c0e6321bc29d23046562/dfm-0.4.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35652acf3486c0e6321bc29d23046562/dfm-0.4.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/35652acf3486c0e6321bc29d23046562/dfm-0.4.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ctiao/dfm/0.4.4/d6bd35e12c75857197d2fc99963f8b5328b528a6/dfm-0.4.4-javadoc.jar!/" />

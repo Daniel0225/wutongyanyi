@@ -13,7 +13,7 @@ import android.graphics.Rect;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 
 /**

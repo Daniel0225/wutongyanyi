@@ -6,7 +6,8 @@ import android.os.Handler;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
+
 
 /**
  * Module:   TCCustomSwitch

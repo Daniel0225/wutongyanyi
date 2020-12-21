@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tagTextView"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="时尚女装"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:background="@drawable/tag_item_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

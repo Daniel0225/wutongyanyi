@@ -27,7 +27,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 
 /**

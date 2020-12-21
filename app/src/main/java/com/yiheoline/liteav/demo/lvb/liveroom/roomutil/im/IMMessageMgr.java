@@ -2,8 +2,9 @@ package com.yiheoline.liteav.demo.lvb.liveroom.roomutil.im;
 
 import android.content.Context;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

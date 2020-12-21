@@ -111,34 +111,34 @@ public class TCVideoListMgr {
     public void fetchVodList(final Listener listener) {
         try {
             JSONObject body = new JSONObject().put("index","0").put("count", PAGE_SIZE);
-            TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/get_vod_list", body, new TCHTTPMgr.Callback() {
-                @Override
-                public void onSuccess(JSONObject data) {
-                    ArrayList<TCVideoInfo> videoList = new ArrayList();
-                    if (data != null) {
-                        JSONArray list = data.optJSONArray("list");
-                        if (list != null) {
-                            for (int i = 0; i<list.length(); i++) {
-                                JSONObject obj = list.optJSONObject(i);
-                                if (obj != null) {
-                                    TCVideoInfo video  = new TCVideoInfo(obj);
-                                    videoList.add(video);
-                                }
-                            }
-                        }
-                    }
-                    if (listener != null) {
-                        listener.onVideoList(0, videoList, false);
-                    }
-                }
-
-                @Override
-                public void onFailure(int code, String msg) {
-                    if (listener != null) {
-                        listener.onVideoList(code, null, false);
-                    }
-                }
-            });
+//            TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/get_vod_list", body, new TCHTTPMgr.Callback() {
+//                @Override
+//                public void onSuccess(JSONObject data) {
+//                    ArrayList<TCVideoInfo> videoList = new ArrayList();
+//                    if (data != null) {
+//                        JSONArray list = data.optJSONArray("list");
+//                        if (list != null) {
+//                            for (int i = 0; i<list.length(); i++) {
+//                                JSONObject obj = list.optJSONObject(i);
+//                                if (obj != null) {
+//                                    TCVideoInfo video  = new TCVideoInfo(obj);
+//                                    videoList.add(video);
+//                                }
+//                            }
+//                        }
+//                    }
+//                    if (listener != null) {
+//                        listener.onVideoList(0, videoList, false);
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(int code, String msg) {
+//                    if (listener != null) {
+//                        listener.onVideoList(code, null, false);
+//                    }
+//                }
+//            });
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -16,7 +16,8 @@ import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import static com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef.LiveRoomErrorCode.ERROR_LICENSE_INVALID;
 

@@ -12,7 +12,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.ImageView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
+
 
 @SuppressLint("AppCompatCustomView")
 public class RoundImageView extends ImageView {

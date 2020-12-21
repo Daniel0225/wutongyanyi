@@ -7,7 +7,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.List;
 

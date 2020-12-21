@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.TCActivityTitle;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.List;
 

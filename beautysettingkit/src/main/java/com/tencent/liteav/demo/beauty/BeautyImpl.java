@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.Toast;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
 
 import com.tencent.liteav.beauty.TXBeautyManager;
 import com.tencent.liteav.demo.beauty.constant.BeautyConstants;

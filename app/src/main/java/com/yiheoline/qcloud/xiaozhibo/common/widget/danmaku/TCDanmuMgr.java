@@ -20,8 +20,8 @@ import android.text.style.ForegroundColorSpan;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.HashMap;
 import java.util.concurrent.ExecutionException;

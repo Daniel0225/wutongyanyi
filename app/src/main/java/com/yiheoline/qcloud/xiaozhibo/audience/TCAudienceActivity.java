@@ -8,9 +8,6 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Display;
@@ -25,6 +22,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.tencent.liteav.demo.beauty.view.BeautyPanel;
 import com.tencent.liteav.demo.beauty.BeautyParams;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
@@ -32,7 +33,6 @@ import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.ui.ErrorDialogFragment;
@@ -53,6 +53,7 @@ import com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.TCVideoListFragment;
 import com.tencent.rtmp.TXLiveConstants;
 import com.tencent.rtmp.TXLog;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -84,7 +85,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
 
     private Handler                             mHandler = new Handler(Looper.getMainLooper());
 
-
+    private String mixedPlayUrl;//直播地址
     private TXCloudVideoView                    mTXCloudVideoView;      // 观看大主播的 View
     private MLVBLiveRoom                        mLiveRoom;              // MLVB 组件
 
@@ -116,7 +117,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     private String                              mTimeStamp = "";
 
     //头像列表控件
-    private RecyclerView                        mUserAvatarList;
+    private RecyclerView mUserAvatarList;
     private TCUserAvatarListAdapter             mAvatarListAdapter;
 
     //点赞动画
@@ -168,6 +169,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         setContentView(R.layout.activity_audience);
 
         Intent intent = getIntent();
+        mixedPlayUrl = intent.getStringExtra(TCConstants.PLAY_URL);
         mPusherId = intent.getStringExtra(TCConstants.PUSHER_ID);
         mGroupId = intent.getStringExtra(TCConstants.GROUP_ID);
         mPusherNickname = intent.getStringExtra(TCConstants.PUSHER_NAME);
@@ -350,7 +352,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         if (mPlaying) return;
         mLiveRoom.setSelfProfile(mNickname, mAvatar);
         mLiveRoom.setListener(this);
-        mLiveRoom.enterRoom(mGroupId, mTXCloudVideoView, new IMLVBLiveRoomListener.EnterRoomCallback() {
+        mLiveRoom.enterRoom(mGroupId,mixedPlayUrl, mTXCloudVideoView, new IMLVBLiveRoomListener.EnterRoomCallback() {
             @Override
             public void onError(int errCode, String errInfo) {
                 showErrorAndQuit("加入房间失败，Error:" + errCode);

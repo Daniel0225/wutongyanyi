@@ -24,7 +24,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
-import com.tencent.qcloud.xiaozhibo.R;
+
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.Random;
 

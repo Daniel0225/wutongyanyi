@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.1002326270xc:LayoutManager-FlowLayout:v1.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.1002326270xc/LayoutManager-FlowLayout/v1.8/7d6bace6a4e35ab34654bc15c39cd4b0525da9a3/LayoutManager-FlowLayout-v1.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

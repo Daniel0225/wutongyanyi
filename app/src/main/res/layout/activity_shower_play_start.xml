@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#999999"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/mTXCloudVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/changeCamera"
+        android:text="翻转"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@mipmap/fanzhuan"
+        android:layout_width="wrap_content"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/addTag"
+        android:text="添加标签"
+        android:layout_toEndOf="@+id/changeCamera"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@mipmap/tag"
+        android:layout_width="wrap_content"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/backView"
+        android:src="@mipmap/guanbi2"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/changeCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直播标题"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        />
+
+    <EditText
+        android:id="@+id/titleInputView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:hint="请输入直播间标题"
+        android:layout_below="@+id/titleLabel"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/startPlayBtn"
+        android:src="@mipmap/start_play"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/warm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/warm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直播即代表你同意《梧桐演艺主播协议》"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

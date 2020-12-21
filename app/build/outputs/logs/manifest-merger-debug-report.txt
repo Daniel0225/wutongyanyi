@@ -1,86 +1,157 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+MERGED from [com.github.xiaoyuanhu.boxing:boxing:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ac31d2e7268eb1148290e150d2d9d74f\jetified-boxing-1.0.4.1\AndroidManifest.xml:18:1-28:12
+MERGED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:18:1-46:12
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d2029cf9fd46dfccc48fc8d1cd3b9784\core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\38e51be5662602f2cd632a275be7707a\anko-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba9da7f5f7740acf2f874db6d5de3384\jetified-anko-design-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\824b2fbfefed6c23fe4cf72905fa8e1b\anko-sqlite-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\20ea3982e90c8cf2ac61e6238c91c9c3\anko-sdk27-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\85d87f0a3d938ca9b2fd4fab9be76626\anko-sdk27-coroutines-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5206ddce6f664542b426358899ece073\jetified-anko-appcompat-v7-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\58dc26ea428a92de98762c0786572535\jetified-anko-support-v4-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c218871022d66e3b5040dfa43414c32\jetified-anko-appcompat-v7-coroutines-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba579ba05d5761c238b992fb03e1c2de\anko-appcompat-v7-commons-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\213d02e4a779c29fcb0d2c3206587256\anko-support-v4-commons-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c9e613755c17c23d901ec0432224296\anko-commons-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fc75e891a409e62df46ac40e6bbc07a0\anko-coroutines-0.10.8\AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:design-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fa6e14033f99b49e4572fdf05103f71\jetified-design-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8bcea80cc8e7189fc29e14dc72460021\sqlite-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cb1f77380aa9744e873e306a41dcde49\platform-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f27a963a0436d932b43c744fb9435862\jetified-appcompatV7-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\466d066a7ba60d85c87d0d2db4dce83f\jetified-supportV4-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d4dab6d26692a3ca1726a7f1093ed654\jetified-commons-base-0.10.8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e75dd1fec880c5be426368da0b2b0462\jetified-BaseRecyclerViewAdapterHelper-3.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [:beautysettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:audioeffectsettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\audioeffectsettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:2:1-35:12
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:2:1-45:12
-MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e47c8426a5178df58cbf77368d671ac6\dfm-0.4.4\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:multidex:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\71cec002f4cf1fb23f88554897527146\multidex-1.0.0\AndroidManifest.xml:16:1-19:12
-MERGED from [com.tencent.bugly:crashreport:3.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d556df0da2ceda00e68fa057fc91e29\crashreport-3.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\711cd693cb47fa08b9b342d9a2815457\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc3876738bdb5d8e498d8c27630d1092\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c82b71cc23f1f749201c229f1e0919f8\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\240ad4e7c0a4c0f0ac07ba22afac43c2\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\13f115cc5d5138e9ed6d7046dab5d030\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a191153422ddfd26478c8b99811273f5\transition-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c361ce609604c8b37cbff4112761818\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4660acd0807cc71ba66bee2bd6cbbbe5\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2f9ffac3f9aa7c3da9b2ea0a60bff798\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e393f8741de26a3dcc6eeb170bd18679\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c98a9bc0a455ab0200cce6feac99fa67\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b82955ed32a4ee277723d8123c155ac3\customview-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8756cea37b098f254fcf1c05271849e1\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e2a5a2145c109898fc28f4778cc59fa2\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\776dfa9be835a7a130740bd6b0619584\loader-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\45af0f91ec351e1a1c603d501e9b45b7\cardview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f89186d3faa35207960141dbf97e7823\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\912d14cf8b7da59afd70a06b1ab8df17\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9f66af0770fd83464340388aae824c93\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6382b0a1555e0e71f2a2930dfe6b1d66\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ab60f6dd6ef13cb57d98ea7973f298c0\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\441dd746fc5507909e127eaa50801847\print-28.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e30d9e6f3403e84c4cae532d406e4009\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\855199d21a2457dffd94f776f414402b\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0c580ad6917269345b415f2689381fa7\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\32c3c3c1ff1572cd4fbf4adc8b2e281b\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
-INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:2:1-35:12
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:2:1-45:12
+MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\35652acf3486c0e6321bc29d23046562\dfm-0.4.4\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\92e3b243ecb0f0770afa98d86b3df319\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c5dbb7d3005eada7cc6df0859c50f2e0\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.chensl.rotatephotoview:rotatephotoview:1.0.5] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\274acfe01fed49f450c6c44449434e85\jetified-rotatephotoview-1.0.5\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\aa857fcef5067fac0eb60c78ba34c63d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.shuyu:GSYVideoPlayer:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\76b5b147e5a4c37958e5b42068541eb9\jetified-GSYVideoPlayer-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.tencent:mmkv:1.0.18] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0b58a1035529e81a8f3dfda0323a942e\jetified-mmkv-1.0.18\AndroidManifest.xml:2:1-9:12
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.dyhdyh.loadingbar2:loadingbar:2.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b32b3d95dd63443386987d0db365d79\jetified-loadingbar-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\346b91153ed9a551ff184b5b93ee33f5\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.1002326270xc:LayoutManager-FlowLayout:v1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d14266a0754de9af9de59e24e0c123b\jetified-LayoutManager-FlowLayout-v1.8\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12a7a42a8df2d1a3949272a54d449e35\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0020f04b93b8c465a976467d12e41326\jetified-Android-PickerView-4.1.9\AndroidManifest.xml:2:1-11:12
+MERGED from [top.zibin:Luban:1.1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\41c147fc38a7392a52d6c51a81cd9209\jetified-Luban-1.1.8\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\62b42771574550f7c60fb8090211772d\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6a9ba58fa3bc7f62d1378a3eb93d4017\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.shuyu:GSYVideoPlayer-exo2:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\915ea771b9282fd5ad4d92d2759647a4\jetified-GSYVideoPlayer-exo2-8.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [tv.danmaku.ijk.media:ijkplayer-exo:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b9282c60a4eb6cda55c6cbbaec331670\jetified-ijkplayer-exo-0.8.8\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.exoplayer:exoplayer:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cf90ab851ed4dc811b25a7fda56118a2\jetified-exoplayer-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0f9d8284af49e4f860dea453b9d5d951\jetified-exoplayer-ui-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fc3cd600507b20201b148bbb14631e3\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ff38e10a9511bb9262b36410a294db95\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\43bd053344dd91889caa765b4d03efcf\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1d758cb9ab12ad6092399d559f7f5aba\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c8d19400b7f90767a40bf848d545c16\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b340202e6e96084fa364bee26a8acfe\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12ff3bf4931c6ee0e182bbcefc5a1cfe\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e43a985b08a652886ef802cf14a111c7\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8092df27876235e212dfd26626ab1ebc\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\754722de293e99795dfef034937daf8d\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8dbb9132b1fb53fd4fbb93eaf077875c\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c3dea5666a6bf4ec85e7958faa8721cd\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1e12a013c874f47e3318ff7cbcb96164\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8536fa4b2f40145e5653a8084e46a57b\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.andkulikov:transitionseverywhere:2.0.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\043cabd6244815da57d6ad2355509d53\jetified-transitionseverywhere-2.0.0-beta01\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.transition:transition:1.1.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3925ddcc5b9a9a9cff8c60cea2c00140\transition-1.1.0-beta01\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\421d31ee971c76ac1a6a5c2b52e41d47\media-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\59ef8ff78b39f0fed4b156cee58382c6\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\63375a8602e663a8c50b61d57bebad9d\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6933bb133c67191545122a168eed45c4\jetified-wheelview-4.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc4f4858855e039c57c15500877bf525\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1b095822d1b8a91797ad223c378ae9e6\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d3a0c526675defaec83a58f88616d673\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\83186ecf5c8ddeae84db330840a1a96d\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\86c784bf68d2d55319264b405834eb0f\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ada3b234ed492d80a9e5d19f35dedbd5\jetified-extension-rtmp-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-adapters:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4e322b83dee2ec3e3979d41c6e8789e0\databinding-adapters-3.6.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2555e9165e75d1a542547fe86919257b\databinding-runtime-3.6.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee45a8a67bc4a49e989664cf053e586d\jetified-viewbinding-3.6.3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\788369c7b1869b1b4e59a4c5a1dcb60c\jetified-exoplayer-dash-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0491ce51f5965034dc41968a8afa0173\jetified-exoplayer-hls-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\05fc1fa98af4080e238140afee95c305\jetified-exoplayer-smoothstreaming-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f0c7ca6a3256c8f42fe8b2f8c5a77aed\jetified-exoplayer-core-2.12.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0a40b125de68f24ce442b117500408d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5c0c439dd771074d966cf4cb84a1b1ef\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\54b0365c12e9e963d0a6847a964a4644\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f814c49c4e6d427ba2071c2724ae0c93\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fdf32433e1a6a6a1a59c5f19e6604e1d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a8796c967b3c0d3b92f93a3b9f68bb69\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2cf129ca3dd02365ebf8406780f5d73b\jetified-exoplayer-extractor-2.12.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\da9ff10dd315660ab4bf689f6de279ef\jetified-exoplayer-common-2.12.1\AndroidManifest.xml:17:1-26:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6bb93f32f2105cf9e3f57a26d270b671\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.shuyu:gsyVideoPlayer-armv5:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\dc23e08b7fe4f84c533455f7e117b295\jetified-gsyVideoPlayer-armv5-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-armv7a:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee146c8241d5496ada3e618b3e42b8ed\jetified-gsyVideoPlayer-armv7a-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-arm64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\77491da4cf698d4677617a18e0feb058\jetified-gsyVideoPlayer-arm64-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-x64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8d8719711e8b1484d6b08bbc725782ad\jetified-gsyVideoPlayer-x64-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-x86:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\538523530cac13d9441265e9b9e84363\jetified-gsyVideoPlayer-x86-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.shuyu:gsyVideoPlayer-base:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\803fb1bcc5b1a16bf2a0b26b8e1f86c5\jetified-gsyVideoPlayer-base-8.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [tv.danmaku.ijk.media:ijkplayer-java:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8e9eaae2a630ca6d7fd94ee742271dd6\jetified-ijkplayer-java-0.8.8\AndroidManifest.xml:2:1-9:12
+MERGED from [com.shuyu:gsyvideoplayer-androidvideocache:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a3db85a245461bf992fd7d4c9c863734\jetified-gsyvideoplayer-androidvideocache-8.0.0\AndroidManifest.xml:2:1-17:12
+MERGED from [net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\40e1339494ae8787f27206de99cc92e0\jetified-rtmp-client-3.1.0\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
+INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
 	package
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:3:5-43
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-145:12
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:1-146:12
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:12:5-67
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:12:5-67
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:12:5-67
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:12:5-67
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:12:5-67
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:12:5-67
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:12:5-67
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:12:5-67
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:26:5-67
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:26:5-67
+MERGED from [net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\40e1339494ae8787f27206de99cc92e0\jetified-rtmp-client-3.1.0\AndroidManifest.xml:11:5-67
+MERGED from [net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\40e1339494ae8787f27206de99cc92e0\jetified-rtmp-client-3.1.0\AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:14:5-79
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:14:5-79
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:13:5-79
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:13:5-79
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:14:5-79
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:14:5-79
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:13:5-79
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:13:5-79
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:11:5-79
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:11:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f0c7ca6a3256c8f42fe8b2f8c5a77aed\jetified-exoplayer-core-2.12.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f0c7ca6a3256c8f42fe8b2f8c5a77aed\jetified-exoplayer-core-2.12.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\da9ff10dd315660ab4bf689f6de279ef\jetified-exoplayer-common-2.12.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\da9ff10dd315660ab4bf689f6de279ef\jetified-exoplayer-common-2.12.1\AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:7:5-76
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:16:5-76
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:16:5-76
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:14:5-76
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:14:5-76
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:16:5-76
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:16:5-76
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:14:5-76
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:7:22-73
 uses-permission#android.permission.READ_PHONE_STATE
@@ -93,26 +164,30 @@ ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidMa
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:9:22-66
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:10:5-81
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:18:5-81
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:18:5-81
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:18:5-81
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:18:5-81
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:28:5-81
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:28:5-81
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:5-79
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:19:5-80
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:19:5-80
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:5-80
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:19:5-80
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:19:5-80
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:27:5-80
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:27:5-80
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:12:5-71
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:23:5-71
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:23:5-71
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:23:5-71
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:23:5-71
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:12:22-68
 uses-permission#android.permission.CAMERA
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:13:5-65
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:21:5-65
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:21:5-65
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:21:5-65
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:21:5-65
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:13:22-62
 uses-permission#android.permission.READ_CONTACTS
@@ -120,21 +195,21 @@ ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidMa
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:14:22-69
 uses-feature#android.hardware.camera
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:15:5-60
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:5-60
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:15:19-57
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:5-70
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:17:5-70
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:19-67
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:17:19-67
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:18:5-81
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:5-81
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:18:22-78
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:5-79
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:22-76
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.CHANGE_NETWORK_STATE
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:21:5-79
 	android:name
@@ -145,14 +220,14 @@ ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidMa
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:22:22-65
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:5-80
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:25:5-80
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:25:5-80
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:25:5-80
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:25:5-80
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:22-77
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:5-81
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:11:5-81
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:11:5-81
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:11:5-81
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:22-78
 uses-permission#android.permission.VIBRATE
@@ -168,201 +243,263 @@ ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidMa
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:27:22-75
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:5-71
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:28:5-71
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:22-68
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:28:22-68
 uses-permission#android.permission.USE_CREDENTIALS
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:5-74
+	android:name
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:5-74
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:22-71
-uses-permission#android.permission.MANAGE_ACCOUNTS
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:5-74
-	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:22-71
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:32:5-68
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:27:5-68
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:27:5-68
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:5-68
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:27:5-68
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:27:5-68
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:32:22-65
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:22-65
 application
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:33:5-143:19
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:29:5-33:19
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:29:5-33:19
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:16:5-43:19
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:16:5-43:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:33:5-144:19
+MERGED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:27:5-44:19
+MERGED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:27:5-44:19
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\38e51be5662602f2cd632a275be7707a\anko-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\38e51be5662602f2cd632a275be7707a\anko-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba9da7f5f7740acf2f874db6d5de3384\jetified-anko-design-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba9da7f5f7740acf2f874db6d5de3384\jetified-anko-design-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\824b2fbfefed6c23fe4cf72905fa8e1b\anko-sqlite-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\824b2fbfefed6c23fe4cf72905fa8e1b\anko-sqlite-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\20ea3982e90c8cf2ac61e6238c91c9c3\anko-sdk27-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\20ea3982e90c8cf2ac61e6238c91c9c3\anko-sdk27-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\85d87f0a3d938ca9b2fd4fab9be76626\anko-sdk27-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\85d87f0a3d938ca9b2fd4fab9be76626\anko-sdk27-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5206ddce6f664542b426358899ece073\jetified-anko-appcompat-v7-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5206ddce6f664542b426358899ece073\jetified-anko-appcompat-v7-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\58dc26ea428a92de98762c0786572535\jetified-anko-support-v4-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\58dc26ea428a92de98762c0786572535\jetified-anko-support-v4-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c218871022d66e3b5040dfa43414c32\jetified-anko-appcompat-v7-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c218871022d66e3b5040dfa43414c32\jetified-anko-appcompat-v7-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba579ba05d5761c238b992fb03e1c2de\anko-appcompat-v7-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba579ba05d5761c238b992fb03e1c2de\anko-appcompat-v7-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\213d02e4a779c29fcb0d2c3206587256\anko-support-v4-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\213d02e4a779c29fcb0d2c3206587256\anko-support-v4-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c9e613755c17c23d901ec0432224296\anko-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c9e613755c17c23d901ec0432224296\anko-commons-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fc75e891a409e62df46ac40e6bbc07a0\anko-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fc75e891a409e62df46ac40e6bbc07a0\anko-coroutines-0.10.8\AndroidManifest.xml:11:5-20
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:29:5-33:19
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:29:5-33:19
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:16:5-43:19
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:16:5-43:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c5dbb7d3005eada7cc6df0859c50f2e0\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c5dbb7d3005eada7cc6df0859c50f2e0\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.shuyu:GSYVideoPlayer:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\76b5b147e5a4c37958e5b42068541eb9\jetified-GSYVideoPlayer-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:GSYVideoPlayer:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\76b5b147e5a4c37958e5b42068541eb9\jetified-GSYVideoPlayer-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\346b91153ed9a551ff184b5b93ee33f5\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\346b91153ed9a551ff184b5b93ee33f5\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.1002326270xc:LayoutManager-FlowLayout:v1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d14266a0754de9af9de59e24e0c123b\jetified-LayoutManager-FlowLayout-v1.8\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.1002326270xc:LayoutManager-FlowLayout:v1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d14266a0754de9af9de59e24e0c123b\jetified-LayoutManager-FlowLayout-v1.8\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:13:5-17:19
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:13:5-17:19
+MERGED from [tv.danmaku.ijk.media:ijkplayer-exo:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b9282c60a4eb6cda55c6cbbaec331670\jetified-ijkplayer-exo-0.8.8\AndroidManifest.xml:9:5-13:19
+MERGED from [tv.danmaku.ijk.media:ijkplayer-exo:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b9282c60a4eb6cda55c6cbbaec331670\jetified-ijkplayer-exo-0.8.8\AndroidManifest.xml:9:5-13:19
+MERGED from [com.andkulikov:transitionseverywhere:2.0.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\043cabd6244815da57d6ad2355509d53\jetified-transitionseverywhere-2.0.0-beta01\AndroidManifest.xml:11:5-20
+MERGED from [com.andkulikov:transitionseverywhere:2.0.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\043cabd6244815da57d6ad2355509d53\jetified-transitionseverywhere-2.0.0-beta01\AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc4f4858855e039c57c15500877bf525\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc4f4858855e039c57c15500877bf525\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6bb93f32f2105cf9e3f57a26d270b671\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6bb93f32f2105cf9e3f57a26d270b671\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.shuyu:gsyVideoPlayer-armv5:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\dc23e08b7fe4f84c533455f7e117b295\jetified-gsyVideoPlayer-armv5-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-armv5:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\dc23e08b7fe4f84c533455f7e117b295\jetified-gsyVideoPlayer-armv5-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-armv7a:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee146c8241d5496ada3e618b3e42b8ed\jetified-gsyVideoPlayer-armv7a-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-armv7a:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee146c8241d5496ada3e618b3e42b8ed\jetified-gsyVideoPlayer-armv7a-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-arm64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\77491da4cf698d4677617a18e0feb058\jetified-gsyVideoPlayer-arm64-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-arm64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\77491da4cf698d4677617a18e0feb058\jetified-gsyVideoPlayer-arm64-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-x64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8d8719711e8b1484d6b08bbc725782ad\jetified-gsyVideoPlayer-x64-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-x64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8d8719711e8b1484d6b08bbc725782ad\jetified-gsyVideoPlayer-x64-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-x86:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\538523530cac13d9441265e9b9e84363\jetified-gsyVideoPlayer-x86-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyVideoPlayer-x86:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\538523530cac13d9441265e9b9e84363\jetified-gsyVideoPlayer-x86-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyvideoplayer-androidvideocache:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a3db85a245461bf992fd7d4c9c863734\jetified-gsyvideoplayer-androidvideocache-8.0.0\AndroidManifest.xml:11:5-15:19
+MERGED from [com.shuyu:gsyvideoplayer-androidvideocache:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a3db85a245461bf992fd7d4c9c863734\jetified-gsyvideoplayer-androidvideocache-8.0.0\AndroidManifest.xml:11:5-15:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+		ADDED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:31:9-35
+		ADDED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:31:9-35
 	android:label
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:37:9-41
 	android:resizeableActivity
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:39:9-42
 	android:largeHeap
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:40:9-33
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:38:9-33
 	android:icon
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:36:9-43
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:36:9-36
 	android:allowBackup
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:35:9-35
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:38:9-40
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:40:9-40
 	android:usesCleartextTraffic
-		ADDED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:32:9-44
+		ADDED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:32:9-44
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:34:9-68
+activity#com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:9-109
+	android:name
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:19-97
+activity#com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:9-94
+	android:name
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:19-91
+activity#com.yiheoline.qcloud.xiaozhibo.homepage.ShowSettingActivity
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:9-96
+	android:name
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:19-93
 activity#com.yiheoline.qcloud.xiaozhibo.main.splash.TCSplashActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:9-51:20
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:44:9-54:20
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:13-49
 	android:launchMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:45:13-43
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:46:13-43
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:44:13-47
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:48:13-47
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:13-87
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:45:13-87
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:46:13-50:29
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:17-69
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:25-66
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:17-77
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:52:17-77
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:27-74
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:52:27-74
 activity#com.yiheoline.qcloud.xiaozhibo.login.TCLoginActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:54:9-57:49
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:55:9-58:49
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:57:13-49
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:57:13-46
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:58:13-46
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:55:13-80
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:56:13-80
 activity#com.yiheoline.qcloud.xiaozhibo.login.TCRegisterActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:58:9-61:52
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:59:9-62:52
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:60:13-49
-	android:theme
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:61:13-49
+	android:theme
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:62:13-49
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:59:13-83
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:60:13-83
 activity#com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:62:9-65:46
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:63:9-66:52
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:64:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:66:13-49
 	android:launchMode
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:65:13-44
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:63:13-78
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:64:13-78
 activity#com.yiheoline.qcloud.xiaozhibo.anchor.prepare.TCAnchorPrepareActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:66:9-68:52
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:67:9-69:52
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:68:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:69:13-49
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:67:13-97
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:68:13-97
 activity#com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:69:9-73:59
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:70:9-74:59
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:71:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:72:13-49
 	android:windowSoftInputMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:73:13-56
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:74:13-56
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:72:13-47
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:73:13-47
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:70:13-86
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:71:13-86
 activity#com.yiheoline.qcloud.xiaozhibo.playback.TCPlaybackActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:74:9-78:59
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:75:9-79:59
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:76:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:77:13-49
 	android:windowSoftInputMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:78:13-56
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:79:13-56
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:77:13-47
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:78:13-47
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:75:13-86
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:76:13-86
 activity#com.yiheoline.qcloud.xiaozhibo.anchor.TCCameraAnchorActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:79:9-82:59
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:80:9-83:59
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:81:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:82:13-49
 	android:windowSoftInputMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:82:13-56
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:83:13-56
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:80:13-88
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:81:13-88
 activity#com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenAnchorActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:83:9-93:20
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:84:9-94:20
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:87:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:88:13-49
 	android:launchMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:89:13-44
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:87:13-44
 	android:windowSoftInputMode
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:88:13-56
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:90:13-56
 	android:configChanges
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:86:13-74
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:85:13-55
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:89:13-55
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:84:13-95
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:85:13-95
 intent-filter#category:name:android.intent.category.DEFAULT
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:90:13-92:29
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:13-93:29
 category#android.intent.category.DEFAULT
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:17-76
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:92:17-76
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:27-73
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:92:27-73
 service#com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenRecordService
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:94:9-99:19
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:96:9-99:40
 	android:enabled
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:96:13-35
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:98:13-35
 	android:exported
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:97:13-37
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:99:13-37
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:95:13-94
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:97:13-94
 activity#com.yiheoline.qcloud.xiaozhibo.profile.TCEditUseInfoActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:100:9-102:52
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:101:9-103:52
 	android:screenOrientation
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:102:13-49
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:103:13-49
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:101:13-88
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:102:13-88
 activity#com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:9-157
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:9-106:64
 	android:theme
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:106-154
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:106:13-61
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:19-105
-provider#android.support.v4.content.FileProvider
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:107:9-115:20
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:105:13-99
+provider#androidx.core.content.FileProvider
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:108:9-116:20
 	android:grantUriPermissions
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:110:13-47
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:112:13-47
 	android:authorities
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:109:13-76
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:110:13-76
 	android:exported
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:111:13-37
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:108:13-67
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:109:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:112:13-114:53
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:113:13-115:53
 	android:resource
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:114:17-50
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:115:17-50
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:113:17-67
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:114:17-67
 uses-library#com.google.android.maps
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:117:9-119:40
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:118:9-120:40
 	android:required
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:119:13-37
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:13-37
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:118:13-51
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:119:13-51
 uses-library#android.test.runner
-ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:9-60
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:121:9-60
 	android:name
-		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:23-57
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:121:23-57
 service#com.tencent.imsdk.session.remote.SessionService
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:123:9-125:42
 	android:process
@@ -385,8 +522,8 @@ ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidMa
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:130:13-80
 receiver#com.tencent.imsdk.session.SessionBroadcastReceiver
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:9-141:20
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:35:9-42:20
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:35:9-42:20
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:35:9-42:20
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:35:9-42:20
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:19-84
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:com.tencent.imsdk.session.boot+action:name:com.tencent.qcloud.qal.TASK_REMOVED
@@ -407,86 +544,212 @@ action#com.tencent.qcloud.qal.TASK_REMOVED
 ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:17-78
 	android:name
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:25-75
+activity#com.yiheoline.qcloud.xiaozhibo.login.LoginActivity
+ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:143:9-87
+	android:name
+		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:143:19-84
 uses-sdk
 INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
+MERGED from [com.github.xiaoyuanhu.boxing:boxing:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ac31d2e7268eb1148290e150d2d9d74f\jetified-boxing-1.0.4.1\AndroidManifest.xml:24:5-26:41
+MERGED from [com.github.xiaoyuanhu.boxing:boxing:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ac31d2e7268eb1148290e150d2d9d74f\jetified-boxing-1.0.4.1\AndroidManifest.xml:24:5-26:41
+MERGED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:23:5-25:41
+MERGED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:23:5-25:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d2029cf9fd46dfccc48fc8d1cd3b9784\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d2029cf9fd46dfccc48fc8d1cd3b9784\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\38e51be5662602f2cd632a275be7707a\anko-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\38e51be5662602f2cd632a275be7707a\anko-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba9da7f5f7740acf2f874db6d5de3384\jetified-anko-design-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba9da7f5f7740acf2f874db6d5de3384\jetified-anko-design-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\824b2fbfefed6c23fe4cf72905fa8e1b\anko-sqlite-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sqlite:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\824b2fbfefed6c23fe4cf72905fa8e1b\anko-sqlite-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\20ea3982e90c8cf2ac61e6238c91c9c3\anko-sdk27-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\20ea3982e90c8cf2ac61e6238c91c9c3\anko-sdk27-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\85d87f0a3d938ca9b2fd4fab9be76626\anko-sdk27-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk27-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\85d87f0a3d938ca9b2fd4fab9be76626\anko-sdk27-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5206ddce6f664542b426358899ece073\jetified-anko-appcompat-v7-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5206ddce6f664542b426358899ece073\jetified-anko-appcompat-v7-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\58dc26ea428a92de98762c0786572535\jetified-anko-support-v4-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\58dc26ea428a92de98762c0786572535\jetified-anko-support-v4-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c218871022d66e3b5040dfa43414c32\jetified-anko-appcompat-v7-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c218871022d66e3b5040dfa43414c32\jetified-anko-appcompat-v7-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba579ba05d5761c238b992fb03e1c2de\anko-appcompat-v7-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ba579ba05d5761c238b992fb03e1c2de\anko-appcompat-v7-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\213d02e4a779c29fcb0d2c3206587256\anko-support-v4-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\213d02e4a779c29fcb0d2c3206587256\anko-support-v4-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c9e613755c17c23d901ec0432224296\anko-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4c9e613755c17c23d901ec0432224296\anko-commons-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fc75e891a409e62df46ac40e6bbc07a0\anko-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fc75e891a409e62df46ac40e6bbc07a0\anko-coroutines-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:design-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fa6e14033f99b49e4572fdf05103f71\jetified-design-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:design-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fa6e14033f99b49e4572fdf05103f71\jetified-design-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8bcea80cc8e7189fc29e14dc72460021\sqlite-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:sqlite-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8bcea80cc8e7189fc29e14dc72460021\sqlite-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cb1f77380aa9744e873e306a41dcde49\platform-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cb1f77380aa9744e873e306a41dcde49\platform-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f27a963a0436d932b43c744fb9435862\jetified-appcompatV7-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f27a963a0436d932b43c744fb9435862\jetified-appcompatV7-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\466d066a7ba60d85c87d0d2db4dce83f\jetified-supportV4-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\466d066a7ba60d85c87d0d2db4dce83f\jetified-supportV4-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d4dab6d26692a3ca1726a7f1093ed654\jetified-commons-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d4dab6d26692a3ca1726a7f1093ed654\jetified-commons-base-0.10.8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e75dd1fec880c5be426368da0b2b0462\jetified-BaseRecyclerViewAdapterHelper-3.0.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e75dd1fec880c5be426368da0b2b0462\jetified-BaseRecyclerViewAdapterHelper-3.0.4\AndroidManifest.xml:7:5-9:41
 MERGED from [:beautysettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:beautysettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\beautysettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:audioeffectsettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\audioeffectsettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:audioeffectsettingkit] D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\audioeffectsettingkit\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b07e62e9a8c800576c47ce6d3e3a1be8\imsdk-4.5.45\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e47c8426a5178df58cbf77368d671ac6\dfm-0.4.4\AndroidManifest.xml:22:5-24:41
-MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e47c8426a5178df58cbf77368d671ac6\dfm-0.4.4\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:multidex:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\71cec002f4cf1fb23f88554897527146\multidex-1.0.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:multidex:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\71cec002f4cf1fb23f88554897527146\multidex-1.0.0\AndroidManifest.xml:18:5-42
-MERGED from [com.tencent.bugly:crashreport:3.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d556df0da2ceda00e68fa057fc91e29\crashreport-3.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:crashreport:3.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d556df0da2ceda00e68fa057fc91e29\crashreport-3.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9d7250a774d78c6da773e4ce19c93e82\design-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\7f5f0b3369d8fa8a72a20e2278ec0acc\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\711cd693cb47fa08b9b342d9a2815457\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\711cd693cb47fa08b9b342d9a2815457\recyclerview-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc3876738bdb5d8e498d8c27630d1092\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc3876738bdb5d8e498d8c27630d1092\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c82b71cc23f1f749201c229f1e0919f8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c82b71cc23f1f749201c229f1e0919f8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\240ad4e7c0a4c0f0ac07ba22afac43c2\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\240ad4e7c0a4c0f0ac07ba22afac43c2\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\13f115cc5d5138e9ed6d7046dab5d030\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\13f115cc5d5138e9ed6d7046dab5d030\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a191153422ddfd26478c8b99811273f5\transition-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a191153422ddfd26478c8b99811273f5\transition-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c361ce609604c8b37cbff4112761818\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c361ce609604c8b37cbff4112761818\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4660acd0807cc71ba66bee2bd6cbbbe5\viewpager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4660acd0807cc71ba66bee2bd6cbbbe5\viewpager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2f9ffac3f9aa7c3da9b2ea0a60bff798\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2f9ffac3f9aa7c3da9b2ea0a60bff798\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e393f8741de26a3dcc6eeb170bd18679\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e393f8741de26a3dcc6eeb170bd18679\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c98a9bc0a455ab0200cce6feac99fa67\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c98a9bc0a455ab0200cce6feac99fa67\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b82955ed32a4ee277723d8123c155ac3\customview-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b82955ed32a4ee277723d8123c155ac3\customview-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8756cea37b098f254fcf1c05271849e1\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8756cea37b098f254fcf1c05271849e1\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e2a5a2145c109898fc28f4778cc59fa2\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e2a5a2145c109898fc28f4778cc59fa2\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\776dfa9be835a7a130740bd6b0619584\loader-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\776dfa9be835a7a130740bd6b0619584\loader-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\45af0f91ec351e1a1c603d501e9b45b7\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\45af0f91ec351e1a1c603d501e9b45b7\cardview-v7-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b93ddaf99704c9896c23344bb8a6cc5b\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f89186d3faa35207960141dbf97e7823\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f89186d3faa35207960141dbf97e7823\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\912d14cf8b7da59afd70a06b1ab8df17\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\912d14cf8b7da59afd70a06b1ab8df17\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9f66af0770fd83464340388aae824c93\interpolator-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9f66af0770fd83464340388aae824c93\interpolator-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6382b0a1555e0e71f2a2930dfe6b1d66\documentfile-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6382b0a1555e0e71f2a2930dfe6b1d66\documentfile-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ab60f6dd6ef13cb57d98ea7973f298c0\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ab60f6dd6ef13cb57d98ea7973f298c0\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\441dd746fc5507909e127eaa50801847\print-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\441dd746fc5507909e127eaa50801847\print-28.0.0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e30d9e6f3403e84c4cae532d406e4009\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e30d9e6f3403e84c4cae532d406e4009\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\855199d21a2457dffd94f776f414402b\livedata-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\855199d21a2457dffd94f776f414402b\livedata-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0c580ad6917269345b415f2689381fa7\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0c580ad6917269345b415f2689381fa7\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\32c3c3c1ff1572cd4fbf4adc8b2e281b\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\32c3c3c1ff1572cd4fbf4adc8b2e281b\runtime-1.1.1\AndroidManifest.xml:20:5-44
-MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6395f262c472580995287e3ca1edfd2a\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.imsdk:imsdk:4.5.45] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c8dc4de65d8461895404b11eeb094831\jetified-imsdk-4.5.45\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\35652acf3486c0e6321bc29d23046562\dfm-0.4.4\AndroidManifest.xml:22:5-24:41
+MERGED from [com.github.ctiao:dfm:0.4.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\35652acf3486c0e6321bc29d23046562\dfm-0.4.4\AndroidManifest.xml:22:5-24:41
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\92e3b243ecb0f0770afa98d86b3df319\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\92e3b243ecb0f0770afa98d86b3df319\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c5dbb7d3005eada7cc6df0859c50f2e0\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c5dbb7d3005eada7cc6df0859c50f2e0\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.chensl.rotatephotoview:rotatephotoview:1.0.5] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\274acfe01fed49f450c6c44449434e85\jetified-rotatephotoview-1.0.5\AndroidManifest.xml:8:5-10:41
+MERGED from [com.chensl.rotatephotoview:rotatephotoview:1.0.5] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\274acfe01fed49f450c6c44449434e85\jetified-rotatephotoview-1.0.5\AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\aa857fcef5067fac0eb60c78ba34c63d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\aa857fcef5067fac0eb60c78ba34c63d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.shuyu:GSYVideoPlayer:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\76b5b147e5a4c37958e5b42068541eb9\jetified-GSYVideoPlayer-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:GSYVideoPlayer:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\76b5b147e5a4c37958e5b42068541eb9\jetified-GSYVideoPlayer-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent:mmkv:1.0.18] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0b58a1035529e81a8f3dfda0323a942e\jetified-mmkv-1.0.18\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent:mmkv:1.0.18] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0b58a1035529e81a8f3dfda0323a942e\jetified-mmkv-1.0.18\AndroidManifest.xml:5:5-7:41
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:22:5-24:41
+MERGED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:22:5-24:41
+MERGED from [com.dyhdyh.loadingbar2:loadingbar:2.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b32b3d95dd63443386987d0db365d79\jetified-loadingbar-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dyhdyh.loadingbar2:loadingbar:2.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b32b3d95dd63443386987d0db365d79\jetified-loadingbar-2.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\346b91153ed9a551ff184b5b93ee33f5\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\346b91153ed9a551ff184b5b93ee33f5\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.1002326270xc:LayoutManager-FlowLayout:v1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d14266a0754de9af9de59e24e0c123b\jetified-LayoutManager-FlowLayout-v1.8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.1002326270xc:LayoutManager-FlowLayout:v1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0d14266a0754de9af9de59e24e0c123b\jetified-LayoutManager-FlowLayout-v1.8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-java:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\298aa3472c94516a3bdd0f0c1fa12cc7\jetified-gsyVideoPlayer-java-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12a7a42a8df2d1a3949272a54d449e35\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12a7a42a8df2d1a3949272a54d449e35\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0020f04b93b8c465a976467d12e41326\jetified-Android-PickerView-4.1.9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0020f04b93b8c465a976467d12e41326\jetified-Android-PickerView-4.1.9\AndroidManifest.xml:7:5-9:41
+MERGED from [top.zibin:Luban:1.1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\41c147fc38a7392a52d6c51a81cd9209\jetified-Luban-1.1.8\AndroidManifest.xml:7:5-9:41
+MERGED from [top.zibin:Luban:1.1.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\41c147fc38a7392a52d6c51a81cd9209\jetified-Luban-1.1.8\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\62b42771574550f7c60fb8090211772d\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\62b42771574550f7c60fb8090211772d\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6a9ba58fa3bc7f62d1378a3eb93d4017\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6a9ba58fa3bc7f62d1378a3eb93d4017\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.shuyu:GSYVideoPlayer-exo2:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\915ea771b9282fd5ad4d92d2759647a4\jetified-GSYVideoPlayer-exo2-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:GSYVideoPlayer-exo2:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\915ea771b9282fd5ad4d92d2759647a4\jetified-GSYVideoPlayer-exo2-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [tv.danmaku.ijk.media:ijkplayer-exo:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b9282c60a4eb6cda55c6cbbaec331670\jetified-ijkplayer-exo-0.8.8\AndroidManifest.xml:5:5-7:41
+MERGED from [tv.danmaku.ijk.media:ijkplayer-exo:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b9282c60a4eb6cda55c6cbbaec331670\jetified-ijkplayer-exo-0.8.8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cf90ab851ed4dc811b25a7fda56118a2\jetified-exoplayer-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cf90ab851ed4dc811b25a7fda56118a2\jetified-exoplayer-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0f9d8284af49e4f860dea453b9d5d951\jetified-exoplayer-ui-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0f9d8284af49e4f860dea453b9d5d951\jetified-exoplayer-ui-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fc3cd600507b20201b148bbb14631e3\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8fc3cd600507b20201b148bbb14631e3\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ff38e10a9511bb9262b36410a294db95\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ff38e10a9511bb9262b36410a294db95\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\43bd053344dd91889caa765b4d03efcf\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\43bd053344dd91889caa765b4d03efcf\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1d758cb9ab12ad6092399d559f7f5aba\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1d758cb9ab12ad6092399d559f7f5aba\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c8d19400b7f90767a40bf848d545c16\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6c8d19400b7f90767a40bf848d545c16\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b340202e6e96084fa364bee26a8acfe\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3b340202e6e96084fa364bee26a8acfe\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12ff3bf4931c6ee0e182bbcefc5a1cfe\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\12ff3bf4931c6ee0e182bbcefc5a1cfe\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e43a985b08a652886ef802cf14a111c7\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\e43a985b08a652886ef802cf14a111c7\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8092df27876235e212dfd26626ab1ebc\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8092df27876235e212dfd26626ab1ebc\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\754722de293e99795dfef034937daf8d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\754722de293e99795dfef034937daf8d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8dbb9132b1fb53fd4fbb93eaf077875c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8dbb9132b1fb53fd4fbb93eaf077875c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c3dea5666a6bf4ec85e7958faa8721cd\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\c3dea5666a6bf4ec85e7958faa8721cd\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1e12a013c874f47e3318ff7cbcb96164\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1e12a013c874f47e3318ff7cbcb96164\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8536fa4b2f40145e5653a8084e46a57b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8536fa4b2f40145e5653a8084e46a57b\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.andkulikov:transitionseverywhere:2.0.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\043cabd6244815da57d6ad2355509d53\jetified-transitionseverywhere-2.0.0-beta01\AndroidManifest.xml:7:5-9:41
+MERGED from [com.andkulikov:transitionseverywhere:2.0.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\043cabd6244815da57d6ad2355509d53\jetified-transitionseverywhere-2.0.0-beta01\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.transition:transition:1.1.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3925ddcc5b9a9a9cff8c60cea2c00140\transition-1.1.0-beta01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0-beta01] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\3925ddcc5b9a9a9cff8c60cea2c00140\transition-1.1.0-beta01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\421d31ee971c76ac1a6a5c2b52e41d47\media-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\421d31ee971c76ac1a6a5c2b52e41d47\media-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\59ef8ff78b39f0fed4b156cee58382c6\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\59ef8ff78b39f0fed4b156cee58382c6\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\63375a8602e663a8c50b61d57bebad9d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\63375a8602e663a8c50b61d57bebad9d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6933bb133c67191545122a168eed45c4\jetified-wheelview-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6933bb133c67191545122a168eed45c4\jetified-wheelview-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc4f4858855e039c57c15500877bf525\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\bc4f4858855e039c57c15500877bf525\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1b095822d1b8a91797ad223c378ae9e6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\1b095822d1b8a91797ad223c378ae9e6\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d3a0c526675defaec83a58f88616d673\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\d3a0c526675defaec83a58f88616d673\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\83186ecf5c8ddeae84db330840a1a96d\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\83186ecf5c8ddeae84db330840a1a96d\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\86c784bf68d2d55319264b405834eb0f\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\86c784bf68d2d55319264b405834eb0f\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ada3b234ed492d80a9e5d19f35dedbd5\jetified-extension-rtmp-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ada3b234ed492d80a9e5d19f35dedbd5\jetified-extension-rtmp-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-adapters:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4e322b83dee2ec3e3979d41c6e8789e0\databinding-adapters-3.6.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\4e322b83dee2ec3e3979d41c6e8789e0\databinding-adapters-3.6.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2555e9165e75d1a542547fe86919257b\databinding-runtime-3.6.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2555e9165e75d1a542547fe86919257b\databinding-runtime-3.6.3\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:viewbinding:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee45a8a67bc4a49e989664cf053e586d\jetified-viewbinding-3.6.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:3.6.3] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee45a8a67bc4a49e989664cf053e586d\jetified-viewbinding-3.6.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\788369c7b1869b1b4e59a4c5a1dcb60c\jetified-exoplayer-dash-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\788369c7b1869b1b4e59a4c5a1dcb60c\jetified-exoplayer-dash-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0491ce51f5965034dc41968a8afa0173\jetified-exoplayer-hls-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0491ce51f5965034dc41968a8afa0173\jetified-exoplayer-hls-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\05fc1fa98af4080e238140afee95c305\jetified-exoplayer-smoothstreaming-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\05fc1fa98af4080e238140afee95c305\jetified-exoplayer-smoothstreaming-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f0c7ca6a3256c8f42fe8b2f8c5a77aed\jetified-exoplayer-core-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f0c7ca6a3256c8f42fe8b2f8c5a77aed\jetified-exoplayer-core-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0a40b125de68f24ce442b117500408d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\0a40b125de68f24ce442b117500408d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5c0c439dd771074d966cf4cb84a1b1ef\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\5c0c439dd771074d966cf4cb84a1b1ef\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\54b0365c12e9e963d0a6847a964a4644\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\54b0365c12e9e963d0a6847a964a4644\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f814c49c4e6d427ba2071c2724ae0c93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\f814c49c4e6d427ba2071c2724ae0c93\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fdf32433e1a6a6a1a59c5f19e6604e1d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\fdf32433e1a6a6a1a59c5f19e6604e1d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a8796c967b3c0d3b92f93a3b9f68bb69\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a8796c967b3c0d3b92f93a3b9f68bb69\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2cf129ca3dd02365ebf8406780f5d73b\jetified-exoplayer-extractor-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\2cf129ca3dd02365ebf8406780f5d73b\jetified-exoplayer-extractor-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\da9ff10dd315660ab4bf689f6de279ef\jetified-exoplayer-common-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\da9ff10dd315660ab4bf689f6de279ef\jetified-exoplayer-common-2.12.1\AndroidManifest.xml:20:5-22:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6bb93f32f2105cf9e3f57a26d270b671\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\6bb93f32f2105cf9e3f57a26d270b671\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.shuyu:gsyVideoPlayer-armv5:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\dc23e08b7fe4f84c533455f7e117b295\jetified-gsyVideoPlayer-armv5-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-armv5:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\dc23e08b7fe4f84c533455f7e117b295\jetified-gsyVideoPlayer-armv5-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-armv7a:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee146c8241d5496ada3e618b3e42b8ed\jetified-gsyVideoPlayer-armv7a-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-armv7a:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\ee146c8241d5496ada3e618b3e42b8ed\jetified-gsyVideoPlayer-armv7a-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-arm64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\77491da4cf698d4677617a18e0feb058\jetified-gsyVideoPlayer-arm64-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-arm64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\77491da4cf698d4677617a18e0feb058\jetified-gsyVideoPlayer-arm64-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-x64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8d8719711e8b1484d6b08bbc725782ad\jetified-gsyVideoPlayer-x64-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-x64:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8d8719711e8b1484d6b08bbc725782ad\jetified-gsyVideoPlayer-x64-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-x86:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\538523530cac13d9441265e9b9e84363\jetified-gsyVideoPlayer-x86-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-x86:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\538523530cac13d9441265e9b9e84363\jetified-gsyVideoPlayer-x86-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-base:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\803fb1bcc5b1a16bf2a0b26b8e1f86c5\jetified-gsyVideoPlayer-base-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyVideoPlayer-base:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\803fb1bcc5b1a16bf2a0b26b8e1f86c5\jetified-gsyVideoPlayer-base-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [tv.danmaku.ijk.media:ijkplayer-java:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8e9eaae2a630ca6d7fd94ee742271dd6\jetified-ijkplayer-java-0.8.8\AndroidManifest.xml:5:5-7:41
+MERGED from [tv.danmaku.ijk.media:ijkplayer-java:0.8.8] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\8e9eaae2a630ca6d7fd94ee742271dd6\jetified-ijkplayer-java-0.8.8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.shuyu:gsyvideoplayer-androidvideocache:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a3db85a245461bf992fd7d4c9c863734\jetified-gsyvideoplayer-androidvideocache-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuyu:gsyvideoplayer-androidvideocache:8.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a3db85a245461bf992fd7d4c9c863734\jetified-gsyvideoplayer-androidvideocache-8.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\40e1339494ae8787f27206de99cc92e0\jetified-rtmp-client-3.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [net.butterflytv.utils:rtmp-client:3.1.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\40e1339494ae8787f27206de99cc92e0\jetified-rtmp-client-3.1.0\AndroidManifest.xml:7:5-9:41
 INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -497,3 +760,35 @@ INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\Androi
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 		ADDED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
 		INJECTED from D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml
+activity#com.bilibili.boxing_impl.ui.BoxingActivity
+ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:28:9-33:20
+	android:screenOrientation
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:31:13-49
+	android:launchMode
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:30:13-43
+	android:theme
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:29:13-70
+activity#com.bilibili.boxing_impl.ui.BoxingViewActivity
+ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:34:9-39:20
+	android:screenOrientation
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:37:13-49
+	android:launchMode
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:36:13-43
+	android:theme
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:38:13-63
+	android:name
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:35:13-74
+activity#com.bilibili.boxing_impl.ui.BoxingBottomSheetActivity
+ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:40:9-43:66
+	android:screenOrientation
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:42:13-49
+	android:theme
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:43:13-63
+	android:name
+		ADDED from [com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:41:13-81
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:29:5-84
+	android:name
+		ADDED from [com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:29:22-81

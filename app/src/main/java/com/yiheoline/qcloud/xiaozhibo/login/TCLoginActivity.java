@@ -13,12 +13,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.misc.NameGenerator;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
 
@@ -209,7 +208,8 @@ public class TCLoginActivity extends Activity {
                 showOnLoading(true);
 
                 if (TCUtils.isNetworkAvailable(this)) {
-                    login(NameGenerator.getRandomUserID(), "");
+//                    login(NameGenerator.getRandomUserID(), "");
+                    login("dingying", "");
                 }
             }
         }

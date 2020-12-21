@@ -10,10 +10,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.FileProvider;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Display;
@@ -26,9 +22,13 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenAnchorActivity;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
@@ -37,6 +37,7 @@ import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.audience.TCCustomSwitch;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheoline.qcloud.xiaozhibo.anchor.TCCameraAnchorActivity;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
 

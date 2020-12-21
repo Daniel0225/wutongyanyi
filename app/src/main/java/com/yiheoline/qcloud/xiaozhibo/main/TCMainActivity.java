@@ -5,30 +5,32 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.homepage.HomePageFragment;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
+import com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.TCVideoListFragment;
 import com.yiheoline.qcloud.xiaozhibo.profile.TCUserInfoFragment;
 import com.yiheoline.qcloud.xiaozhibo.show.ShowFragment;
 import com.yiheoline.qcloud.xiaozhibo.utils.StatusBarUtil;
 import com.yiheoline.qcloud.xiaozhibo.video.VideoFragment;
 import com.yiheoline.qcloud.xiaozhibo.widgets.NoAnimationViewPager;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,7 +110,7 @@ public class TCMainActivity extends AppCompatActivity implements BottomNavigatio
         });
     }
 
-    class ViewPageAdapter extends FragmentPagerAdapter{
+    class ViewPageAdapter extends FragmentPagerAdapter {
         public ViewPageAdapter(FragmentManager fm) {
             super(fm);
         }

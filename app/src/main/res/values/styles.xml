@@ -121,4 +121,22 @@
     <style name="BeautyTheme" parent="BeautyPanelStyle">
         <item name="beautyPanelColorPrimary">@color/colorGreen</item>
     </style>
+
+    <!-- Base dialog theme. -->
+    <style name="NoBGDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <!-- dialog 动画主题 -->
+    <style name="BottomAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
 </resources>

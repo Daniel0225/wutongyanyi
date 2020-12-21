@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/XiaoZhiBo.iml" filepath="$PROJECT_DIR$/XiaoZhiBo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/audioeffectsettingkit/audioeffectsettingkit.iml" filepath="$PROJECT_DIR$/audioeffectsettingkit/audioeffectsettingkit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/beautysettingkit/beautysettingkit.iml" filepath="$PROJECT_DIR$/beautysettingkit/beautysettingkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XiaoZhiBo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XiaoZhiBo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/audioeffectsettingkit/XiaoZhiBo.audioeffectsettingkit.iml" filepath="$PROJECT_DIR$/.idea/modules/audioeffectsettingkit/XiaoZhiBo.audioeffectsettingkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/beautysettingkit/XiaoZhiBo.beautysettingkit.iml" filepath="$PROJECT_DIR$/.idea/modules/beautysettingkit/XiaoZhiBo.beautysettingkit.iml" />
     </modules>
   </component>
 </project>

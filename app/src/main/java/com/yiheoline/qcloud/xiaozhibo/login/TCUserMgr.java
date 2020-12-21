@@ -249,11 +249,11 @@ public class TCUserMgr {
     private void loginInternal(final String userId, final String pwd, final TCHTTPMgr.Callback callback) {
         try {
             JSONObject body = new JSONObject()
-                    .put("userid", userId)
+                    .put("userID", userId)
                     .put("password", pwd);
 
             if (!TextUtils.isEmpty(TCGlobalConfig.APP_SVR_URL)) {
-                TCHTTPMgr.getInstance().request(TCGlobalConfig.APP_SVR_URL + "/login", body, new TCHTTPMgr.Callback() {
+                TCHTTPMgr.getInstance().request(TCGlobalConfig.APP_SVR_URL + "/login?userID="+userId, body, new TCHTTPMgr.Callback() {
                     @Override
                     public void onSuccess(JSONObject data) {
                         mUserId = userId;
@@ -261,19 +261,19 @@ public class TCUserMgr {
                         int code = data.optInt("code");
                         String msg = data.optString("message");
                         data = data.optJSONObject("data");
-                        if (code == 200 && data != null) {
-                            mToken = data.optString("token");                   // 用于计算网络请求的 sig
-                            JSONObject serviceSig = data.optJSONObject("roomservice_sign");
-                            mUserSig = serviceSig.optString("userSig");         // IM 的 sign
-                            mUserId = serviceSig.optString("userID");           // 后台分配的userId
-                            mAccountType = serviceSig.optString("accountType"); //
-                            mSdkAppID = serviceSig.optInt("sdkAppID");          // sdkappId
+                        if (code == 0 && data != null) {
+                            JSONObject serviceSig = data.optJSONObject("data");
+//                            mToken = data.optString("token");                   // 用于计算网络请求的 sig
+                            mUserSig = data.optString("userSig");         // IM 的 sign
+                            mUserId = data.optString("userID");           // 后台分配的userId
+//                            mAccountType = serviceSig.optString("accountType"); //
+                            mSdkAppID = data.optInt("sdkAppID");          // sdkappId
 
-                            JSONObject cosInfo = data.optJSONObject("cos_info");      // COS 存储相关的信息
-                            mCosInfo.bucket = cosInfo.optString("Bucket");      // COS 存储的Buket
-                            mCosInfo.appID = cosInfo.optString("Appid");        // COS 对应的AppId
-                            mCosInfo.region = cosInfo.optString("Region");      // COS 的存储区域
-                            mCosInfo.secretID = cosInfo.optString("SecretId");  // COS 的密钥ID
+//                            JSONObject cosInfo = data.optJSONObject("cos_info");      // COS 存储相关的信息
+//                            mCosInfo.bucket = cosInfo.optString("Bucket");      // COS 存储的Buket
+//                            mCosInfo.appID = cosInfo.optString("Appid");        // COS 对应的AppId
+//                            mCosInfo.region = cosInfo.optString("Region");      // COS 的存储区域
+//                            mCosInfo.secretID = cosInfo.optString("SecretId");  // COS 的密钥ID
                             // 登录到 MLVB 组件
                             loginMLVB();
 

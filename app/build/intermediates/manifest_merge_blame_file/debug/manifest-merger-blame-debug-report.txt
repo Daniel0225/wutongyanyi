@@ -29,7 +29,7 @@
 16-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:10:5-81
 16-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:10:22-78
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:5-79
+17-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:5-80
 17-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:11:22-77
 18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 18-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:12:5-71
@@ -42,270 +42,313 @@
 20-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:14:22-69
 21
 22    <uses-feature android:name="android.hardware.camera" />
-22-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:15:5-60
-22-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:15:19-57
+22-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:5-60
+22-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:19-57
 23    <uses-feature android:name="android.hardware.camera.autofocus" />
-23-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:5-70
-23-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:16:19-67
+23-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:17:5-70
+23-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:17:19-67
 24
 25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-25-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:18:5-81
-25-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:18:22-78
-26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-26-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:5-79
-26-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:22-76
-27    <!-- IMSDK 权限 -->
-28    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-28-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:21:5-79
-28-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:21:22-76
-29    <uses-permission android:name="android.permission.GET_TASKS" />
-29-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:22:5-68
-29-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:22:22-65
-30    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-30-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:5-80
-30-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:22-77
-31    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-31-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:5-81
-31-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:22-78
-32    <uses-permission android:name="android.permission.VIBRATE" />
-32-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:25:5-66
-32-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:25:22-63
-33    <uses-permission android:name="android.permission.WAKE_LOCK" />
-33-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:26:5-68
-33-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:26:22-65
-34    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-34-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:27:5-78
-34-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:27:22-75
-35    <!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> -->
-36    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-36-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:5-71
-36-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:22-68
-37    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-37-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:5-74
-37-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:22-71
-38    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-38-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:5-74
-38-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:22-71
-39    <uses-permission android:name="android.permission.BLUETOOTH" />
-39-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:32:5-68
-39-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:32:22-65
-40
-41    <application
-41-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:33:5-143:19
-42        android:name="com.yiheoline.qcloud.xiaozhibo.TCApplication"
-42-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:34:9-68
-43        android:allowBackup="true"
-43-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:35:9-35
-44        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-44-->[com.android.support:support-compat:28.0.0] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
-45        android:debuggable="true"
-46        android:icon="@mipmap/ic_launcher"
-46-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:36:9-43
-47        android:label="@string/app_name"
-47-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:37:9-41
-48        android:largeHeap="true"
-48-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:40:9-33
-49        android:resizeableActivity="true"
-49-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:39:9-42
-50        android:supportsRtl="true"
-50-->[com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:31:9-35
-51        android:testOnly="true"
-52        android:theme="@style/AppTheme"
-52-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:38:9-40
-53        android:usesCleartextTraffic="true" >
-53-->[com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\55586fba5158898169ef8ca9144fc522\LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:32:9-44
-54        <activity
-54-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:9-51:20
-55            android:name="com.yiheoline.qcloud.xiaozhibo.main.splash.TCSplashActivity"
-55-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:13-87
-56            android:launchMode="singleTop"
-56-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:45:13-43
-57            android:screenOrientation="portrait"
-57-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:13-49
-58            android:theme="@style/SplashTheme" >
-58-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:44:13-47
-59            <intent-filter>
-59-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:46:13-50:29
-60                <action android:name="android.intent.action.MAIN" />
-60-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:17-69
-60-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:25-66
-61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:17-77
-62-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:27-74
-63            </intent-filter>
-64        </activity>
-65        <activity
-65-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:54:9-57:49
-66            android:name="com.yiheoline.qcloud.xiaozhibo.login.TCLoginActivity"
-66-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:55:13-80
-67            android:screenOrientation="portrait"
-67-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:56:13-49
-68            android:theme="@style/LoginTheme" />
-68-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:57:13-46
-69        <activity
-69-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:58:9-61:52
-70            android:name="com.yiheoline.qcloud.xiaozhibo.login.TCRegisterActivity"
-70-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:59:13-83
-71            android:screenOrientation="portrait"
-71-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:60:13-49
-72            android:theme="@style/RegisterTheme" />
-72-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:61:13-49
-73        <activity
-73-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:62:9-65:46
-74            android:name="com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity"
-74-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:63:13-78
-75            android:launchMode="singleTask"
-75-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:65:13-44
-76            android:screenOrientation="portrait" />
-76-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:64:13-49
-77        <activity
-77-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:66:9-68:52
-78            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.prepare.TCAnchorPrepareActivity"
-78-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:67:13-97
-79            android:screenOrientation="portrait" />
-79-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:68:13-49
-80        <activity
-80-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:69:9-73:59
-81            android:name="com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity"
-81-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:70:13-86
-82            android:screenOrientation="portrait"
-82-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:71:13-49
-83            android:theme="@style/PlayerTheme"
-83-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:72:13-47
-84            android:windowSoftInputMode="adjustNothing" />
-84-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:73:13-56
-85        <activity
-85-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:74:9-78:59
-86            android:name="com.yiheoline.qcloud.xiaozhibo.playback.TCPlaybackActivity"
-86-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:75:13-86
-87            android:screenOrientation="portrait"
-87-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:76:13-49
-88            android:theme="@style/PlayerTheme"
-88-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:77:13-47
-89            android:windowSoftInputMode="adjustNothing" />
-89-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:78:13-56
-90        <activity
-90-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:79:9-82:59
-91            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.TCCameraAnchorActivity"
-91-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:80:13-88
-92            android:screenOrientation="portrait"
-92-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:81:13-49
-93            android:windowSoftInputMode="adjustNothing" />
-93-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:82:13-56
-94        <activity
-94-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:83:9-93:20
-95            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenAnchorActivity"
-95-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:84:13-95
-96            android:configChanges="orientation|keyboardHidden|screenSize"
-96-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:86:13-74
-97            android:launchMode="singleTask"
-97-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:89:13-44
-98            android:screenOrientation="portrait"
-98-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:87:13-49
-99            android:theme="@style/RecordActivityTheme"
-99-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:85:13-55
-100            android:windowSoftInputMode="adjustNothing" >
-100-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:88:13-56
-101            <intent-filter>
-101-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:90:13-92:29
-102                <category android:name="android.intent.category.DEFAULT" />
-102-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:17-76
-102-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:27-73
-103            </intent-filter>
-104        </activity>
-105
-106        <service
-106-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:94:9-99:19
-107            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenRecordService"
-107-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:95:13-94
-108            android:enabled="true"
-108-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:96:13-35
-109            android:exported="false" >
-109-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:97:13-37
-110        </service>
-111
-112        <activity
-112-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:100:9-102:52
-113            android:name="com.yiheoline.qcloud.xiaozhibo.profile.TCEditUseInfoActivity"
-113-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:101:13-88
-114            android:screenOrientation="portrait" />
-114-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:102:13-49
-115        <activity
-115-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:9-157
-116            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
-116-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:19-105
-117            android:theme="@android:style/Theme.Translucent" />
-117-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:106-154
-118
-119        <provider
-119-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:107:9-115:20
-120            android:name="android.support.v4.content.FileProvider"
-120-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:108:13-67
-121            android:authorities="com.tencent.qcloud.xiaozhibo.fileprovider"
-121-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:109:13-76
-122            android:exported="false"
-122-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:111:13-37
-123            android:grantUriPermissions="true" >
-123-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:110:13-47
-124            <meta-data
-124-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:112:13-114:53
-125                android:name="android.support.FILE_PROVIDER_PATHS"
-125-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:113:17-67
-126                android:resource="@xml/filepaths" />
-126-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:114:17-50
-127        </provider>
-128
-129        <uses-library
-129-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:117:9-119:40
-130            android:name="com.google.android.maps"
-130-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:118:13-51
-131            android:required="false" />
-131-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:119:13-37
-132        <uses-library android:name="android.test.runner" />
-132-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:9-60
-132-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:23-57
-133
-134        <service
-134-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:123:9-125:42
-135            android:name="com.tencent.imsdk.session.remote.SessionService"
-135-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:124:13-75
-136            android:process=":network" />
-136-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:125:13-39
-137        <service
-137-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:126:9-128:42
-138            android:name="com.tencent.imsdk.session.remote.AssistService"
-138-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:127:13-74
-139            android:process=":network" />
-139-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:128:13-39
-140        <service
-140-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:129:9-132:42
-141            android:name="com.tencent.imsdk.session.remote.KeepAliveJobService"
-141-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:130:13-80
-142            android:permission="android.permission.BIND_JOB_SERVICE"
-142-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:131:13-69
-143            android:process=":network" />
-143-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:132:13-39
-144
-145        <receiver android:name="com.tencent.imsdk.session.SessionBroadcastReceiver" >
-145-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:9-141:20
-145-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:19-84
-146            <intent-filter>
-146-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:135:13-140:29
-147                <action android:name="com.tencent.imsdk.session.boot" />
-147-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:136:17-73
-147-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:136:25-70
-148                <action android:name="android.intent.action.BOOT_COMPLETED" />
-148-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:137:17-79
-148-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:137:25-76
-149                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-149-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:138:17-79
-149-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:138:25-76
-150                <action android:name="com.tencent.qcloud.qal.TASK_REMOVED" />
-150-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:17-78
-150-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:25-75
-151            </intent-filter>
-152        </receiver>
-153    </application>
+25-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:5-81
+25-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:19:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- IMSDK 权限 -->
+26-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:20:5-79
+26-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:20:22-76
+27    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+27-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:21:5-79
+27-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:21:22-76
+28    <uses-permission android:name="android.permission.GET_TASKS" />
+28-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:22:5-68
+28-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:22:22-65
+29    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+29-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:5-80
+29-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:23:22-77
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:5-81
+30-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:24:22-78
+31    <uses-permission android:name="android.permission.VIBRATE" />
+31-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:25:5-66
+31-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:25:22-63
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:26:5-68
+32-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:26:22-65
+33    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> -->
+33-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:27:5-78
+33-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:27:22-75
+34    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+34-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:28:5-71
+34-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:28:22-68
+35    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+35-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:5-74
+35-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:29:22-71
+36    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+36-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:5-74
+36-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:30:22-71
+37    <uses-permission android:name="android.permission.BLUETOOTH" />
+37-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:5-68
+37-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:31:22-65
+38    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+38-->[com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:29:5-84
+38-->[com.lzy.net:okgo:3.0.4] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\a9dc32d15db32ab7bc3abff231d65285\jetified-okgo-3.0.4\AndroidManifest.xml:29:22-81
+39
+40    <application
+40-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:33:5-144:19
+41        android:name="com.yiheoline.qcloud.xiaozhibo.TCApplication"
+41-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:34:9-68
+42        android:allowBackup="true"
+42-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:35:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.3.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\927c034b9dd49f5174e8cb8e412b1c82\core-1.3.1\AndroidManifest.xml:24:18-86
+44        android:debuggable="true"
+45        android:icon="@mipmap/logo"
+45-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:36:9-36
+46        android:label="@string/app_name"
+46-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:37:9-41
+47        android:largeHeap="true"
+47-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:38:9-33
+48        android:resizeableActivity="true"
+48-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:39:9-42
+49        android:supportsRtl="true"
+49-->[com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:31:9-35
+50        android:testOnly="true"
+51        android:theme="@style/AppTheme"
+51-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:40:9-40
+52        android:usesCleartextTraffic="true" >
+52-->[com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\cd9592eb0ef3558161c8d2cf527991be\jetified-LiteAVSDK_Smart-8.1.9717\AndroidManifest.xml:32:9-44
+53        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity" />
+53-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:9-109
+53-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:41:19-97
+54        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity" />
+54-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:9-94
+54-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:42:19-91
+55        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowSettingActivity" />
+55-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:9-96
+55-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:43:19-93
+56        <activity
+56-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:44:9-54:20
+57            android:name="com.yiheoline.qcloud.xiaozhibo.main.splash.TCSplashActivity"
+57-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:45:13-87
+58            android:launchMode="singleTop"
+58-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:46:13-43
+59            android:screenOrientation="portrait"
+59-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:47:13-49
+60            android:theme="@style/SplashTheme" >
+60-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:48:13-47
+61            <intent-filter>
+61-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:49:13-53:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:50:17-69
+62-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:50:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:52:17-77
+64-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:52:27-74
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:55:9-58:49
+68            android:name="com.yiheoline.qcloud.xiaozhibo.login.TCLoginActivity"
+68-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:56:13-80
+69            android:screenOrientation="portrait"
+69-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:57:13-49
+70            android:theme="@style/LoginTheme" />
+70-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:58:13-46
+71        <activity
+71-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:59:9-62:52
+72            android:name="com.yiheoline.qcloud.xiaozhibo.login.TCRegisterActivity"
+72-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:60:13-83
+73            android:screenOrientation="portrait"
+73-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:61:13-49
+74            android:theme="@style/RegisterTheme" />
+74-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:62:13-49
+75        <activity
+75-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:63:9-66:52
+76            android:name="com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity"
+76-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:64:13-78
+77            android:launchMode="singleTask"
+77-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:65:13-44
+78            android:screenOrientation="portrait" />
+78-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:66:13-49
+79        <activity
+79-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:67:9-69:52
+80            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.prepare.TCAnchorPrepareActivity"
+80-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:68:13-97
+81            android:screenOrientation="portrait" />
+81-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:69:13-49
+82        <activity
+82-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:70:9-74:59
+83            android:name="com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity"
+83-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:71:13-86
+84            android:screenOrientation="portrait"
+84-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:72:13-49
+85            android:theme="@style/PlayerTheme"
+85-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:73:13-47
+86            android:windowSoftInputMode="adjustNothing" />
+86-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:74:13-56
+87        <activity
+87-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:75:9-79:59
+88            android:name="com.yiheoline.qcloud.xiaozhibo.playback.TCPlaybackActivity"
+88-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:76:13-86
+89            android:screenOrientation="portrait"
+89-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:77:13-49
+90            android:theme="@style/PlayerTheme"
+90-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:78:13-47
+91            android:windowSoftInputMode="adjustNothing" />
+91-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:79:13-56
+92        <activity
+92-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:80:9-83:59
+93            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.TCCameraAnchorActivity"
+93-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:81:13-88
+94            android:screenOrientation="portrait"
+94-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:82:13-49
+95            android:windowSoftInputMode="adjustNothing" />
+95-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:83:13-56
+96        <activity
+96-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:84:9-94:20
+97            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenAnchorActivity"
+97-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:85:13-95
+98            android:configChanges="orientation|keyboardHidden|screenSize"
+98-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:86:13-74
+99            android:launchMode="singleTask"
+99-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:87:13-44
+100            android:screenOrientation="portrait"
+100-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:88:13-49
+101            android:theme="@style/RecordActivityTheme"
+101-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:89:13-55
+102            android:windowSoftInputMode="adjustNothing" >
+102-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:90:13-56
+103            <intent-filter>
+103-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:91:13-93:29
+104                <category android:name="android.intent.category.DEFAULT" />
+104-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:92:17-76
+104-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:92:27-73
+105            </intent-filter>
+106        </activity>
+107
+108        <service
+108-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:96:9-99:40
+109            android:name="com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenRecordService"
+109-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:97:13-94
+110            android:enabled="true"
+110-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:98:13-35
+111            android:exported="false" />
+111-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:99:13-37
+112
+113        <activity
+113-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:101:9-103:52
+114            android:name="com.yiheoline.qcloud.xiaozhibo.profile.TCEditUseInfoActivity"
+114-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:102:13-88
+115            android:screenOrientation="portrait" />
+115-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:103:13-49
+116        <activity
+116-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:104:9-106:64
+117            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+117-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:105:13-99
+118            android:theme="@android:style/Theme.Translucent" />
+118-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:106:13-61
+119
+120        <provider
+120-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:108:9-116:20
+121            android:name="androidx.core.content.FileProvider"
+121-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:109:13-62
+122            android:authorities="com.tencent.qcloud.xiaozhibo.fileprovider"
+122-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:110:13-76
+123            android:exported="false"
+123-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:111:13-37
+124            android:grantUriPermissions="true" >
+124-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:112:13-47
+125            <meta-data
+125-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:113:13-115:53
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:114:17-67
+127                android:resource="@xml/filepaths" />
+127-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:115:17-50
+128        </provider>
+129
+130        <uses-library
+130-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:118:9-120:40
+131            android:name="com.google.android.maps"
+131-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:119:13-51
+132            android:required="false" />
+132-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:120:13-37
+133        <uses-library android:name="android.test.runner" />
+133-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:121:9-60
+133-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:121:23-57
+134
+135        <service
+135-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:123:9-125:42
+136            android:name="com.tencent.imsdk.session.remote.SessionService"
+136-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:124:13-75
+137            android:process=":network" />
+137-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:125:13-39
+138        <service
+138-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:126:9-128:42
+139            android:name="com.tencent.imsdk.session.remote.AssistService"
+139-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:127:13-74
+140            android:process=":network" />
+140-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:128:13-39
+141        <service
+141-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:129:9-132:42
+142            android:name="com.tencent.imsdk.session.remote.KeepAliveJobService"
+142-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:130:13-80
+143            android:permission="android.permission.BIND_JOB_SERVICE"
+143-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:131:13-69
+144            android:process=":network" />
+144-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:132:13-39
+145
+146        <receiver android:name="com.tencent.imsdk.session.SessionBroadcastReceiver" >
+146-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:9-141:20
+146-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:134:19-84
+147            <intent-filter>
+147-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:135:13-140:29
+148                <action android:name="com.tencent.imsdk.session.boot" />
+148-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:136:17-73
+148-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:136:25-70
+149                <action android:name="android.intent.action.BOOT_COMPLETED" />
+149-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:137:17-79
+149-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:137:25-76
+150                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+150-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:138:17-79
+150-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:138:25-76
+151                <action android:name="com.tencent.qcloud.qal.TASK_REMOVED" />
+151-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:17-78
+151-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:139:25-75
+152            </intent-filter>
+153        </receiver>
 154
-155</manifest>
+155        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.LoginActivity" />
+155-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:143:9-87
+155-->D:\QMDownload\MLVBSDK-master\Android\XiaoZhiBo\app\src\main\AndroidManifest.xml:143:19-84
+156        <activity
+156-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:28:9-33:20
+157            android:name="com.bilibili.boxing_impl.ui.BoxingActivity"
+157-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:29:13-70
+158            android:launchMode="singleTop"
+158-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:30:13-43
+159            android:screenOrientation="portrait"
+159-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:31:13-49
+160            android:theme="@style/Boxing.AppTheme.NoActionBar" >
+160-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:32:13-63
+161        </activity>
+162        <activity
+162-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:34:9-39:20
+163            android:name="com.bilibili.boxing_impl.ui.BoxingViewActivity"
+163-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:35:13-74
+164            android:launchMode="singleTop"
+164-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:36:13-43
+165            android:screenOrientation="portrait"
+165-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:37:13-49
+166            android:theme="@style/Boxing.AppTheme.NoActionBar" >
+166-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:38:13-63
+167        </activity>
+168        <activity
+168-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:40:9-43:66
+169            android:name="com.bilibili.boxing_impl.ui.BoxingBottomSheetActivity"
+169-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:41:13-81
+170            android:screenOrientation="portrait"
+170-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:42:13-49
+171            android:theme="@style/Boxing.AppTheme.NoActionBar" />
+171-->[com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1] C:\Users\54755\.gradle\caches\transforms-2\files-2.1\9a75b2d859813d73257e9b2909b7de1b\jetified-boxing-impl-1.0.4.1\AndroidManifest.xml:43:13-63
+172    </application>
+173
+174</manifest>

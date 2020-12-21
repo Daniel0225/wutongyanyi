@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55586fba5158898169ef8ca9144fc522/LiteAVSDK_Smart-8.1.9717/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55586fba5158898169ef8ca9144fc522/LiteAVSDK_Smart-8.1.9717/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55586fba5158898169ef8ca9144fc522/LiteAVSDK_Smart-8.1.9717/jars/libs/LiteAVSDK_Smart-0.0.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd9592eb0ef3558161c8d2cf527991be/jetified-LiteAVSDK_Smart-8.1.9717/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd9592eb0ef3558161c8d2cf527991be/jetified-LiteAVSDK_Smart-8.1.9717/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd9592eb0ef3558161c8d2cf527991be/jetified-LiteAVSDK_Smart-8.1.9717/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd9592eb0ef3558161c8d2cf527991be/jetified-LiteAVSDK_Smart-8.1.9717/jars/libs/LiteAVSDK_Smart-0.0.1.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.liteavsdk/LiteAVSDK_Smart/8.1.9717/262b8df87b450943dfa4e5003bc7b7a594b9376a/LiteAVSDK_Smart-8.1.9717-javadoc.jar!/" />

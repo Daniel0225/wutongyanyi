@@ -6,8 +6,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.tencent.qcloud.xiaozhibo.R;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 import java.util.List;

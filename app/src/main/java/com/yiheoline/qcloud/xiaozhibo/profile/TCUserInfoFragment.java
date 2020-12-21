@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,15 +14,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
 import com.tencent.imsdk.TIMManager;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
+import com.yiheoline.qcloud.xiaozhibo.login.LoginActivity;
 import com.yiheoline.qcloud.xiaozhibo.login.TCLoginActivity;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheoline.qcloud.xiaozhibo.profile.view.TCLineControllerView;
 import com.tencent.rtmp.TXLiveBase;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
 
@@ -104,7 +106,7 @@ public class TCUserInfoFragment extends Fragment implements View.OnClickListener
                 break;
             case R.id.lcv_ui_logout: //注销APPi
                 TCUserMgr.getInstance().logout();
-                Intent intent = new Intent(getContext(), TCLoginActivity.class);
+                Intent intent = new Intent(getContext(), LoginActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 getActivity().finish();

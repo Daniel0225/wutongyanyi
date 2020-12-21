@@ -17,11 +17,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
 
@@ -47,7 +47,7 @@ public class TCLineEditTextView extends LinearLayout {
         TypedArray ta = mContext.obtainStyledAttributes(attrs, R.styleable.TCLineView, 0, 0);
         try {
             name = ta.getString(R.styleable.TCLineView_name);
-            content = ta.getString(R.styleable.TCLineView_content);
+            content = ta.getString(R.styleable.TCLineView_content1);
             isBottom = ta.getBoolean(R.styleable.TCLineView_isBottom, false);
             setUpView();
 

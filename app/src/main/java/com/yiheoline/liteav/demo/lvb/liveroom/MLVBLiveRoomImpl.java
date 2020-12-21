@@ -8,12 +8,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.model.Response;
 import com.tencent.imsdk.TIMUserProfile;
 import com.tencent.imsdk.TIMValueCallBack;
 import com.tencent.liteav.audio.TXAudioEffectManager;
@@ -35,6 +38,9 @@ import com.tencent.rtmp.TXLivePlayer;
 import com.tencent.rtmp.TXLivePushConfig;
 import com.tencent.rtmp.TXLivePusher;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
+import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
+import com.yiheoline.qcloud.xiaozhibo.http.response.CreateRoomResponse;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -374,8 +380,6 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
 
         if (mSelfAccountInfo == null) return;
         //1. 在应用层调用startLocalPreview，启动本地预览
-
-        //2. 请求CGI:get_push_url，异步获取到推流地址pushUrl
         mHttpRequest.getPushUrl(mSelfAccountInfo.userID, roomID, new HttpRequests.OnResponseCallback<HttpResponse.PushUrl>() {
             @Override
             public void onResponse(int retcode, String retmsg, HttpResponse.PushUrl data) {
@@ -475,7 +479,7 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
      * @param callback 进入房间的结果回调
      */
     @Override
-    public void enterRoom(final String roomID, final TXCloudVideoView view, final IMLVBLiveRoomListener.EnterRoomCallback callback) {
+    public void enterRoom(final String roomID,final String mixedPlayUrl, final TXCloudVideoView view, final IMLVBLiveRoomListener.EnterRoomCallback callback) {
         TXCLog.i(TAG, "API -> enterRoom:" + roomID);
         if (roomID == null || roomID.length() == 0) {
             callbackOnThread(callback, "onError", MLVBCommonDef.LiveRoomErrorCode.ERROR_PARAMETERS_INVALID, "[LiveRoom] 进房失败[房间号为空]");
@@ -501,7 +505,7 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
                         if (view != null) {
                             view.setVisibility(View.VISIBLE);
                         }
-                        String mixedPlayUrl = getMixedPlayUrlByRoomID(roomID);
+//                        String mixedPlayUrl = getMixedPlayUrlByRoomID(roomID);
                         if (mixedPlayUrl != null && mixedPlayUrl.length() > 0) {
                             int playType = getPlayType(mixedPlayUrl);
                             mTXLivePlayer.setPlayerView(view);
@@ -562,7 +566,7 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
 
         } else {
             //通知房间内其他主播
-            notifyPusherChange();
+//            notifyPusherChange();
 
             //2. 调用IM的quitGroup
             IMMessageMgr imMessageMgr = mIMMessageMgr;
@@ -705,6 +709,22 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
                 } else {
                     callbackOnThread(callback, "onError", retcode, "[LiveRoom] getCustomInfo失败[" + retmsg + ":" + retcode + "]");
                 }
+            }
+        });
+    }
+
+    @Override
+    public void initMlvb(LoginInfo loginInfo) {
+        MLVBLiveRoom liveRoom = MLVBLiveRoom.sharedInstance(mAppContext);
+        liveRoom.login(loginInfo, new IMLVBLiveRoomListener.LoginCallback() {
+            @Override
+            public void onError(int errCode, String errInfo) {
+                Log.i(TAG, "onError: errorCode = " + errInfo + " info = " + errInfo);
+            }
+
+            @Override
+            public void onSuccess() {
+                Log.i(TAG, "onSuccess: ");
             }
         });
     }

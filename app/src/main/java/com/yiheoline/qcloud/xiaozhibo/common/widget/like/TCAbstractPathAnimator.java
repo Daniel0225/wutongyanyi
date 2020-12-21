@@ -21,7 +21,8 @@ import android.graphics.Path;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tencent.qcloud.xiaozhibo.R;
+
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;

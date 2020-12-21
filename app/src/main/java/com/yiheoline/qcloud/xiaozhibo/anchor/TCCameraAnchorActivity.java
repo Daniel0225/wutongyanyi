@@ -5,9 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -16,26 +14,37 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.callback.StringCallback;
+import com.lzy.okgo.model.HttpParams;
+import com.lzy.okgo.model.Response;
 import com.tencent.liteav.audiosettingkit.AudioEffectPanel;
+import com.tencent.liteav.demo.beauty.BeautyParams;
 import com.tencent.liteav.demo.beauty.constant.BeautyConstants;
 import com.tencent.liteav.demo.beauty.model.BeautyInfo;
 import com.tencent.liteav.demo.beauty.model.ItemInfo;
 import com.tencent.liteav.demo.beauty.model.TabInfo;
 import com.tencent.liteav.demo.beauty.view.BeautyPanel;
-import com.tencent.liteav.demo.beauty.BeautyParams;
+import com.tencent.rtmp.ui.TXCloudVideoView;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheoline.qcloud.xiaozhibo.anchor.music.TCAudioControl;
+import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.TCUserAvatarListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.video.TCVideoView;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.video.TCVideoViewMgr;
-import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
+import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
+import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
+import com.yiheoline.qcloud.xiaozhibo.http.response.CreateRoomResponse;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
-import com.yiheoline.qcloud.xiaozhibo.anchor.music.TCAudioControl;
-import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -63,7 +72,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
     private Button                          mFlashView;             // 闪光灯按钮
 
     // 观众头像列表控件
-    private RecyclerView                    mUserAvatarList;        // 用户头像的列表控件
+    private RecyclerView mUserAvatarList;        // 用户头像的列表控件
     private TCUserAvatarListAdapter mAvatarListAdapter;     // 头像列表的 Adapter
 
     // 主播信息
@@ -236,6 +245,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         mLiveRoom.getBeautyManager().setEyeScaleLevel(beautyParams.mBigEyeLevel);
         if (TCUtils.checkRecordPermission(this)) {
             super.startPublish();
+//            createRoom();
         }
     }
 
@@ -286,7 +296,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         }
 
         videoView.startLoading();
-        mLiveRoom.startRemoteView(pusherInfo, videoView.videoView, new IMLVBLiveRoomListener.PlayCallback() {
+        mLiveRoom.startRemoteView(pusherInfo, videoView.videoView, new PlayCallback() {
             @Override
             public void onBegin() {
                 videoView.stopLoading(true); //推流成功，stopLoading 大主播显示出踢人的button

@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tencent.qcloud.xiaozhibo.R;
+import com.yiheonline.qcloud.xiaozhibo.R;
+
 
 /**
  * Module:   FinishDetailDialogFragment

@@ -25,8 +25,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
-import com.tencent.qcloud.xiaozhibo.R;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
+import com.yiheonline.qcloud.xiaozhibo.R;
 
 import java.io.File;
 import java.util.ArrayList;
