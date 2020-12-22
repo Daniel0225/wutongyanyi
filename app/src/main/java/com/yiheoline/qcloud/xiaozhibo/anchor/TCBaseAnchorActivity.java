@@ -20,11 +20,15 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.model.HttpParams;
+import com.lzy.okgo.model.Response;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
+import com.yiheoline.qcloud.xiaozhibo.Constant;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
@@ -38,6 +42,8 @@ import com.yiheoline.qcloud.xiaozhibo.common.widget.like.TCHeartLayout;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatEntity;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatMsgListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
+import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
+import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.tencent.rtmp.TXLog;
 import com.yiheonline.qcloud.xiaozhibo.R;
@@ -81,7 +87,6 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     private String                      mAvatarPicUrl;          // 个人头像地址
     private String                      mNickName;              // 个人昵称
     private String                      mUserId;                // 个人用户id
-    private String                      mLocation;              // 个人定位地址
     protected long                      mTotalMemberCount = 0;  // 总进房观众数量
     protected long                      mCurrentMemberCount = 0;// 当前观众数量
     protected long                      mHeartCount = 0;        // 点赞数量
@@ -98,6 +103,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     private BroadcastTimerTask              mBroadcastTimerTask;    // 定时任务
     protected long                          mSecond = 0;            // 开播的时间，单位为秒
     private long                            mStartPushPts;          // 开始直播的时间，用于 ELK 上报统计。 您可以不关注
+    private int noticeId = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +119,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         mCoverPicUrl = intent.getStringExtra(TCConstants.COVER_PIC);
         mAvatarPicUrl = intent.getStringExtra(TCConstants.USER_HEADPIC);
         mNickName = intent.getStringExtra(TCConstants.USER_NICK);
-        mLocation = intent.getStringExtra(TCConstants.USER_LOC);
+        noticeId = getIntent().getIntExtra(TCConstants.NOTICE_ID,0);
 
         mArrayListChatEntity = new ArrayList<>();
         mErrDlgFragment = new ErrorDialogFragment();
@@ -233,7 +239,6 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
             roomInfo = new JSONObject()
                     .put("title", mTitle)
                     .put("frontcover", mCoverPicUrl)
-                    .put("location", mLocation)
                     .toString();
         } catch (JSONException e) {
             roomInfo = mTitle;
@@ -259,18 +264,30 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     protected void onCreateRoomSuccess() {
         startTimer();
         // 填写了后台服务器地址
-        if (!TextUtils.isEmpty(TCGlobalConfig.APP_SVR_URL)) {
-            try {
-                JSONObject body = new JSONObject().put("userId", mUserId)
-                        .put("title", mTitle)
-                        .put("frontCover", mCoverPicUrl)
-                        .put("location", mLocation);
-                TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/room/upload", body, null);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
+//        if (!TextUtils.isEmpty(TCGlobalConfig.APP_SVR_URL)) {
+//            try {
+//                JSONObject body = new JSONObject().put("userId", mUserId)
+//                        .put("title", mTitle)
+//                        .put("frontCover", mCoverPicUrl)
+//                        .put("location", mLocation);
+//                TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/room/upload", body, null);
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
+        HttpParams httpParams = new HttpParams();
+        httpParams.put("noticeId",noticeId);
+        OkGo.<BaseResponse<String>>post(Constant.START_LIVE)
+                .params(httpParams)
+                .execute(new JsonCallBack<BaseResponse<String>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<String>> response) {
+
+                    }
+                });
     }
+
+
 
     protected void stopPublish() {
         mLiveRoom.exitRoom(new ExitRoomCallback() {

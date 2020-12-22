@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/search_goods_bg"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/cancelBtn"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/keyWordsInputView"
+                android:background="@null"
+                android:hint="输入关键字"
+                android:paddingStart="40dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_marginStart="13dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/chazhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#fffd8318"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/historyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索历史"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#FCFCFC"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchHistoryRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

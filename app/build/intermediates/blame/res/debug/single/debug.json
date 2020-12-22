@@ -76,6 +76,10 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\btn_login.xml"
     },
     {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_buy_now.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\buy_now.png"
+    },
+    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_play_seekbar_progress.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\play_seekbar_progress.xml"
     },
@@ -164,6 +168,10 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-v21\\btn_send_message.xml"
     },
     {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_like.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\like.png"
+    },
+    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_recording_background_horizontal.jpg.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\recording_background_horizontal.jpg"
     },
@@ -198,6 +206,10 @@
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_camera_anchor.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\activity_camera_anchor.xml"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_unlike.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\unlike.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_video_material_download_normal.png.flat",
@@ -354,6 +366,10 @@
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_switch_open.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\switch_open.xml"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_unstarted.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\unstarted.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_heart0.png.flat",
@@ -576,6 +592,10 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\fragment_video.xml"
     },
     {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_started.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\started.png"
+    },
+    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icon_like_png.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\icon_like_png.png"
     },
@@ -674,6 +694,10 @@
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_flash_off.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\flash_off.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_history_item_layout.xml.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\search_history_item_layout.xml"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_visitors.png.flat",
@@ -948,8 +972,16 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\layout_view_line_edit_text.xml"
     },
     {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_item_layout.xml.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\search_item_layout.xml"
+    },
+    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_barrage_slider_on.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\barrage_slider_on.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_floating_default.xml.flat",
@@ -1066,6 +1098,10 @@
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_camera_audio.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\ic_camera_audio.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_notice_detail.xml.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\activity_notice_detail.xml"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_liveshow_item_dot.xml.flat",

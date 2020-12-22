@@ -245,7 +245,6 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         mLiveRoom.getBeautyManager().setEyeScaleLevel(beautyParams.mBigEyeLevel);
         if (TCUtils.checkRecordPermission(this)) {
             super.startPublish();
-//            createRoom();
         }
     }
 

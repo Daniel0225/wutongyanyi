@@ -1,6 +1,7 @@
 package com.yiheoline.qcloud.xiaozhibo.homepage
 
 import android.content.Intent
+import android.nfc.Tag
 import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
@@ -24,9 +25,11 @@ import com.library.flowlayout.SpaceItemDecoration
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
+import com.lzy.okgo.request.base.Request
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
 import com.yiheoline.qcloud.xiaozhibo.bean.ApplyNoticeBean
+import com.yiheoline.qcloud.xiaozhibo.bean.TagBean
 import com.yiheoline.qcloud.xiaozhibo.bean.TypeBean
 import com.yiheoline.qcloud.xiaozhibo.bean.UpImageBean
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.AddPicListAdapter
@@ -49,7 +52,9 @@ import java.time.Duration
 
 class ApplyShowActivity : BaseActivity() {
     var typeList : MutableList<TypeBean>? = null
+    var tags = arrayListOf<TagBean>()
     var adapter : AddPicListAdapter? = null
+    var tagAdapter : TagListAdapter? = null
     var cover = ""
     var imageList = arrayListOf("empty")
     var upImageType = 4
@@ -101,10 +106,11 @@ class ApplyShowActivity : BaseActivity() {
         //初始化添加标签RV
         tagRecyclerView.layoutManager = FlowLayoutManager()
         tagRecyclerView?.addItemDecoration((SpaceItemDecoration(20)))
-        var tagAdapter = TagListAdapter(R.layout.tag_item_layout, arrayListOf("黄梅戏","精品"))
+        tagAdapter = TagListAdapter(R.layout.tag_item_layout, tags)
         tagRecyclerView.adapter = tagAdapter
-        tagAdapter.setOnItemClickListener { _, _, position ->
-
+        tagAdapter?.setOnItemClickListener { _, _, position ->
+            tags[position].isChecked = !tags[position].isChecked
+            tagAdapter?.notifyDataSetChanged()
         }
         //选择类型
         typeInputView.onClick {
@@ -171,6 +177,7 @@ class ApplyShowActivity : BaseActivity() {
     override fun initData() {
         super.initData()
         getTypeList()
+        getTag()
     }
 
     fun getUirData(list : List<String>) : ArrayList<ImageMedia>{
@@ -208,9 +215,25 @@ class ApplyShowActivity : BaseActivity() {
         applyNoticeBean.imageDetail = getImagePath(imageList)
         applyNoticeBean.price = price.toDouble()
         applyNoticeBean.title = title
+        var tagList = arrayListOf<TagBean>()
+        for (item in tags){
+            if(item.isChecked){
+                tagList.add(item)
+            }
+        }
+        applyNoticeBean.tagList = tagList
         OkGo.post<BaseResponse<String>>(Constant.INSERT_NOTICE)
                 .upJson(FastJsonUtil.createJsonString(applyNoticeBean))
                 .execute(object : JsonCallBack<BaseResponse<String>>(){
+                    override fun onStart(request: Request<BaseResponse<String>, out Request<Any, Request<*, *>>>?) {
+                        super.onStart(request)
+                        LoadingBar.dialog(mContext).extras(arrayOf("提交中")).show()
+                    }
+
+                    override fun onFinish() {
+                        super.onFinish()
+                        LoadingBar.dialog(mContext).cancel()
+                    }
                     override fun onSuccess(response: Response<BaseResponse<String>>?) {
                         if(response?.body()?.res == 0){
                             toast("申请已提交")
@@ -297,6 +320,22 @@ class ApplyShowActivity : BaseActivity() {
                                 adapter?.notifyDataSetChanged()
                             }
 
+                        }else{
+                            toast(response?.body()?.msg+"")
+                        }
+                    }
+
+                })
+    }
+    /**
+     * 获取默认标签
+     */
+    private fun getTag(){
+        OkGo.get<BaseResponse<List<TagBean>>>(Constant.QUERY_TAG_LIST)
+                .execute(object : JsonCallBack<BaseResponse<List<TagBean>>>(){
+                    override fun onSuccess(response: Response<BaseResponse<List<TagBean>>>?) {
+                        if(response?.body()?.res == 0){
+                            tagAdapter?.setList(response.body()?.data!! as ArrayList<TagBean>)
                         }else{
                             toast(response?.body()?.msg+"")
                         }

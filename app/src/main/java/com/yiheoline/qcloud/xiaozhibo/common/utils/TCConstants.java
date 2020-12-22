@@ -15,6 +15,7 @@ public class TCConstants {
     public static final String USER_NICK        = "user_nick";
     public static final String USER_HEADPIC     = "user_headpic";
     public static final String USER_LOC         = "user_location";
+    public static final String NOTICE_ID         = "notice_id";
 
     //主播退出广播字段
     public static final String EXIT_APP         = "EXIT_APP";

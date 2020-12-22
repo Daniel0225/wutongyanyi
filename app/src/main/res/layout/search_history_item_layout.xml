@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/searchHistoryWord"
+        android:layout_toStartOf="@+id/clearHistoryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时尚女衣"
+        android:textColor="#ff8d95a8"
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/clearHistoryBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/guanbi"
+        android:layout_width="50dp"
+        android:scaleType="center"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#FCFCFC" />
+</RelativeLayout>

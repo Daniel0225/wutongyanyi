@@ -1,6 +1,8 @@
 package com.yiheoline.qcloud.xiaozhibo.bean;
 
-public class ShowNoticeBean {
+import java.io.Serializable;
+
+public class ShowNoticeBean implements Serializable {
     private int catId;
     private String detail;
     private String imageDetail;
@@ -10,6 +12,15 @@ public class ShowNoticeBean {
     private int duration;
     private int noticeId;
     private double price;
+    private String cover;
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
 
     public int getCatId() {
         return catId;

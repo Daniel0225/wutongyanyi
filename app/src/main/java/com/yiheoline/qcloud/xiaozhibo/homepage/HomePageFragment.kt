@@ -23,6 +23,7 @@ import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.NearShowListAdapter
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.PreListAdapter
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
+import com.yiheoline.qcloud.xiaozhibo.http.response.HomePageResponse
 import com.yiheoline.qcloud.xiaozhibo.login.LoginActivity
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.fragment_home_page.*
@@ -56,16 +57,6 @@ class HomePageFragment : BaseFragment() {
 
     override fun initView() {
         super.initView()
-        //初始化视频播放器
-        val source1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4"
-        videoPlayer.setUp(source1,true,"测试视频")
-        videoPlayer.isLooping = true
-        videoPlayer.setIsTouchWiget(false)
-        videoPlayer.isHideKey = true
-        videoPlayer.dismissControlTime = 0
-        videoPlayer.isStartAfterPrepared = true
-        videoPlayer.isReleaseWhenLossAudio = false
-        videoPlayer.startPlayLogic()
 
         //初始化预告rv
         var manager = LinearLayoutManager(context)
@@ -92,13 +83,24 @@ class HomePageFragment : BaseFragment() {
         nearShowRecycler.layoutManager = GridLayoutManager(context,3)
         nearShowListAdapter = NearShowListAdapter(R.layout.near_show_list_item_layout, arrayListOf())
         nearShowRecycler.adapter = nearShowListAdapter
+        nearShowListAdapter?.setOnItemClickListener { _, _, position ->
+            startActivity<NoticeDetailActivity>("noticeBean" to nearShowListAdapter!!.data[position])
+        }
+
         //初始化精选推荐RV
         selectRecycler.layoutManager = GridLayoutManager(context,3)
         selectAdapter = NearShowListAdapter(R.layout.near_show_list_item_layout, arrayListOf())
         selectRecycler.adapter = selectAdapter
+        selectAdapter?.setOnItemClickListener { _, _, position ->
+            startActivity<NoticeDetailActivity>("noticeBean" to nearShowListAdapter!!.data[position])
+        }
 
         startPlay.onClick {
             StartPlayDialog.onCreateDialog(context!!)
+        }
+
+        keyWordsInputView.onClick {
+            startActivity<SearchActivity>()
         }
 
         //获取数据
@@ -107,18 +109,33 @@ class HomePageFragment : BaseFragment() {
         getRecommendList()
     }
 
+    private fun initVideoPlayer(){
+        //初始化视频播放器
+        val source1 = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4"
+//        var source1 = Constant.VIDEO_BASE+preListAdapter!!.data[preListAdapter!!.selectPosition].videoDetail
+        videoPlayer.setUp(source1,true,"测试视频")
+        videoPlayer.isLooping = true
+        videoPlayer.setIsTouchWiget(false)
+        videoPlayer.isHideKey = true
+        videoPlayer.dismissControlTime = 0
+        videoPlayer.isStartAfterPrepared = true
+        videoPlayer.isReleaseWhenLossAudio = false
+        videoPlayer.startPlayLogic()
+    }
+
     /**
      * 获取首页直播预告信息
      */
     private fun getPreList(){
         var params = HttpParams()
         params.put("isShow",1)
-        OkGo.post<BaseResponse<List<ShowNoticeBean>>>(Constant.HOME_PAGE_LIST)
+        OkGo.post<BaseResponse<HomePageResponse>>(Constant.HOME_PAGE_LIST)
                 .params(params)
-                .execute(object : JsonCallBack<BaseResponse<List<ShowNoticeBean>>>(){
-                    override fun onSuccess(response: Response<BaseResponse<List<ShowNoticeBean>>>?) {
+                .execute(object : JsonCallBack<BaseResponse<HomePageResponse>>(){
+                    override fun onSuccess(response: Response<BaseResponse<HomePageResponse>>?) {
                         if(response?.body()?.res == 0){
-                            preListAdapter?.setList(response.body()?.data!!)
+                            preListAdapter?.setList(response.body().data.list)
+                            initVideoPlayer()
                         }else{
                             toast(response?.body()?.msg.toString())
                         }
@@ -133,12 +150,12 @@ class HomePageFragment : BaseFragment() {
     private fun getNearList(){
         var params = HttpParams()
         params.put("lately",1)
-        OkGo.post<BaseResponse<List<ShowNoticeBean>>>(Constant.HOME_PAGE_LIST)
+        OkGo.post<BaseResponse<HomePageResponse>>(Constant.HOME_PAGE_LIST)
                 .params(params)
-                .execute(object : JsonCallBack<BaseResponse<List<ShowNoticeBean>>>(){
-                    override fun onSuccess(response: Response<BaseResponse<List<ShowNoticeBean>>>?) {
+                .execute(object : JsonCallBack<BaseResponse<HomePageResponse>>(){
+                    override fun onSuccess(response: Response<BaseResponse<HomePageResponse>>?) {
                         if(response?.body()?.res == 0){
-                            nearShowListAdapter?.setList(response.body()?.data!!)
+                            nearShowListAdapter?.setList(response.body().data!!.list)
                         }else{
                             toast(response?.body()?.msg.toString())
                         }
@@ -153,12 +170,12 @@ class HomePageFragment : BaseFragment() {
     private fun getRecommendList(){
         var params = HttpParams()
         params.put("isRecommend",1)
-        OkGo.post<BaseResponse<List<ShowNoticeBean>>>(Constant.HOME_PAGE_LIST)
+        OkGo.post<BaseResponse<HomePageResponse>>(Constant.HOME_PAGE_LIST)
                 .params(params)
-                .execute(object : JsonCallBack<BaseResponse<List<ShowNoticeBean>>>(){
-                    override fun onSuccess(response: Response<BaseResponse<List<ShowNoticeBean>>>?) {
+                .execute(object : JsonCallBack<BaseResponse<HomePageResponse>>(){
+                    override fun onSuccess(response: Response<BaseResponse<HomePageResponse>>?) {
                         if(response?.body()?.res == 0){
-                            selectAdapter?.setList(response.body()?.data!!)
+                            selectAdapter?.setList(response.body().data!!.list)
                         }else{
                             toast(response?.body()?.msg.toString())
                         }

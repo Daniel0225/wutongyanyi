@@ -38,7 +38,9 @@
         android:largeHeap="true"
         android:resizeableActivity="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.SearchActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeDetailActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowSettingActivity" />
         <activity

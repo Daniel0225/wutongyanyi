@@ -19,7 +19,7 @@ class ShowerPlayStartActivity : BaseActivity() {
 
     override fun initView() {
         super.initView()
-//        mTXCloudVideoView.setLogMargin(10f, 10f, 45f, 55f)
+        mTXCloudVideoView.setLogMargin(10f, 10f, 45f, 55f)
 
         // 打开本地预览，传入预览的 View
         mLiveRoom.startLocalPreview(true, mTXCloudVideoView)
@@ -39,6 +39,9 @@ class ShowerPlayStartActivity : BaseActivity() {
 
         backView.onClick {
             finish()
+        }
+        changeCamera.onClick {
+            mLiveRoom.switchCamera()
         }
     }
 
