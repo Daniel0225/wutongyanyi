@@ -89,8 +89,8 @@ class TCApplication : MultiDexApplication() {
          */
         var application: TCApplication? = null
         var userId = ""
-        private const val TAG = "TCApplication"
         var token = ""
         var isLogin = false
+        var currentPlayId = 0
     }
 }

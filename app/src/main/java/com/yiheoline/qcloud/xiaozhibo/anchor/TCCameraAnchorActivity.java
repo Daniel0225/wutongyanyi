@@ -258,8 +258,8 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
     }
 
     @Override
-    protected void onCreateRoomSuccess() {
-        super.onCreateRoomSuccess();
+    protected void onCreateRoomSuccess(String roomId) {
+        super.onCreateRoomSuccess(roomId);
         startRecordAnimation();
     }
 

@@ -10,37 +10,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8583793-fb83-4cb6-ad6a-91aa9eed8ff5" name="Default Changelist" comment="很多功能">
-      <change afterPath="$PROJECT_DIR$/app/libs/alipaySdk-15.7.4-20200228192259.aar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/CreateOrderResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/MyNoticeBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/ShowNoticeDetailBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/NoticeDetailActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/SearchActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/HistorySearchAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/SearchAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/http/response/HomePageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notice_detail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_history_item_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/search_item_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/buy_now.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/started.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/unlike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/unstarted.png" afterDir="false" />
+    <list default="true" id="b8583793-fb83-4cb6-ad6a-91aa9eed8ff5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/OnLinePlayBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/StartPlayBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/UpPlayInfoBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/FinishDetailDialogFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/FinishDetailDialogFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$2.class" afterDir="false" />
@@ -54,60 +33,22 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$BroadcastTimerTask$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$BroadcastTimerTask$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$BroadcastTimerTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity$BroadcastTimerTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$7$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$7$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/MusicListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/MusicListAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/TCAudioControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/TCAudioControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/TCMusicSelectView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/music/TCMusicSelectView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/prepare/TCAnchorPrepareActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/prepare/TCAnchorPrepareActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/screen/TCScreenAnchorActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/anchor/screen/TCScreenAnchorActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/audience/TCAudienceActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/audience/TCAudienceActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/msg/TCChatMsgListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/msg/TCChatMsgListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/utils/TCConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/utils/TCConstants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCActivityTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCActivityTitle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCInputTextMsgDialog$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCInputTextMsgDialog$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCInputTextMsgDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCInputTextMsgDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCUserAvatarListAdapter$AvatarViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCUserAvatarListAdapter$AvatarViewHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCUserAvatarListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/TCUserAvatarListAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/like/TCHeartLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/like/TCHeartLayout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/video/TCVideoViewMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/common/widget/video/TCVideoViewMgr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/login/TCLoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/login/TCLoginActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/login/TCRegisterActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/login/TCRegisterActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/TCMainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/TCMainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/videolist/ui/TCVideoListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/videolist/ui/TCVideoListAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/videolist/ui/TCVideoListFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/main/videolist/ui/TCVideoListFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/playback/TCPlaybackActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/playback/TCPlaybackActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/TCEditUseInfoActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/TCEditUseInfoActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/TCUserInfoFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/TCUserInfoFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/view/TCLineControllerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/view/TCLineControllerView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/view/TCLineEditTextView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/yiheoline/qcloud/xiaozhibo/profile/view/TCLineEditTextView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/Constant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/Constant.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/TCApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/TCApplication.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/anchor/TCBaseAnchorActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/anchor/TCCameraAnchorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/ShowNoticeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/ShowNoticeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/TagBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/bean/TagBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/common/utils/TCConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/common/utils/TCConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ApplyShowActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ApplyShowActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/HomePageFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/HomePageFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ShowSettingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ShowSettingActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ShowerPlayStartActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/ShowerPlayStartActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/NearShowListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/NearShowListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/PreListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/PreListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/PreShowAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/PreShowAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/TagListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/adapter/TagListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tag_item_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tag_item_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/near_show_list_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/near_show_list_item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pre_list_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pre_list_item_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/NoticeDetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/yiheoline/qcloud/xiaozhibo/homepage/NoticeDetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notice_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notice_detail.xml" afterDir="false" />
     </list>
     <list id="9b78b8bc-de1c-4cb9-95cd-3965704f4af2" name="ignore" comment="ignore" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,8 +80,8 @@
         <option value="valueResourceFile" />
         <option value="Kotlin File" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -340,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608533394207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="直播">
+      <created>1608620712289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608620712289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -356,13 +304,14 @@
     <MESSAGE value="第一次上传" />
     <MESSAGE value="几个fragment" />
     <MESSAGE value="很多功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="很多功能" />
+    <MESSAGE value="直播" />
+    <option name="LAST_COMMIT_MESSAGE" value="直播" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1608619053895">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1608624701013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608619053895" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608624701013" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608111662264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -371,26 +320,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="265" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608120637441" />
-    <state x="107" y="87" key="CommitChangelistDialog2" timestamp="1608533976806">
+    <state x="107" y="87" key="CommitChangelistDialog2" timestamp="1608620704497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="107" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608533976806" />
-    <state width="1860" height="200" key="GridCell.Tab.0.bottom" timestamp="1608618120952">
+    <state x="107" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608620704497" />
+    <state width="1860" height="298" key="GridCell.Tab.0.bottom" timestamp="1608625230152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608618120952" />
-    <state width="1860" height="200" key="GridCell.Tab.0.center" timestamp="1608618120951">
+    <state width="1860" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608625230152" />
+    <state width="1860" height="298" key="GridCell.Tab.0.center" timestamp="1608625230152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608618120951" />
-    <state width="1860" height="200" key="GridCell.Tab.0.left" timestamp="1608618120951">
+    <state width="1860" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608625230152" />
+    <state width="1860" height="298" key="GridCell.Tab.0.left" timestamp="1608625230152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608618120951" />
-    <state width="1860" height="200" key="GridCell.Tab.0.right" timestamp="1608618120951">
+    <state width="1860" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608625230152" />
+    <state width="1860" height="298" key="GridCell.Tab.0.right" timestamp="1608625230152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608618120951" />
+    <state width="1860" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608625230152" />
     <state width="1860" height="271" key="GridCell.Tab.1.bottom" timestamp="1608550935794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -411,10 +360,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608535339503" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608533398481">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608620715736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608533398481" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608620715736" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608533978994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -423,9 +372,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="270" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608605759317" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1608619743621">
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1608624927758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608619743621" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608624927758" />
   </component>
 </project>

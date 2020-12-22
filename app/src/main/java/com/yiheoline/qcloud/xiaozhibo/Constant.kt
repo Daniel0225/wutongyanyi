@@ -4,8 +4,8 @@ class Constant {
     companion object {
         //基础地址
 //        private const val BASE_URL: String = "http://192.168.0.136:8085/"//
-      const val BASE_URL: String = "https://test.api.air.yihenst.com/"
-//        const val BASE_URL: String = "http://192.168.0.85:8083/"
+//      const val BASE_URL: String = "https://test.api.air.yihenst.com/"
+        const val BASE_URL: String = "http://192.168.0.85:8085/"
         const val IMAGE_BASE = "http://test.img.yihenst.com/"
         const val MUSIC_BASE = "http://test.audio.yihenst.com"
         const val VIDEO_BASE = "http://test.video.yihenst.com/"
@@ -24,6 +24,8 @@ class Constant {
         const val NOTICE_DETAIL = BASE_URL + "notice/noticeDetail"
         const val START_LIVE = BASE_URL + "live/theater/start"
         const val PLACE_ORDER = BASE_URL + "order/placeAnOrder"
+        const val FINISH_PLAY = BASE_URL + "live/theater/finish"
+        const val ONLINE_PLAY = BASE_URL + "live/theater/online/"
 
     }
 }

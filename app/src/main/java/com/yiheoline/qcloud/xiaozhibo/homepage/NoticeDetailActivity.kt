@@ -9,6 +9,7 @@ import com.lzy.okgo.model.Response
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
 import com.yiheoline.qcloud.xiaozhibo.bean.CreateOrderResult
+import com.yiheoline.qcloud.xiaozhibo.bean.OnLinePlayBean
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeBean
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeDetailBean
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
@@ -45,6 +46,10 @@ class NoticeDetailActivity : BaseActivity() {
         }
 
         getNoticeDetail(noticeBean.noticeId.toString())
+
+        startNow.onClick {
+            getOnLine(noticeDetailBean?.noticeId.toString())
+        }
     }
 
     private fun refreshUi(){
@@ -136,6 +141,22 @@ class NoticeDetailActivity : BaseActivity() {
 //                            startActivity<OrderPayActivity>("createOrderResult" to response.body()?.data,"orderType" to 2)
                         }else{
 //                            Toast.makeText(this@VideoDetailActivity,response?.body()?.msg+"", Toast.LENGTH_LONG).show()
+                        }
+                    }
+
+                })
+    }
+    /**
+     * 查找直播信息
+     */
+    private fun getOnLine(noticeId: String){
+        OkGo.get<BaseResponse<OnLinePlayBean>>(Constant.ONLINE_PLAY+noticeId)
+                .execute(object : JsonCallBack<BaseResponse<OnLinePlayBean>>(){
+                    override fun onSuccess(response: Response<BaseResponse<OnLinePlayBean>>?) {
+                        if(response?.body()?.res == 0){
+
+                        }else{
+                            toast(response?.body()?.msg.toString())
                         }
                     }
 

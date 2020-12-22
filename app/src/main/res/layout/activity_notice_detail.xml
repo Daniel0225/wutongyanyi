@@ -196,6 +196,7 @@
             android:textSize="12sp"
             />
         <ImageView
+            android:id="@+id/startNow"
             android:src="@mipmap/buy_now"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"

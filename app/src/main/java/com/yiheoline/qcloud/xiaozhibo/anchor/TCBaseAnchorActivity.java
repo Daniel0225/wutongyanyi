@@ -29,7 +29,10 @@ import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
 import com.yiheoline.qcloud.xiaozhibo.Constant;
+import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
+import com.yiheoline.qcloud.xiaozhibo.bean.StartPlayBean;
+import com.yiheoline.qcloud.xiaozhibo.bean.UpPlayInfoBean;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.ui.ErrorDialogFragment;
@@ -46,6 +49,7 @@ import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.tencent.rtmp.TXLog;
+import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil;
 import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONException;
@@ -247,7 +251,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
             @Override
             public void onSuccess(String roomId) {
                 Log.w(TAG, String.format("创建直播间%s成功", roomId));
-                onCreateRoomSuccess();
+                onCreateRoomSuccess(roomId);
             }
 
             @Override
@@ -261,7 +265,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     /**
      * 创建直播间成功
      */
-    protected void onCreateRoomSuccess() {
+    protected void onCreateRoomSuccess(String roomId) {
         startTimer();
         // 填写了后台服务器地址
 //        if (!TextUtils.isEmpty(TCGlobalConfig.APP_SVR_URL)) {
@@ -275,14 +279,19 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
 //                e.printStackTrace();
 //            }
 //        }
-        HttpParams httpParams = new HttpParams();
-        httpParams.put("noticeId",noticeId);
-        OkGo.<BaseResponse<String>>post(Constant.START_LIVE)
-                .params(httpParams)
-                .execute(new JsonCallBack<BaseResponse<String>>() {
+        StartPlayBean startPlayBean = new StartPlayBean();
+        startPlayBean.setNoticeId(noticeId);
+        startPlayBean.setRoomId(roomId);
+        OkGo.<BaseResponse<Integer>>post(Constant.START_LIVE)
+                .upJson(FastJsonUtil.createJsonString(startPlayBean))
+                .execute(new JsonCallBack<BaseResponse<Integer>>() {
                     @Override
-                    public void onSuccess(Response<BaseResponse<String>> response) {
+                    public void onSuccess(Response<BaseResponse<Integer>> response) {
+                        if(response.body().getRes() == 0){
+                            TCApplication.Companion.setCurrentPlayId(response.body().data);
+                        }else{
 
+                        }
                     }
                 });
     }
@@ -614,12 +623,32 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         args.putString("time", TCUtils.formattedTime(mSecond));
         args.putString("heartCount", String.format(Locale.CHINA, "%d", mHeartCount));
         args.putString("totalMemberCount", String.format(Locale.CHINA, "%d", mTotalMemberCount));
+        upLoadPlayInfo(mHeartCount,mTotalMemberCount);
         dialogFragment.setArguments(args);
         dialogFragment.setCancelable(false);
         if (dialogFragment.isAdded())
             dialogFragment.dismiss();
         else
             dialogFragment.show(getFragmentManager(), "");
+    }
+
+    /**
+     * 上报直播信息
+     */
+    private void upLoadPlayInfo(long likeCount,long totalCount){
+        UpPlayInfoBean upPlayInfoBean = new UpPlayInfoBean();
+        upPlayInfoBean.setLikeCount(likeCount);
+        upPlayInfoBean.setWatchCount(totalCount);
+        upPlayInfoBean.setNoticeId(noticeId);
+        upPlayInfoBean.setTheaterLiveId(TCApplication.Companion.getCurrentPlayId());
+        OkGo.<BaseResponse<String>>put(Constant.FINISH_PLAY)
+                .upJson(FastJsonUtil.createJsonString(upPlayInfoBean))
+                .execute(new JsonCallBack<BaseResponse<String>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<String>> response) {
+
+                    }
+                });
     }
 
     /**

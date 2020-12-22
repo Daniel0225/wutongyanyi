@@ -32,12 +32,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\recording_background_vertical.png"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_uncheck.png.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\uncheck.png"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_message.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\icon_message.xml"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_uncheck.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\uncheck.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_home_h.png.flat",
@@ -56,12 +56,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\linkmic_loading.xml"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_button.xml.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\tab_button.xml"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progress_bg.9.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\progress_bg.9.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_tab_button.xml.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\tab_button.xml"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_tag_item_layout.xml.flat",
@@ -92,12 +92,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\beauty_seekbar_icon.png"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_loading_2.png.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\loading_2.png"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_video_material_download.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\ic_video_material_download.xml"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_loading_2.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\loading_2.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_btn.xml.flat",
@@ -120,12 +120,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\like.png"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_recording_background_private_horizontal.jpg.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\recording_background_private_horizontal.jpg"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_pre3.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\pre3.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_recording_background_private_horizontal.jpg.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\mipmap-xxhdpi\\recording_background_private_horizontal.jpg"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_input_text.xml.flat",
@@ -184,12 +184,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\button_return_home_page.xml"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_barrage_slider_off.png.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\barrage_slider_off.png"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_play_seekbar_icon.png.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\play_seekbar_icon.png"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_barrage_slider_off.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable-xxhdpi\\barrage_slider_off.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\menu_home_page_tab.xml.flat",
@@ -200,12 +200,12 @@
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\start_play_bg.xml"
     },
     {
-        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_kick_out.png.flat",
-        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\btn_kick_out.png"
-    },
-    {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_camera_anchor.xml.flat",
         "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\layout\\activity_camera_anchor.xml"
+    },
+    {
+        "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_kick_out.png.flat",
+        "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\drawable\\btn_kick_out.png"
     },
     {
         "merged": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_unlike.png.flat",
