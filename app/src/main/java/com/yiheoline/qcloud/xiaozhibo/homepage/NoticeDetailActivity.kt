@@ -1,24 +1,28 @@
 package com.yiheoline.qcloud.xiaozhibo.homepage
 
+import android.content.Intent
 import android.graphics.Color
-import android.widget.Toast
+import android.util.Log
 import com.bumptech.glide.Glide
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
+import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoomImpl
+import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.http.HttpRequests
+import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.http.HttpResponse
 import com.yiheoline.qcloud.xiaozhibo.Constant
+import com.yiheoline.qcloud.xiaozhibo.TCApplication
+import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
-import com.yiheoline.qcloud.xiaozhibo.bean.CreateOrderResult
-import com.yiheoline.qcloud.xiaozhibo.bean.OnLinePlayBean
-import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeBean
-import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeDetailBean
+import com.yiheoline.qcloud.xiaozhibo.bean.*
+import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
+import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil
 import com.yiheoline.qcloud.xiaozhibo.utils.TimeUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_notice_detail.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
-import kotlinx.android.synthetic.main.toolbar_layout.titleView
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.textColor
@@ -49,6 +53,7 @@ class NoticeDetailActivity : BaseActivity() {
 
         startNow.onClick {
             getOnLine(noticeDetailBean?.noticeId.toString())
+//            placeOrder(noticeDetailBean?.noticeId.toString())
         }
     }
 
@@ -58,6 +63,7 @@ class NoticeDetailActivity : BaseActivity() {
         priceView.text = noticeDetailBean?.price.toString()
         detailTextView.text = noticeDetailBean?.detail
         Glide.with(this).load(Constant.IMAGE_BASE+noticeDetailBean?.cover).into(coverImage)
+        Glide.with(this).load(Constant.IMAGE_BASE+noticeDetailBean?.imageDetail).into(detailImage)
         if(noticeDetailBean?.isIntent == null){
 
         }else{
@@ -138,9 +144,10 @@ class NoticeDetailActivity : BaseActivity() {
 
                     override fun onSuccess(response: Response<BaseResponse<CreateOrderResult>>?) {
                         if(response?.body()?.res == 0){
-//                            startActivity<OrderPayActivity>("createOrderResult" to response.body()?.data,"orderType" to 2)
+                            startActivity<ConfirmOrderActivity>("noticeDetailBean" to noticeDetailBean,
+                            "createOrderResult" to response?.body()?.data)
                         }else{
-//                            Toast.makeText(this@VideoDetailActivity,response?.body()?.msg+"", Toast.LENGTH_LONG).show()
+                            toast(response?.body()?.msg.toString())
                         }
                     }
 
@@ -150,16 +157,39 @@ class NoticeDetailActivity : BaseActivity() {
      * 查找直播信息
      */
     private fun getOnLine(noticeId: String){
-        OkGo.get<BaseResponse<OnLinePlayBean>>(Constant.ONLINE_PLAY+noticeId)
+        var params = HttpParams()
+        params.put("noticeId",noticeId)
+        OkGo.get<BaseResponse<OnLinePlayBean>>(Constant.ONLINE_PLAY)
+                .params(params)
                 .execute(object : JsonCallBack<BaseResponse<OnLinePlayBean>>(){
                     override fun onSuccess(response: Response<BaseResponse<OnLinePlayBean>>?) {
                         if(response?.body()?.res == 0){
-
+                            getPlayUrl(response?.body()?.data!!)
                         }else{
                             toast(response?.body()?.msg.toString())
                         }
                     }
 
                 })
+    }
+    /**
+     * 调用直播服务器 查询直播地址
+     */
+    private fun getPlayUrl(onLinePlayBean: OnLinePlayBean){
+        var mHttpRequest = HttpRequests("https://liveroom.qcloud.com/weapp/live_room")
+        mHttpRequest.setToken(TCApplication.mlvbToken)
+        mHttpRequest.setUserID(TCApplication.userId)
+        mHttpRequest.getPushers(onLinePlayBean.roomId) { retcode, retmsg, data ->
+            var intent = Intent(this, TCAudienceActivity::class.java)
+            intent.putExtra(TCConstants.PLAY_URL, data!!.mixedPlayURL)
+            intent.putExtra(TCConstants.HEART_COUNT, "51512")
+            intent.putExtra(TCConstants.MEMBER_COUNT, onLinePlayBean.number)
+            intent.putExtra(TCConstants.GROUP_ID, data.roomID)
+            intent.putExtra(TCConstants.PLAY_TYPE, true)
+            intent.putExtra(TCConstants.FILE_ID,  "")
+            intent.putExtra(TCConstants.ROOM_TITLE, data.roomInfo)
+            intent.putExtra("LIVE_ID",onLinePlayBean.liveId)
+            startActivityForResult(intent,2000)
+        }
     }
 }

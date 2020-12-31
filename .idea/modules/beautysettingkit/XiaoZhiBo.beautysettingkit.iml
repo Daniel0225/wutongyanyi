@@ -49,7 +49,7 @@
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.tencent.liteavsdk:LiteAVSDK_Smart:8.1.9717@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.tencent.liteavsdk:LiteAVSDK_Smart:8.2.9808@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />

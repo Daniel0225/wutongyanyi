@@ -18,6 +18,7 @@ import okhttp3.RequestBody;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 import com.google.gson.JsonSyntaxException;
+import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -381,6 +382,7 @@ public class HttpRequests {
     }
 
     public boolean heartBeat(String user_id, String room_id, int roomStatusCode){
+
         String body = "";
         try {
             body = new JsonBuilder()
@@ -454,6 +456,10 @@ public class HttpRequests {
                     if (data != null) {
                         setUserID(data.userID);
                         setToken(data.token);
+                        if(data.token != null)
+                            TCApplication.Companion.setMlvbToken(data.token);
+                        if(data.userID != null)
+                            TCApplication.Companion.setUserId(data.userID);
                     }
                     if (callback != null) {
                         callback.onResponse(retcode, retmsg, data);

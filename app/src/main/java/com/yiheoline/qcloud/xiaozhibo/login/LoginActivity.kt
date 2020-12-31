@@ -15,6 +15,7 @@ import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoomImpl
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.LoginInfo
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.TCApplication
+import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
@@ -168,6 +169,7 @@ class LoginActivity : BaseActivity() {
         if (mContext == null) return
         val loginInfo = LoginInfo()
         loginInfo.sdkAppID = apPidResponse.sdkAppID.toLong()
+        loginInfo.sdkAppID = TCGlobalConfig.SDKAPPID.toLong()
         loginInfo.userID = loginResponse.userId
         loginInfo.userSig = apPidResponse.userSig
         val userName: String = loginResponse.nickname

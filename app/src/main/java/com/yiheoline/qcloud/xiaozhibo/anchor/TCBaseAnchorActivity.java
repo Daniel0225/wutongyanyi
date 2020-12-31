@@ -16,8 +16,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lzy.okgo.OkGo;
@@ -31,6 +35,9 @@ import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
 import com.yiheoline.qcloud.xiaozhibo.Constant;
 import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
+import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
+import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
+import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.StartPlayBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.UpPlayInfoBean;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
@@ -51,6 +58,7 @@ import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.tencent.rtmp.TXLog;
 import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil;
 import com.yiheonline.qcloud.xiaozhibo.R;
+import com.zhangyf.gift.RewardLayout;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -108,7 +116,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     protected long                          mSecond = 0;            // 开播的时间，单位为秒
     private long                            mStartPushPts;          // 开始直播的时间，用于 ELK 上报统计。 您可以不关注
     private int noticeId = 0;
-
+    private RewardLayout rewardLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -135,6 +143,9 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         }
         mLiveRoom.setSelfProfile(mNickName, mAvatarPicUrl);
         startPublish();
+        //初始化礼物控件
+        rewardLayout = findViewById(R.id.giftContent);
+        initGiftContent();
     }
 
     /**
@@ -167,6 +178,110 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         IDanmakuView danmakuView = (IDanmakuView) findViewById(R.id.anchor_danmaku_view);
         mDanmuMgr = new TCDanmuMgr(this);
         mDanmuMgr.setDanmakuView(danmakuView);
+    }
+
+    /**
+     * 初始化礼物控件
+     */
+    private void initGiftContent(){
+        rewardLayout.setGiftAdapter(new RewardLayout.GiftAdapter<SendGiftBean>() {
+            @Override
+            public View onInit(View view, SendGiftBean bean) {
+                ImageView giftImage = (ImageView) view.findViewById(R.id.iv_gift_img);
+                final TextView giftNum = (TextView) view.findViewById(R.id.tv_gift_amount);
+                TextView userName = (TextView) view.findViewById(R.id.tv_user_name);
+                TextView giftName = (TextView) view.findViewById(R.id.tv_gift_name);
+
+                // 初始化数据
+                giftNum.setText("x" + bean.getTheSendGiftSize());
+                bean.setTheGiftCount(bean.getTheSendGiftSize());
+                giftImage.setImageResource(bean.getGiftImg());
+                userName.setText(bean.getUserName());
+                giftName.setText("送出 " + bean.getGiftName());
+                return view;
+            }
+
+            @Override
+            public View onUpdate(View view, SendGiftBean o, SendGiftBean t) {
+                ImageView giftImage = (ImageView) view.findViewById(R.id.iv_gift_img);
+                TextView giftNum = (TextView) view.findViewById(R.id.tv_gift_amount);
+
+                int showNum = (Integer) o.getTheGiftCount() + o.getTheSendGiftSize();
+                // 刷新已存在的giftview界面数据
+                giftNum.setText("x" + showNum);
+                giftImage.setImageResource(o.getGiftImg());
+                // 数字刷新动画
+                new NumAnim().start(giftNum);
+                // 更新累计礼物数量
+                o.setTheGiftCount(showNum);
+                // 更新其它自定义字段
+//              o.setUserName(t.getUserName());
+                return view;
+            }
+
+            @Override
+            public void onKickEnd(SendGiftBean bean) {
+                Log.e("zyfff", "onKickEnd:" + bean.getTheGiftId() + "," + bean.getGiftName() + "," + bean.getUserName() + "," + bean.getTheGiftCount());
+            }
+
+            @Override
+            public void onComboEnd(SendGiftBean bean) {
+//                Log.e("zyfff","onComboEnd:"+bean.getTheGiftId()+","+bean.getGiftName()+","+bean.getUserName()+","+bean.getTheGiftCount());
+            }
+
+            @Override
+            public void addAnim(final View view) {
+                final TextView textView = (TextView) view.findViewById(R.id.tv_gift_amount);
+                ImageView img = (ImageView) view.findViewById(R.id.iv_gift_img);
+                // 整个giftview动画
+                Animation giftInAnim = AnimUtils.getInAnimation(TCBaseAnchorActivity.this);
+                // 礼物图像动画
+                Animation imgInAnim = AnimUtils.getInAnimation(TCBaseAnchorActivity.this);
+                // 首次连击动画
+                final NumAnim comboAnim = new NumAnim();
+                imgInAnim.setStartTime(500);
+                imgInAnim.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                        textView.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        textView.setVisibility(View.VISIBLE);
+                        comboAnim.start(textView);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                view.startAnimation(giftInAnim);
+                img.startAnimation(imgInAnim);
+            }
+
+            @Override
+            public AnimationSet outAnim() {
+                return AnimUtils.getOutAnimation(TCBaseAnchorActivity.this);
+            }
+
+            @Override
+            public boolean checkUnique(SendGiftBean o, SendGiftBean t) {
+                return o.getTheGiftId() == t.getTheGiftId() && o.getTheUserId() == t.getTheUserId();
+            }
+
+
+            @Override
+            public SendGiftBean generateBean(SendGiftBean bean) {
+                try {
+                    return (SendGiftBean) bean.clone();
+                } catch (CloneNotSupportedException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        });
     }
 
     @Override
@@ -387,6 +502,9 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
             case TCConstants.IMCMD_DANMU:
                 handleDanmuMsg(userInfo, message);
                 break;
+            case TCConstants.IMCMD_GIFT:
+                handleGiftMsg(userInfo);
+                break;
             default:
                 break;
         }
@@ -491,6 +609,21 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         //todo：修改显示类型
         entity.setType(TCConstants.PRAISE);
         notifyMsg(entity);
+    }
+
+    /**
+     * 收到礼物消息
+     */
+    public void handleGiftMsg(TCSimpleUserInfo userInfo){
+        String nickName = "";
+        if (TextUtils.isEmpty(userInfo.nickname))
+            nickName = userInfo.userid ;
+        else
+            nickName = userInfo.nickname;
+
+
+        SendGiftBean giftBean = new SendGiftBean(1,1,nickName,"火箭",R.mipmap.hj,2700);
+        rewardLayout.put(giftBean);
     }
 
     /**

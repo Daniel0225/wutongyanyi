@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -33,6 +35,10 @@ import com.tencent.rtmp.ui.TXCloudVideoView;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.qcloud.xiaozhibo.anchor.music.TCAudioControl;
+import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
+import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
+import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity;
+import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
@@ -45,6 +51,7 @@ import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.http.response.CreateRoomResponse;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheonline.qcloud.xiaozhibo.R;
+import com.zhangyf.gift.RewardLayout;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -99,6 +106,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
     private ObjectAnimator                  mObjAnim;               // 动画
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.BeautyTheme);
@@ -110,6 +118,8 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         BeautyInfo beautyInfo = mBeautyControl.getDefaultBeautyInfo();
         beautyInfo.setBeautyBg(BeautyConstants.BEAUTY_BG_GRAY);
         mBeautyControl.setBeautyInfo(beautyInfo);
+
+
     }
 
     @Override
@@ -217,6 +227,8 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
             mMainHandler.removeCallbacksAndMessages(null);
         }
     }
+
+
 
 
     /**

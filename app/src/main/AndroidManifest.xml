@@ -38,7 +38,11 @@
         android:largeHeap="true"
         android:resizeableActivity="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.SearchActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoRecordActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.BuyResultActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ConfirmOrderActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.SearchActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoSearchActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeDetailActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity" />
@@ -83,6 +87,11 @@
             android:name="com.yiheoline.qcloud.xiaozhibo.anchor.TCCameraAnchorActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.yiheoline.qcloud.xiaozhibo.anchor.screen.TCScreenAnchorActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

@@ -92,5 +92,6 @@ class TCApplication : MultiDexApplication() {
         var token = ""
         var isLogin = false
         var currentPlayId = 0
+        var mlvbToken = ""
     }
 }

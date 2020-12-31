@@ -9,11 +9,6 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-<!--        <View-->
-<!--            android:id="@+id/statusBar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="25dp"-->
-<!--            android:background="#FCFCFD"/>-->
 
         <RelativeLayout
             android:id="@+id/topView"
@@ -70,28 +65,41 @@
             android:layout_width="match_parent"
              android:layout_marginStart="5dp"
             android:layout_height="50dp"/>
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/selectContain"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.yiheoline.qcloud.xiaozhibo.widgets.EmptyVideoPlayer
-                android:id="@+id/videoPlayer"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"/>
-            <ImageView
-                android:src="@mipmap/video_cover"
-                android:scaleType="centerCrop"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="180dp"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
+                android:layout_height="wrap_content">
+                <com.yiheoline.qcloud.xiaozhibo.widgets.EmptyVideoPlayer
+                    android:id="@+id/videoPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:src="@mipmap/video_cover"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
 
-        <include layout="@layout/near_show_item_layout"/>
-        <include layout="@layout/select_item_layout"/>
+            <include layout="@layout/near_show_item_layout"/>
+            <include layout="@layout/select_item_layout"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/catListRv"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp"/>

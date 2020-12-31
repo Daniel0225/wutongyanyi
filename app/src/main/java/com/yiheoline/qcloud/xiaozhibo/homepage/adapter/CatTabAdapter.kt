@@ -5,15 +5,16 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.yiheoline.qcloud.xiaozhibo.bean.TypeBean
 import com.yiheoline.qcloud.xiaozhibo.utils.DpUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 import org.jetbrains.anko.textColor
 
-class CatTabAdapter(layoutId:Int, data:MutableList<String>): BaseQuickAdapter<String, BaseViewHolder>(layoutId,data){
+class CatTabAdapter(layoutId:Int, data:MutableList<TypeBean>): BaseQuickAdapter<TypeBean, BaseViewHolder>(layoutId,data){
     var selectPosition = 0
-    override fun convert(holder: BaseViewHolder, item: String) {
+    override fun convert(holder: BaseViewHolder, item: TypeBean) {
         var nameView = holder.getView<TextView>(R.id.tabName)
-        nameView.text = item
+        nameView.text = item.name
         if(getItemPosition(item) == selectPosition){
             nameView.textSize = 18f
             nameView.textColor = Color.parseColor("#333333")

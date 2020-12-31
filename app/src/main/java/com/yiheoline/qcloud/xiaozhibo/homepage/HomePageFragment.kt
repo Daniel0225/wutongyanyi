@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
@@ -17,6 +18,7 @@ import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.anchor.prepare.TCAnchorPrepareActivity
 import com.yiheoline.qcloud.xiaozhibo.base.BaseFragment
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeBean
+import com.yiheoline.qcloud.xiaozhibo.bean.TypeBean
 import com.yiheoline.qcloud.xiaozhibo.dialog.StartPlayDialog
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.CatTabAdapter
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.NearShowListAdapter
@@ -41,7 +43,8 @@ class HomePageFragment : BaseFragment() {
     private var preListAdapter : PreListAdapter? = null
     private var selectAdapter : NearShowListAdapter? = null
     private var nearShowListAdapter : NearShowListAdapter? = null
-    private var categoryList = arrayListOf("精选","话剧","粤剧","京剧","黄梅戏","音乐会","歌舞剧","花鼓戏")
+    private var listByCatAdapter : NearShowListAdapter? = null
+    private var catAdapter : CatTabAdapter? = null
 
     override fun getLayout(): Int {
         return R.layout.fragment_home_page
@@ -73,11 +76,22 @@ class HomePageFragment : BaseFragment() {
         var catManager = LinearLayoutManager(context)
         catManager.orientation = LinearLayoutManager.HORIZONTAL
         catRecyclerView.layoutManager = catManager
-        var catAdapter = CatTabAdapter(R.layout.cat_tab_layout,categoryList)
+        catAdapter = CatTabAdapter(R.layout.cat_tab_layout, arrayListOf())
         catRecyclerView.adapter = catAdapter
-        catAdapter.setOnItemClickListener { _, _, position ->
-            catAdapter.selectPosition = position
-            catAdapter.notifyDataSetChanged()
+        catAdapter?.setOnItemClickListener { _, _, position ->
+            catAdapter?.selectPosition = position
+            catAdapter?.notifyDataSetChanged()
+            if(position == 0){
+                selectContain.visibility = View.VISIBLE
+                catListRv.visibility = View.GONE
+                videoPlayer.onVideoResume()
+                getSelectData()
+            }else{
+                videoPlayer.onVideoPause()
+                selectContain.visibility = View.GONE
+                catListRv.visibility = View.VISIBLE
+                getListByType(catAdapter!!.data[position].catId)
+            }
         }
         //初始化最近直播RV
         nearShowRecycler.layoutManager = GridLayoutManager(context,3)
@@ -95,6 +109,14 @@ class HomePageFragment : BaseFragment() {
             startActivity<NoticeDetailActivity>("noticeBean" to nearShowListAdapter!!.data[position])
         }
 
+        //初始化分类列表RV
+        catListRv.layoutManager = GridLayoutManager(context,3)
+        listByCatAdapter = NearShowListAdapter(R.layout.near_show_list_item_layout, arrayListOf())
+        catListRv.adapter = listByCatAdapter
+        listByCatAdapter?.setOnItemClickListener { _, _, position ->
+            startActivity<NoticeDetailActivity>("noticeBean" to nearShowListAdapter!!.data[position])
+        }
+
         startPlay.onClick {
             StartPlayDialog.onCreateDialog(context!!)
         }
@@ -104,6 +126,14 @@ class HomePageFragment : BaseFragment() {
         }
 
         //获取数据
+        getTypeList()
+        getSelectData()
+    }
+
+    /**
+     * 获取精选数据
+     */
+    private fun getSelectData(){
         getPreList()
         getNearList()
         getRecommendList()
@@ -184,9 +214,58 @@ class HomePageFragment : BaseFragment() {
                 })
     }
 
+    /**
+     * 根据分类获取预告列表
+     */
+    private fun getListByType(catId:Int){
+        var params = HttpParams()
+        params.put("catId",catId)
+        OkGo.post<BaseResponse<HomePageResponse>>(Constant.HOME_PAGE_LIST)
+                .params(params)
+                .execute(object : JsonCallBack<BaseResponse<HomePageResponse>>(){
+                    override fun onSuccess(response: Response<BaseResponse<HomePageResponse>>?) {
+                        if(response?.body()?.res == 0){
+                            listByCatAdapter?.setList(response.body().data!!.list)
+                        }else{
+                            toast(response?.body()?.msg.toString())
+                        }
+                    }
+
+                })
+    }
+
+    /**
+     * 获取分类集合
+     */
+    private fun getTypeList(){
+        OkGo.get<BaseResponse<List<TypeBean>>>(Constant.QUERY_CAT_LIST)
+                .execute(object : JsonCallBack<BaseResponse<List<TypeBean>>>(){
+                    override fun onSuccess(response: Response<BaseResponse<List<TypeBean>>>?) {
+                        if(response?.body()?.res == 0){
+                            catAdapter?.setList(response.body()?.data!!)
+                            var typeBean = TypeBean()
+                            typeBean.name = "精选"
+                            catAdapter?.addData(0,typeBean)
+                        }else{
+                            toast(response?.body()?.msg.toString())
+                        }
+                    }
+
+                })
+    }
+
     override fun onPause() {
         super.onPause()
         videoPlayer.onVideoPause()
+    }
+
+    override fun setUserVisibleHint(isVisibleToUser: Boolean) {
+        super.setUserVisibleHint(isVisibleToUser)
+        if(isVisibleToUser){
+            videoPlayer?.onVideoResume()
+        }else{
+            videoPlayer?.onVideoPause()
+        }
     }
 
     override fun onResume() {

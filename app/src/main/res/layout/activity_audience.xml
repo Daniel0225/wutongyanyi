@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/audience_play_root"
     tools:ignore="contentDescription"
     android:layout_width="match_parent"
@@ -270,6 +271,16 @@
             </LinearLayout>
 
         </RelativeLayout>
+
+        <com.zhangyf.gift.RewardLayout
+            android:id="@+id/giftContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:animateLayoutChanges="true"
+            app:max_gift="3"
+            app:gift_item_layout="@layout/gift_animation_item"
+            android:orientation="vertical" />
 
         <ListView
             android:id="@+id/im_msg_listview"

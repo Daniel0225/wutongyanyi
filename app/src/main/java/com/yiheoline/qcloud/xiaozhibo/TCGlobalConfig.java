@@ -30,7 +30,7 @@ public class TCGlobalConfig {
      * 进入腾讯云直播[控制台-直播SDK-应用管理](https://console.cloud.tencent.com/live/license/appmanage) 创建应用，即可看到 SDKAppId，
      * 它是腾讯云用于区分客户的唯一标识。
      */
-    public static final int SDKAPPID = 1400461890;
+    public static final int SDKAPPID = 1400467748;
 
     /**
      * 2.2 计算签名用的加密密钥，获取步骤如下：
@@ -43,7 +43,7 @@ public class TCGlobalConfig {
      * 注意：该方案仅适用于调试Demo，正式上线前请将 UserSig 计算代码和密钥迁移到您的后台服务器上，以避免加密密钥泄露导致的流量盗用。
      * 文档：https://cloud.tencent.com/document/product/647/17275#Server
      */
-    public static final String SECRETKEY = "6704f72e28ae9f78d9991e94e582116f8a699e3be78ed6ab8681568b15c914ed";
+    public static final String SECRETKEY = "fd95ad22aa84a942f94bf1d64828930397e8d56515df17f38acf451e6388daf1";
 
     /**
      * 2.3 签名过期时间，建议不要设置的过短
@@ -51,7 +51,7 @@ public class TCGlobalConfig {
      * 时间单位：秒
      * 默认时间：7 x 24 x 60 x 60 = 604800 = 7 天
      */
-    public static final int EXPIRETIME = 604800;
+    public static final int EXPIRETIME = 604800*100;
 
 
     /**

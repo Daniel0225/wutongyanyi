@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.RoundImageView
+        android:id="@+id/headerView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_toEndOf="@id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户 10012013241232"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/contentView"
+        android:layout_toStartOf="@+id/isLikeContain"
+        android:layout_below="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/headerView"
+        android:text="现在这么看，谈恋爱需要谨慎不是仅仅告诫女孩了，男孩子也要好好爱自己。"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        />
+    <RelativeLayout
+        android:id="@+id/isLikeContain"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/isLikeImageView"
+            android:src="@mipmap/like"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/likeNumView"
+            android:layout_below="@id/isLikeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.6w"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

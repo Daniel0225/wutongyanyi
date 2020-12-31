@@ -15,6 +15,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -26,6 +28,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.model.Response;
 import com.tencent.liteav.demo.beauty.view.BeautyPanel;
 import com.tencent.liteav.demo.beauty.BeautyParams;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
@@ -33,7 +37,12 @@ import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
+import com.yiheoline.qcloud.xiaozhibo.Constant;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
+import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
+import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
+import com.yiheoline.qcloud.xiaozhibo.bean.GiftUpBean;
+import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.ui.ErrorDialogFragment;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
@@ -48,12 +57,16 @@ import com.yiheoline.qcloud.xiaozhibo.common.widget.like.TCHeartLayout;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatEntity;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatMsgListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
+import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
+import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.TCVideoListFragment;
 import com.tencent.rtmp.TXLiveConstants;
 import com.tencent.rtmp.TXLog;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil;
 import com.yiheonline.qcloud.xiaozhibo.R;
+import com.zhangyf.gift.RewardLayout;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -155,6 +168,8 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
 
     private long                                mLastLinkMicTime;   // 上次发起连麦的时间，用于频率控制
 
+    private RewardLayout rewardLayout;
+    private int liveId;//直播场次id
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -183,7 +198,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         mNickname = TCUserMgr.getInstance().getNickname();
         mAvatar = TCUserMgr.getInstance().getAvatar();
         mCoverUrl = getIntent().getStringExtra(TCConstants.COVER_PIC);
-
+        liveId = intent.getIntExtra("LIVE_ID",0);
         mVideoViewMgr = new TCVideoViewMgr(this, null);
 
         if (TextUtils.isEmpty(mNickname)) {
@@ -197,12 +212,17 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         mBeautyControl.setBeautyManager(mLiveRoom.getBeautyManager());
         startPlay();
 
+        //初始化礼物控件
+        rewardLayout = findViewById(R.id.giftContent);
+        initGiftContent();
+
         //在这里停留，让列表界面卡住几百毫秒，给sdk一点预加载的时间，形成秒开的视觉效果
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -296,6 +316,125 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     }
 
     /**
+     * 初始化礼物控件
+     */
+    private void initGiftContent(){
+        rewardLayout.setGiftAdapter(new RewardLayout.GiftAdapter<SendGiftBean>() {
+            @Override
+            public View onInit(View view, SendGiftBean bean) {
+                ImageView giftImage = (ImageView) view.findViewById(R.id.iv_gift_img);
+                final TextView giftNum = (TextView) view.findViewById(R.id.tv_gift_amount);
+                TextView userName = (TextView) view.findViewById(R.id.tv_user_name);
+                TextView giftName = (TextView) view.findViewById(R.id.tv_gift_name);
+
+                // 初始化数据
+                giftNum.setText("x" + bean.getTheSendGiftSize());
+                bean.setTheGiftCount(bean.getTheSendGiftSize());
+                giftImage.setImageResource(bean.getGiftImg());
+                userName.setText(bean.getUserName());
+                giftName.setText("送出 " + bean.getGiftName());
+                return view;
+            }
+
+            @Override
+            public View onUpdate(View view, SendGiftBean o, SendGiftBean t) {
+                ImageView giftImage = (ImageView) view.findViewById(R.id.iv_gift_img);
+                TextView giftNum = (TextView) view.findViewById(R.id.tv_gift_amount);
+
+                int showNum = (Integer) o.getTheGiftCount() + o.getTheSendGiftSize();
+                // 刷新已存在的giftview界面数据
+                giftNum.setText("x" + showNum);
+                giftImage.setImageResource(o.getGiftImg());
+                // 数字刷新动画
+                new NumAnim().start(giftNum);
+                // 更新累计礼物数量
+                o.setTheGiftCount(showNum);
+                // 更新其它自定义字段
+//              o.setUserName(t.getUserName());
+                return view;
+            }
+
+            @Override
+            public void onKickEnd(SendGiftBean bean) {
+                Log.e("zyfff", "onKickEnd:" + bean.getTheGiftId() + "," + bean.getGiftName() + "," + bean.getUserName() + "," + bean.getTheGiftCount());
+            }
+
+            @Override
+            public void onComboEnd(SendGiftBean bean) {
+//                Log.e("zyfff","onComboEnd:"+bean.getTheGiftId()+","+bean.getGiftName()+","+bean.getUserName()+","+bean.getTheGiftCount());
+            }
+
+            @Override
+            public void addAnim(final View view) {
+                final TextView textView = (TextView) view.findViewById(R.id.tv_gift_amount);
+                ImageView img = (ImageView) view.findViewById(R.id.iv_gift_img);
+                // 整个giftview动画
+                Animation giftInAnim = AnimUtils.getInAnimation(TCAudienceActivity.this);
+                // 礼物图像动画
+                Animation imgInAnim = AnimUtils.getInAnimation(TCAudienceActivity.this);
+                // 首次连击动画
+                final NumAnim comboAnim = new NumAnim();
+                imgInAnim.setStartTime(500);
+                imgInAnim.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                        textView.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        textView.setVisibility(View.VISIBLE);
+                        comboAnim.start(textView);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                view.startAnimation(giftInAnim);
+                img.startAnimation(imgInAnim);
+            }
+
+            @Override
+            public AnimationSet outAnim() {
+                return AnimUtils.getOutAnimation(TCAudienceActivity.this);
+            }
+
+            @Override
+            public boolean checkUnique(SendGiftBean o, SendGiftBean t) {
+                return o.getTheGiftId() == t.getTheGiftId() && o.getTheUserId() == t.getTheUserId();
+            }
+
+
+            @Override
+            public SendGiftBean generateBean(SendGiftBean bean) {
+                try {
+                    return (SendGiftBean) bean.clone();
+                } catch (CloneNotSupportedException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        });
+    }
+
+    /**
+     * 送礼物 上报给服务器
+     */
+    private void sendGift(int giftId){
+        GiftUpBean giftUpBean = new GiftUpBean(giftId,liveId);
+        OkGo.<BaseResponse<String>>post(Constant.SEND_GIFT)
+                .upJson(FastJsonUtil.createJsonString(giftUpBean))
+                .execute(new JsonCallBack<BaseResponse<String>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<String>> response) {
+
+                    }
+                });
+    }
+
+    /**
      *     /////////////////////////////////////////////////////////////////////////////////
      *     //
      *     //                      生命周期相关
@@ -308,12 +447,17 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         if (mDanmuMgr != null) {
             mDanmuMgr.resume();
         }
+        if (rewardLayout != null) {
+            rewardLayout.onResume();
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
+        if (rewardLayout != null) {
+            rewardLayout.onPause();
+        }
         if (mDanmuMgr != null) {
             mDanmuMgr.pause();
         }
@@ -322,6 +466,9 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (rewardLayout != null) {
+            rewardLayout.onDestroy();
+        }
         if (mDanmuMgr != null) {
             mDanmuMgr.destroy();
             mDanmuMgr = null;
@@ -657,6 +804,9 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
             case TCConstants.IMCMD_DANMU:
                 handleDanmuMsg(userInfo, message);
                 break;
+            case TCConstants.IMCMD_GIFT:
+                handleGiftMsg(userInfo);
+                break;
             default:
                 break;
         }
@@ -774,6 +924,19 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
 
         entity.setType(TCConstants.MEMBER_ENTER);
         notifyMsg(entity);
+    }
+
+    /**
+     * 收到礼物消息
+     */
+    public void handleGiftMsg(TCSimpleUserInfo userInfo){
+        String nickName = "";
+        if (TextUtils.isEmpty(userInfo.nickname))
+            nickName = userInfo.userid ;
+        else
+            nickName = userInfo.nickname;
+        SendGiftBean giftBean = new SendGiftBean(1,1,nickName,"火箭",R.mipmap.hj,2700);
+        rewardLayout.put(giftBean);
     }
 
     /**
@@ -896,7 +1059,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
                 break;
             case R.id.btn_share:
                 break;
-            case R.id.btn_log:
+            case R.id.btn_log://发送礼物
                 showLog();
                 break;
             case R.id.record:
@@ -911,18 +1074,9 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     }
 
     private void showLog() {
-        mShowLog = !mShowLog;
-        if (mTXCloudVideoView != null) {
-            mTXCloudVideoView.showLog(mShowLog);
-        }
-        ImageView liveLog = (ImageView) findViewById(R.id.btn_log);
-        if (mShowLog) {
-            if (liveLog != null) liveLog.setBackgroundResource(R.drawable.icon_log_on);
-        } else {
-            if (liveLog != null) liveLog.setBackgroundResource(R.drawable.icon_log_off);
-        }
-
-        mVideoViewMgr.showLog(mShowLog);
+        mLiveRoom.setCustomInfo(MLVBCommonDef.CustomFieldOp.INC, "gift", 1, null);
+        //向ChatRoom发送点赞消息
+        mLiveRoom.sendRoomCustomMsg(String.valueOf(TCConstants.IMCMD_GIFT), "32323", null);
     }
 
 
