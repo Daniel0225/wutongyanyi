@@ -3,15 +3,16 @@ package com.yiheoline.qcloud.xiaozhibo
 class Constant {
     companion object {
         //基础地址
-//        private const val BASE_URL: String = "http://192.168.0.3:8085/"//
-//      const val BASE_URL: String = "https://test.api.air.yihenst.com/"
-        const val BASE_URL: String = "http://192.168.0.85:8085/"
+//        private const val BASE_URL: String = "http://192.168.0.3:8085/"
+      const val BASE_URL: String = "https://test.api.air.yihenst.com/"
+//        const val BASE_URL: String = "http://192.168.0.85:8085/"
         const val IMAGE_BASE = "http://test.img.yihenst.com/"
         const val MUSIC_BASE = "http://test.audio.yihenst.com"
         const val VIDEO_BASE = "http://test.video.yihenst.com/"
         const val FILE_BASE = "http://test.file.yihenst.com/"
 
-        const val PAGE_SIZE = 10
+        const val WX_APP_ID = "wxc6349999acb1d5c0"
+        const val PAGE_SIZE = 20
 
         const val CODE_LOGIN = BASE_URL + "codeLogin"
         const val SEND_CODE = BASE_URL + "sendCode"
@@ -42,6 +43,45 @@ class Constant {
         const val CANCEL_VIDEO_COLLECT = BASE_URL + "video/cancelVideoCollect"
         const val HEART_BEAT = BASE_URL + "live/theater/heartbeat"
         const val SEND_GIFT = BASE_URL + "live/theater/gift"
+        const val PERSONAL_CENTER = BASE_URL + "user/personalCenter"
+        const val AUTH = BASE_URL + "user/userAuth"
+        const val QUERY_UP_RECORD = BASE_URL + "user/queryUploadRecord"
+        const val QUERY_SHORT_UP_RECORD = BASE_URL + "user/queryShortUploadRecord"
+        const val VIEW_LIST = BASE_URL + "user/queryViewList"
+        const val UPDATE_USER_INFO = BASE_URL + "user/updateUserInfo"
+        const val QUERY_FOLLOW = BASE_URL + "user/queryFollowList"
+        const val QUERY_FANS = BASE_URL + "user/queryFanList"
+        const val USER_RECHARGE = BASE_URL + "user/topUp"
+        const val RECHARGE_LIST = BASE_URL + "user/queryTopUpList"
+        const val GIFT_RECORD = BASE_URL + "user/queryGiftRecordList"
+        const val GIFT_ALL = BASE_URL + "gift/all"
+        const val ARTIST_START = BASE_URL + "live/artist/start"
+        const val LIVE_LIST = BASE_URL + "live/artist/online/list"
+        const val ARTIST_FINISH = BASE_URL + "live/artist/finish"
+        const val SHORT_VIDEO_LIST = BASE_URL + "shortVideo/queryShortVideoList"
+        const val SHORT_VIDEO_LIKE = BASE_URL + "shortVideo/shortVideoLike"
+        const val CANCEL_SHORT_VIDEO_LIKE = BASE_URL + "shortVideo/cancelShortVideoLike"
+        const val SHORT_VIDEO_COMMENT = BASE_URL + "shortVideo/getShortVideoComment"
+        const val ADD_VIDEO_COMMENT = BASE_URL + "shortVideo/shortVideoComment"
+        const val USER_FOLLOW = BASE_URL + "user/follow"
+        const val USER_PROFILE = BASE_URL + "user/profile"
+            const val QUERY_SHORT_BY_TYPE = BASE_URL + "shortVideo/queryShortVideoListByType"
+            const val CANCEL_FOLLOW = BASE_URL + "user/cancelFollow"
+            const val SHORT_COMMENT_LIKE = BASE_URL + "shortVideo/commentLike"
+            const val SHORT_COMMENT_LIKE_CANCEL = BASE_URL + "shortVideo/cancelCommentLike"
+            const val NOTICE_ORDER_LIST = BASE_URL + "user/queryNoticeOrder"
+            const val VIDEO_ORDER_LIST = BASE_URL + "user/queryVideoOrder"
+            const val USER_LETTER_LIST = BASE_URL + "user/queryUserLetterList"
+            const val RELATION_LETTER = BASE_URL + "user/relationLetter"
+            const val QUERY_WITHDRAW_LIST = BASE_URL + "user/queryWithdrawList"
+            const val WITH_DRAW = BASE_URL + "user/withdraw"
+        const val ANCHOR_CENTER = BASE_URL + "user/anchorCenter"
+        const val LIVE_RECORD = BASE_URL + "user/queryLiveRecord"
+            const val NOTICE_QUERY_CHOICE = BASE_URL + "notice/queryChoice"
+        const val QUERY_LIKE_SHOW = BASE_URL + "user/queryIntentList"
+        const val QUERY_LIKE_VIDEO = BASE_URL + "user/queryLikeVideoList"
+        const val QUERY_LIKE_SHORT = BASE_URL + "user/queryLikeShortVideoList"
+        const val ONE_CLICK_LOGIN = BASE_URL + "oneClickLogin"
 
     }
 }

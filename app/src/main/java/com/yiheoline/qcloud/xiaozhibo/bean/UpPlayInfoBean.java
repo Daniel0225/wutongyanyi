@@ -7,6 +7,15 @@ public class UpPlayInfoBean implements Serializable {
     private long watchCount;
     private int theaterLiveId;
     private int noticeId;
+    private int artistLiveId;
+
+    public int getArtistLiveId() {
+        return artistLiveId;
+    }
+
+    public void setArtistLiveId(int artistLiveId) {
+        this.artistLiveId = artistLiveId;
+    }
 
     public int getNoticeId() {
         return noticeId;

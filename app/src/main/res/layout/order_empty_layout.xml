@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="你还没有相关订单"
+        android:text="暂无数据"
         android:textColor="#ff8d95a8"
         android:textSize="14sp"
         android:layout_marginTop="40dp"

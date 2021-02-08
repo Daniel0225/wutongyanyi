@@ -20,10 +20,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.HttpParams;
-import com.lzy.okgo.model.Response;
 import com.tencent.liteav.audiosettingkit.AudioEffectPanel;
 import com.tencent.liteav.demo.beauty.BeautyParams;
 import com.tencent.liteav.demo.beauty.constant.BeautyConstants;
@@ -32,13 +28,10 @@ import com.tencent.liteav.demo.beauty.model.ItemInfo;
 import com.tencent.liteav.demo.beauty.model.TabInfo;
 import com.tencent.liteav.demo.beauty.view.BeautyPanel;
 import com.tencent.rtmp.ui.TXCloudVideoView;
-import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
+import com.yiheoline.qcloud.xiaozhibo.Constant;
+import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 import com.yiheoline.qcloud.xiaozhibo.anchor.music.TCAudioControl;
-import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
-import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
-import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity;
-import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
@@ -46,12 +39,8 @@ import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.TCUserAvatarListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.video.TCVideoView;
 import com.yiheoline.qcloud.xiaozhibo.common.widget.video.TCVideoViewMgr;
-import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
-import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
-import com.yiheoline.qcloud.xiaozhibo.http.response.CreateRoomResponse;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
 import com.yiheonline.qcloud.xiaozhibo.R;
-import com.zhangyf.gift.RewardLayout;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -89,7 +78,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
     private TextView                        mMemberCount;           // 观众数量
 
 
-    private AudioEffectPanel                mPanelAudioControl;     // 音效面板
+    private AudioEffectPanel mPanelAudioControl;     // 音效面板
 
     private BeautyPanel                     mBeautyControl;          // 美颜设置的控制类
     private LinearLayout                    mLinearToolBar;
@@ -143,7 +132,7 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         mRecordBall = (ImageView) findViewById(R.id.anchor_iv_record_ball);
 
         mHeadIcon = (ImageView) findViewById(R.id.anchor_iv_head_icon);
-        showHeadIcon(mHeadIcon, TCUserMgr.getInstance().getAvatar());
+        showHeadIcon(mHeadIcon, Constant.IMAGE_BASE+ TCApplication.Companion.getLoginInfo().getAvatar());
         mMemberCount = (TextView) findViewById(R.id.anchor_tv_member_counts);
         mMemberCount.setText("0");
 

@@ -61,15 +61,17 @@ class ShowSettingActivity : BaseActivity() {
             var item = preShowAdapter!!.data[preShowAdapter!!.selectPosition]
             var intent = Intent(mContext, TCCameraAnchorActivity::class.java)
             intent.putExtra(TCConstants.ROOM_TITLE,item.title)
+            intent.putExtra(TCConstants.USER_NICK,TCApplication.loginInfo?.nickname)
             intent.putExtra(TCConstants.COVER_PIC,item.cover)
-            intent.putExtra(TCConstants.USER_ID, TCApplication.userId)
+            intent.putExtra(TCConstants.USER_HEADPIC,Constant.IMAGE_BASE+TCApplication.loginInfo?.avatar)
+            intent.putExtra(TCConstants.USER_ID, TCApplication.loginInfo?.userId)
             intent.putExtra(TCConstants.NOTICE_ID,item.noticeId)
             startActivity(intent)
         }
     }
 
-    override fun initData() {
-        super.initData()
+    override fun onResume() {
+        super.onResume()
         getNoticeList()
     }
 

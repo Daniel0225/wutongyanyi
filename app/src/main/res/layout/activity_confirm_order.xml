@@ -13,8 +13,7 @@
 
         <ImageView
             android:id="@+id/coverImage"
-            android:src="@mipmap/logo"
-            android:background="#000000"
+            android:scaleType="centerCrop"
             android:layout_width="90dp"
             android:layout_height="119dp"/>
 
@@ -104,23 +103,6 @@
             />
 
         <CheckBox
-            android:id="@+id/weixinPay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="25dp"
-            android:drawableEnd="@mipmap/weixin"
-            android:drawablePadding="10dp"
-            android:layout_marginStart="30dp"
-            android:background="@null"
-            android:checked="true"
-            android:button="@drawable/invoice_selector"
-            android:layoutDirection="rtl"
-            android:text="微信支付"
-            android:textColor="#ff8d95a8"
-            android:textSize="14sp" />
-
-        <CheckBox
             android:id="@+id/aliPay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -133,23 +115,51 @@
             android:button="@drawable/invoice_selector"
             android:layoutDirection="rtl"
             android:text="支付宝支付"
+            android:checked="true"
+            android:textColor="#ff8d95a8"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/weixinPay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            android:drawableEnd="@mipmap/weixin"
+            android:drawablePadding="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@null"
+            android:button="@drawable/invoice_selector"
+            android:layoutDirection="rtl"
+            android:text="微信支付"
             android:textColor="#ff8d95a8"
             android:textSize="14sp" />
 
     </LinearLayout>
-
-    <ImageView
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <TextView
         android:id="@+id/payNowBtn"
-        android:src="@mipmap/buy_now2"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"
         android:layout_marginTop="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView

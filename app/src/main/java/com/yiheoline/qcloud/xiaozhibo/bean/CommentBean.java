@@ -1,5 +1,9 @@
 package com.yiheoline.qcloud.xiaozhibo.bean;
 
+import com.yiheoline.qcloud.xiaozhibo.http.response.ReplyResponse;
+
+import java.util.List;
+
 public class CommentBean {
     private String avatar;
     private int commentId;
@@ -10,6 +14,24 @@ public class CommentBean {
     private String nickname;
     private int videoId;
     private String isLike;
+    private String createTime;
+    private ReplyResponse replyList;
+
+    public ReplyResponse getReplyList() {
+        return replyList;
+    }
+
+    public void setReplyList(ReplyResponse replyList) {
+        this.replyList = replyList;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
 
     public String getAvatar() {
         return avatar;

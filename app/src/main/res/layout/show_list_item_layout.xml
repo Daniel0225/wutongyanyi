@@ -7,19 +7,22 @@
     android:layout_marginStart="2.5dp"
     android:layout_height="wrap_content">
 
-    <com.yiheoline.qcloud.xiaozhibo.widgets.AutoAdjustHeightImageView
-        android:id="@+id/productImage"
-        android:scaleType="fitXY"
-        app:aspectRatio="0.7"
+    <com.yiheoline.qcloud.xiaozhibo.widgets.RoundImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        app:aspectRatio2="0.7"
+        app:type="round"
+        app:bottom_left="false"
+        app:bottom_right="false"
+        app:borderRadius="5dp"
         android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:id="@+id/goodsNameView"
+        android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
         android:text="海秀儿 HAESOO.LJE805O 耳饰"
         android:maxLines="2"
         android:ellipsize="end"
@@ -35,9 +38,10 @@
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
+        <com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.RoundImageView
             android:id="@+id/headerView"
-            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_header"
             android:layout_marginStart="5dp"
             android:layout_width="16dp"
             android:layout_height="16dp"/>
@@ -52,9 +56,10 @@
             android:textSize="10sp"
             />
         <ImageView
+            android:id="@+id/likeImageView"
             android:layout_marginEnd="5dp"
             android:layout_toStartOf="@id/likeNumView"
-            android:src="@mipmap/like"
+            android:src="@mipmap/xin"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

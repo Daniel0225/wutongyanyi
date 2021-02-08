@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="96dp"
     android:orientation="vertical"
-    android:layout_marginTop="15dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginEnd="5dp"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginEnd="2.5dp"
     android:layout_height="wrap_content">
-    <com.yiheoline.qcloud.xiaozhibo.utils.AutoAdjustHeightImageView
-        android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher"
-        android:scaleType="centerCrop"
-        app:aspectRatio="0.8"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="今日 20:30"
+        android:textColor="#ff333333"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_width="96dp"
+        android:layout_marginTop="8.5dp"
+        android:layout_height="127dp"
         />
     <TextView
         android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="郭德纲·于谦 明天见  2019持续更新"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="9.5dp"
         android:textColor="#ff333333"
         android:lines="2"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
         android:textSize="12sp"
         />
 </LinearLayout>

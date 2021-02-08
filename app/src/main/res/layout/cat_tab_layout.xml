@@ -12,6 +12,7 @@
         android:text="精选"
         android:textColor="#333333"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <ImageView

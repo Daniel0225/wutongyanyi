@@ -25,7 +25,7 @@ public class SendGiftBean extends BaseGiftBean{
     /**
      * 礼物本地图片也可以定义为远程url
      */
-    private int giftImg;
+    private String giftImg;
     /**
      * 礼物持续时间
      */
@@ -39,7 +39,7 @@ public class SendGiftBean extends BaseGiftBean{
     public SendGiftBean() {
     }
 
-    public SendGiftBean(int userId, int giftId, String userName, String giftName, int giftImg, long time) {
+    public SendGiftBean(int userId, int giftId, String userName, String giftName, String giftImg, long time) {
         this.userId = userId;
         this.giftId = giftId;
         this.userName = userName;
@@ -64,11 +64,11 @@ public class SendGiftBean extends BaseGiftBean{
         this.giftName = giftName;
     }
 
-    public int getGiftImg() {
+    public String getGiftImg() {
         return giftImg;
     }
 
-    public void setGiftImg(int giftImg) {
+    public void setGiftImg(String giftImg) {
         this.giftImg = giftImg;
     }
 

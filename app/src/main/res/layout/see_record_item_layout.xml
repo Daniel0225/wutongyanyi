@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_width="94dp"
+        android:layout_height="54dp"/>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:text="国家话剧院话剧院-《四世同堂》话剧院..."
+        android:textColor="#ff333333"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/priceView"
+        android:gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:text="收费"
+        android:layout_marginTop="5dp"
+        android:background="#FD8318"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        />
+</LinearLayout>

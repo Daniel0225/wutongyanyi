@@ -3,22 +3,13 @@ package com.yiheoline.qcloud.xiaozhibo.bean;
 import java.io.Serializable;
 
 public class RoomInfoBean implements Serializable {
-    private String mixedPlayURL;
-    private String roomID;
+    private String title;
 
-    public String getMixedPlayURL() {
-        return mixedPlayURL;
+    public String getTitle() {
+        return title;
     }
 
-    public void setMixedPlayURL(String mixedPlayURL) {
-        this.mixedPlayURL = mixedPlayURL;
-    }
-
-    public String getRoomID() {
-        return roomID;
-    }
-
-    public void setRoomID(String roomID) {
-        this.roomID = roomID;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

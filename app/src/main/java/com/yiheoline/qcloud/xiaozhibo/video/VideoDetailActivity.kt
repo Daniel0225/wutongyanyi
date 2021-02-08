@@ -7,14 +7,9 @@ import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
-import android.text.Spannable
-import android.text.SpannableStringBuilder
 import android.text.TextUtils
-import android.text.method.LinkMovementMethod
-import android.text.style.ClickableSpan
 import android.util.Log
 import android.view.View
-import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
@@ -26,6 +21,7 @@ import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
 import com.shuyu.gsyvideoplayer.GSYBaseADActivityDetail
 import com.shuyu.gsyvideoplayer.GSYVideoManager
+import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder
 import com.shuyu.gsyvideoplayer.listener.LockClickListener
 import com.shuyu.gsyvideoplayer.video.GSYADVideoPlayer
 import com.shuyu.gsyvideoplayer.video.NormalGSYVideoPlayer
@@ -37,15 +33,12 @@ import com.yiheoline.qcloud.xiaozhibo.bean.PayResult
 import com.yiheoline.qcloud.xiaozhibo.bean.VideoDetailBean
 import com.yiheoline.qcloud.xiaozhibo.dialog.CommentDialog
 import com.yiheoline.qcloud.xiaozhibo.dialog.PayConfirmDialog
-import com.yiheoline.qcloud.xiaozhibo.homepage.BuyResultActivity
-import com.yiheoline.qcloud.xiaozhibo.homepage.ConfirmOrderActivity
-import com.yiheoline.qcloud.xiaozhibo.video.adapter.VideoListAdapter
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
 import com.yiheoline.qcloud.xiaozhibo.http.response.CommentListResponse
-import com.yiheoline.qcloud.xiaozhibo.login.LoginActivity
 import com.yiheoline.qcloud.xiaozhibo.utils.StatusBarUtil
 import com.yiheoline.qcloud.xiaozhibo.video.adapter.CommentListAdapter
+import com.yiheoline.qcloud.xiaozhibo.video.adapter.VideoListAdapter
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_video_detail.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -63,6 +56,7 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
     private var isNeedPay = false
     var videoDetailBean: VideoDetailBean? = null
     var commentAdapter : CommentListAdapter? = null
+    var isReply = false//用于区分是直接发表评论 还是回复评论
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,9 +86,6 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
      */
     private fun initPlayer(){
         //增加title
-        detailPlayer.titleTextView.visibility = View.GONE
-        detailPlayer.backButton.visibility = View.VISIBLE
-        detailPlayer.backButton.onClick { finish() }
         detailPlayer?.setLockClickListener(LockClickListener { _, lock ->
             if (orientationUtils != null) {
                 //配合下方的onConfigurationChanged
@@ -114,7 +105,8 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
                 if(currentPosition >= 5*1000 && currentPosition < 10*1000){
                     warmText.visibility = View.VISIBLE
                 }else if(currentPosition >= 10*1000){
-                    warmText.visibility = View.GONE
+                    //隐藏提示
+                    warmText.visibility = View.VISIBLE
                     if(currentPosition >= 6 * 60 * 1000){
                         isNeedPay = true
                         detailPlayer?.onVideoPause()
@@ -129,22 +121,27 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
                 }
             }
         }
+
+        GSYVideoManager.instance().setPlayerInitSuccessListener { _, _ ->
+            GSYVideoManager.instance().isNeedMute = false
+        }
     }
 
     private fun initSpan(){
         if(videoDetailBean?.isNeedPay == 1){
+            warmText.onClick { toBuyMovie() }
             bugVideoBtn.text = "${videoDetailBean?.price}元购买本片"
-            var spannableString = SpannableStringBuilder()
-            spannableString.append("试看6分钟，可购买本片")
-            var clickableSpan = object : ClickableSpan(){
-                override fun onClick(p0: View) {
-                    toBuyMovie()
-                }
-
-            }
-            spannableString.setSpan(clickableSpan,7,11,Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
-            warmText.text = spannableString
-            warmText.movementMethod = LinkMovementMethod.getInstance()
+//            var spannableString = SpannableStringBuilder()
+//            spannableString.append("试看6分钟，可购买本片")
+//            var clickableSpan = object : ClickableSpan(){
+//                override fun onClick(p0: View) {
+//                    toBuyMovie()
+//                }
+//
+//            }
+//            spannableString.setSpan(clickableSpan,7,11,Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
+//            warmText.text = spannableString
+//            warmText.movementMethod = LinkMovementMethod.getInstance()
         }else{
             warmText.visibility = View.GONE
             isNeedPay = false
@@ -172,6 +169,7 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
 //            videoRecordBean.currentPosition = currentPosition
 //            videoRecordBean.saveOrUpdate("videoId = ${videoRecordBean.videoId}")
 //        }
+        TCApplication.isRelease = true
         GSYVideoManager.releaseAllVideos()
     }
 
@@ -190,6 +188,10 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
 
 
     private fun initViews(){
+        detailPlayer.titleTextView.visibility = View.GONE
+        detailPlayer.backButton.visibility = View.GONE
+        detailPlayer.backButton.onClick { finish() }
+        backView.onClick { finish() }
         bugVideoBtn.onClick {
             toBuyMovie()
         }
@@ -215,7 +217,8 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
             }
         }
         pubCommentBtn.onClick {
-            CommentDialog.onCreateDialog(this@VideoDetailActivity,object : CommentDialog.PublishCommentListener{
+            isReply = false
+            CommentDialog.onCreateDialog(this@VideoDetailActivity,"",object : CommentDialog.PublishCommentListener{
                 override fun publish(commentContent: String) {
                     publishComment(commentContent)
                 }
@@ -231,7 +234,7 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
     private fun initRv(videoDetailBean: VideoDetailBean){
         initSpan()
         imagePath = "${Constant.IMAGE_BASE}/${videoDetailBean?.imgPath}"
-        movieTitleView.text = videoDetailBean?.name
+        movieTitleView.text = videoDetailBean?.title
         videoDescView.text = videoDetailBean?.desc
         checkMoreView.onClick {
             videoDescView.maxLines = 10
@@ -274,21 +277,42 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
         var layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recommendRv.layoutManager = layoutManager
-        commentAdapter = CommentListAdapter(R.layout.recommend_item_layout, arrayListOf())
+        commentAdapter = CommentListAdapter(R.layout.video_recommend_item_layout, arrayListOf())
         recommendRv.adapter = commentAdapter
-        commentAdapter?.addChildClickViewIds(R.id.isLikeContain)
-        commentAdapter?.setOnItemChildClickListener { _, _, position ->
-            var commentBean = commentAdapter!!.data[position]
-            if(commentBean.isLike == null){
-                likeComment(commentBean.commentId)
-                commentAdapter!!.data[position].isLike = "1"
-                commentAdapter!!.data[position].likes++
-            }else{
-                unLikeComment(commentBean.commentId)
-                commentAdapter!!.data[position].isLike = null
-                commentAdapter!!.data[position].likes--
+        commentAdapter?.addChildClickViewIds(R.id.isLikeContain,R.id.replyBtn)
+        commentAdapter?.setOnItemChildClickListener { _, view, position ->
+            when(view.id){
+                R.id.isLikeContain ->{
+                    var commentBean = commentAdapter!!.data[position]
+                    if(commentBean.isLike == null){
+                        likeComment(commentBean.commentId)
+                        commentAdapter!!.data[position].isLike = "1"
+                        commentAdapter!!.data[position].likes++
+                    }else{
+                        unLikeComment(commentBean.commentId)
+                        commentAdapter!!.data[position].isLike = null
+                        commentAdapter!!.data[position].likes--
+                    }
+                    commentAdapter?.notifyItemChanged(position)
+                }
+                R.id.replyBtn ->{
+                    isReply = true
+                    var commentBean = commentAdapter!!.data[position]
+                    CommentDialog.onCreateDialog(this@VideoDetailActivity, "回复@" + commentBean.nickname,object : CommentDialog.PublishCommentListener{
+                        override fun publish(commentContent: String) {
+                            if(isReply){
+                                //如果是回复
+                                replyComment(commentContent,commentBean.commentId,commentBean.userId)
+                            }else{
+                                //如果是发表评论
+                                publishComment(commentContent)
+                            }
+                        }
+
+                    })
+                }
             }
-            commentAdapter?.notifyItemChanged(position)
+
         }
     }
 
@@ -393,7 +417,7 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
                 override fun onSuccess(response: Response<BaseResponse<CreateOrderResult>>?) {
                     if(response?.body()?.res == 0){
                         PayConfirmDialog.onCreateDialog(this@VideoDetailActivity,
-                                response.body()?.data?.totalMoney!!,videoDetailBean!!.name,
+                                response.body()?.data?.totalMoney!!,videoDetailBean!!.title,
                                 object : PayConfirmDialog.PayConfirmListener{
                                     override fun isNeedPay(isUpdate: Boolean, dialog: Dialog) {
                                         if(isUpdate){
@@ -442,7 +466,7 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
                 .execute(object : JsonCallBack<BaseResponse<String>>(){
                     override fun onSuccess(response: Response<BaseResponse<String>>?) {
                         if(response?.body()?.res == 0){
-                            videoDetailBean?.isLike = "1"
+                            videoDetailBean?.isLike = null
                             likeBtn.setImageResource(R.mipmap.dianzan)
                         }
                     }
@@ -635,6 +659,29 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
                             collectBtn.setImageResource(R.mipmap.shoucang)
                         }else{
 
+                        }
+                    }
+
+                })
+    }
+    /**
+     * 回复评论
+     */
+    private fun replyComment(content:String,commentId:Int,replyId:Int){
+        var params = HttpParams()
+        params.put("content",content)
+        params.put("videoId",videoDetailBean!!.videoId)
+        params.put("type",2)
+        params.put("commentId",commentId)
+        params.put("replyId",replyId)
+        OkGo.post<BaseResponse<String>>(Constant.VIDEO_COMMENT)
+                .params(params)
+                .execute(object : JsonCallBack<BaseResponse<String>>(){
+                    override fun onSuccess(response: Response<BaseResponse<String>>?) {
+                        if(response?.body()?.res == 0){
+                            getCommentList(videoDetailBean!!.videoId)
+                        }else{
+                            toast(response?.body()?.msg.toString())
                         }
                     }
 

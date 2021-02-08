@@ -102,7 +102,7 @@ public class TCCOSNetworkCredentialProvider extends BasicLifecycleCredentialProv
             e.printStackTrace();
         }
         if (!TextUtils.isEmpty(signKey) && !TextUtils.isEmpty(keyTime))
-            return new BasicQCloudCredentials(this.secretId, signKey, keyTime);
+            return new BasicQCloudCredentials(this.secretId, "",signKey, keyTime);
         else
             return null;
     }

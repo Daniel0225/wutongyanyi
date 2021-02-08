@@ -123,17 +123,16 @@ class LoginActivity : BaseActivity() {
                     LoadingBar.dialog(mContext).cancel()
                     if(response?.body()?.res == 0){
                         toast("登陆成功")
+                        var loginInfo = response.body().data
                         MMKV.defaultMMKV().encode("loginName",loginName)
-                        TCApplication.token = response.body()?.data!!.token
                         TCApplication.isLogin = true
-                        TCApplication.userId = response.body()?.data!!.userId
-                        MMKV.defaultMMKV().encode("token",TCApplication.token)
+                        TCApplication.loginInfo = loginInfo
+                        MMKV.defaultMMKV().encode("token",loginInfo.token)
+                        MMKV.defaultMMKV().encode("loginInfo",FastJsonUtil.createJsonString(loginInfo))
                         val headers = HttpHeaders()
-                        headers.put("token", TCApplication.token)
+                        headers.put("token", loginInfo.token)
                         OkGo.getInstance().addCommonHeaders(headers)
                         getAppId(response.body().data!!)
-//                        setResult(Activity.RESULT_OK)
-//                        EventBus.getDefault().post(LoginEvent())
                         startActivity<TCMainActivity>()
                         finish()
                     }else{
@@ -169,13 +168,11 @@ class LoginActivity : BaseActivity() {
         if (mContext == null) return
         val loginInfo = LoginInfo()
         loginInfo.sdkAppID = apPidResponse.sdkAppID.toLong()
-        loginInfo.sdkAppID = TCGlobalConfig.SDKAPPID.toLong()
         loginInfo.userID = loginResponse.userId
         loginInfo.userSig = apPidResponse.userSig
         val userName: String = loginResponse.nickname
         loginInfo.userName = if (!TextUtils.isEmpty(userName)) userName else loginResponse.userId
-        loginInfo.userAvatar = loginResponse.avatar
-        MMKV.defaultMMKV().encode("MLVB",FastJsonUtil.createJsonString(loginInfo))
+        loginInfo.userAvatar = Constant.IMAGE_BASE+loginResponse.avatar
         var mlvbLiveRoomImpl = MLVBLiveRoomImpl.sharedInstance(this)
         mlvbLiveRoomImpl.initMlvb(loginInfo)
     }

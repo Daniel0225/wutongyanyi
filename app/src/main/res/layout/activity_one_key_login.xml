@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112.5dp"
+        android:src="@mipmap/logo"
+        android:visibility="gone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/appNameView"
+        android:visibility="gone"
+        android:layout_below="@+id/logoView"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生活需要艺术！"
+        android:textColor="#ff8d95a8"
+        android:textSize="9sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/currentMobile"
+        android:layout_marginTop="67dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="188****0909"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:textColor="#ff999999"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_below="@+id/currentMobile"
+        android:layout_marginTop="25dp"
+        android:text="本机号码一键登录"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_btn"
+        android:layout_width="245dp"
+        android:layout_height="44dp"/>
+
+    <TextView
+        android:id="@+id/toLoginSecond"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginTop="15dp"
+        android:text="账号密码登录"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/xuanze"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录即同意"
+            android:textColor="#ff9a9a9a"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户服务协议》"
+            android:textColor="#ff386ef6"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="#ff9a9a9a"
+            android:textSize="11sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策》"
+            android:textColor="#ff386ef6"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

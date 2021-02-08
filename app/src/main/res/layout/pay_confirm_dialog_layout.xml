@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
-    android:background="#FFFFFF"
+    android:background="@drawable/bg_white_radius"
     android:layout_width="345dp"
     android:layout_height="wrap_content">
 
@@ -71,8 +71,7 @@
         android:drawablePadding="10dp"
         android:layout_marginStart="30dp"
         android:background="@null"
-        android:checked="true"
-        android:layout_below="@+id/line2"
+        android:layout_below="@+id/line3"
         android:button="@drawable/invoice_selector"
         android:layoutDirection="rtl"
         android:text="微信支付"
@@ -80,7 +79,7 @@
         android:textSize="14sp" />
     <View
         android:id="@+id/line3"
-        android:layout_below="@id/weixinPay"
+        android:layout_below="@id/aliPay"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
@@ -89,11 +88,12 @@
         android:layout_height="1px"/>
     <CheckBox
         android:id="@+id/aliPay"
-        android:layout_below="@+id/line3"
+        android:layout_below="@+id/line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
+        android:checked="true"
         android:drawableEnd="@mipmap/zhifubao"
         android:drawablePadding="10dp"
         android:layout_marginStart="30dp"
@@ -105,7 +105,7 @@
         android:textSize="14sp" />
     <View
         android:id="@+id/line4"
-        android:layout_below="@id/aliPay"
+        android:layout_below="@id/weixinPay"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"

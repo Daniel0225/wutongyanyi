@@ -172,6 +172,11 @@ class ApplyShowActivity : BaseActivity() {
             Boxing.of(config).withIntent(this@ApplyShowActivity, BoxingActivity::class.java)
                     .start(this@ApplyShowActivity, 200)
         }
+
+        addCustomBtn.onClick {
+            var intent = Intent(this@ApplyShowActivity,CustomTagActivity::class.java)
+            startActivityForResult(intent,2000)
+        }
     }
 
     override fun initData() {
@@ -180,7 +185,7 @@ class ApplyShowActivity : BaseActivity() {
         getTag()
     }
 
-    fun getUirData(list : List<String>) : ArrayList<ImageMedia>{
+    private fun getUirData(list : List<String>) : ArrayList<ImageMedia>{
         var uriDataList = arrayListOf<ImageMedia>()
         for (item in list){
             if(item != "empty"){
@@ -195,9 +200,22 @@ class ApplyShowActivity : BaseActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == RESULT_OK){
-            var medias = Boxing.getResult(data)
-            if(medias != null){
-                lubanImage(medias)
+            when(requestCode){
+                200 ->{
+                    var medias = Boxing.getResult(data)
+                    if(medias != null){
+                        lubanImage(medias)
+                    }
+                }
+                2000 ->{
+                    var tagName = data?.getStringExtra("tagName")
+                    var tagBean = TagBean()
+                    tagBean.name = tagName
+                    tagBean.tagId = 0
+                    tagBean.isChecked = true
+                    tags.add(tagBean)
+                    tagAdapter?.notifyDataSetChanged()
+                }
             }
         }
     }
@@ -264,7 +282,7 @@ class ApplyShowActivity : BaseActivity() {
 
     //压缩图片 并且上传
     private fun lubanImage(medias : ArrayList<BaseMedia>){
-        LoadingBar.dialog(mContext).extras(arrayOf("正在登录")).show()
+        LoadingBar.dialog(mContext).extras(arrayOf("正在上传")).show()
         for(i in medias.indices){
             Luban.with(mContext).load(medias[i].path).ignoreBy(100).setTargetDir(FileUtils.getCachePath(this))
                     .filter {  !(TextUtils.isEmpty(it) || it.toLowerCase().endsWith(".gif")) }

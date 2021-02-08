@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:src="@mipmap/splash_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/jumpBtn"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.yiheoline.qcloud.xiaozhibo.widgets.RotatingSkip
+            app:circleColor="#999999"
+            app:angleOffset="2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <ImageView
+            android:src="@mipmap/splash_circle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

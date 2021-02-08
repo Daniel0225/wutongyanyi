@@ -24,11 +24,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.HttpParams;
 import com.lzy.okgo.model.Response;
 import com.yiheoline.liteav.demo.lvb.liveroom.IMLVBLiveRoomListener;
 import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
+import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoomImpl;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
@@ -37,6 +39,7 @@ import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
 import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
+import com.yiheoline.qcloud.xiaozhibo.bean.GiftBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.StartPlayBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.UpPlayInfoBean;
@@ -70,6 +73,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import master.flame.danmaku.controller.IDanmakuView;
+
 
 /**
  * Module:   TCBaseAnchorActivity
@@ -115,7 +119,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     private BroadcastTimerTask              mBroadcastTimerTask;    // 定时任务
     protected long                          mSecond = 0;            // 开播的时间，单位为秒
     private long                            mStartPushPts;          // 开始直播的时间，用于 ELK 上报统计。 您可以不关注
-    private int noticeId = 0;
+    private int noticeId = 0;//预告id
     private RewardLayout rewardLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,7 +199,8 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
                 // 初始化数据
                 giftNum.setText("x" + bean.getTheSendGiftSize());
                 bean.setTheGiftCount(bean.getTheSendGiftSize());
-                giftImage.setImageResource(bean.getGiftImg());
+//                giftImage.setImageResource(bean.getGiftImg());
+                Glide.with(TCBaseAnchorActivity.this).load(bean.getGiftImg()).into(giftImage);
                 userName.setText(bean.getUserName());
                 giftName.setText("送出 " + bean.getGiftName());
                 return view;
@@ -209,7 +214,8 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
                 int showNum = (Integer) o.getTheGiftCount() + o.getTheSendGiftSize();
                 // 刷新已存在的giftview界面数据
                 giftNum.setText("x" + showNum);
-                giftImage.setImageResource(o.getGiftImg());
+//                giftImage.setImageResource(o.getGiftImg());
+                Glide.with(TCBaseAnchorActivity.this).load(o.getGiftImg()).into(giftImage);
                 // 数字刷新动画
                 new NumAnim().start(giftNum);
                 // 更新累计礼物数量
@@ -379,33 +385,61 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
 
     /**
      * 创建直播间成功
+     * 演出直播
      */
     protected void onCreateRoomSuccess(String roomId) {
-        startTimer();
-        // 填写了后台服务器地址
-//        if (!TextUtils.isEmpty(TCGlobalConfig.APP_SVR_URL)) {
-//            try {
-//                JSONObject body = new JSONObject().put("userId", mUserId)
-//                        .put("title", mTitle)
-//                        .put("frontCover", mCoverPicUrl)
-//                        .put("location", mLocation);
-//                TCHTTPMgr.getInstance().requestWithSign(TCGlobalConfig.APP_SVR_URL + "/room/upload", body, null);
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
-//        }
+        if(getIntent().hasExtra(TCConstants.NOTICE_ID)){
+            startShow(roomId);
+        }else{
+            startShowSingle(roomId);
+        }
+    }
+
+    /**
+     * 直播开始接口
+     * 演出直播
+     */
+    private void startShow(String roomId){
         StartPlayBean startPlayBean = new StartPlayBean();
         startPlayBean.setNoticeId(noticeId);
         startPlayBean.setRoomId(roomId);
+        startPlayBean.setTitle(mTitle);
         OkGo.<BaseResponse<Integer>>post(Constant.START_LIVE)
                 .upJson(FastJsonUtil.createJsonString(startPlayBean))
                 .execute(new JsonCallBack<BaseResponse<Integer>>() {
                     @Override
                     public void onSuccess(Response<BaseResponse<Integer>> response) {
                         if(response.body().getRes() == 0){
+                            startTimer();
                             TCApplication.Companion.setCurrentPlayId(response.body().data);
                         }else{
+                            Toast.makeText(TCBaseAnchorActivity.this, "服务器出错", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                    }
+                });
+    }
 
+    /**
+     * 直播开始
+     * 艺人直播
+     */
+    private void startShowSingle(String roomId){
+        StartPlayBean startPlayBean = new StartPlayBean();
+        startPlayBean.setCover(mCoverPicUrl);
+        startPlayBean.setTitle(mTitle);
+        startPlayBean.setRoomId(roomId);
+        OkGo.<BaseResponse<Integer>>post(Constant.ARTIST_START)
+                .upJson(FastJsonUtil.createJsonString(startPlayBean))
+                .execute(new JsonCallBack<BaseResponse<Integer>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<Integer>> response) {
+                        if(response.body().getRes() == 0){
+                            startTimer();
+                            TCApplication.Companion.setCurrentPlayId(response.body().data);
+                        }else{
+                            Toast.makeText(TCBaseAnchorActivity.this, "服务器出错", Toast.LENGTH_SHORT).show();
+                            finish();
                         }
                     }
                 });
@@ -503,7 +537,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
                 handleDanmuMsg(userInfo, message);
                 break;
             case TCConstants.IMCMD_GIFT:
-                handleGiftMsg(userInfo);
+                handleGiftMsg(userInfo,message);
                 break;
             default:
                 break;
@@ -559,6 +593,8 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     protected void handleMemberJoinMsg(TCSimpleUserInfo userInfo) {
         mTotalMemberCount++;
         mCurrentMemberCount++;
+        ((MLVBLiveRoomImpl)mLiveRoom).setTotalMemberCount(mTotalMemberCount);
+        ((MLVBLiveRoomImpl)mLiveRoom).setCurrentMemberCount(mCurrentMemberCount);
         TCChatEntity entity = new TCChatEntity();
         entity.setSenderName("通知");
         if (TextUtils.isEmpty(userInfo.nickname))
@@ -579,7 +615,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
             mCurrentMemberCount--;
         else
             Log.d(TAG, "接受多次退出请求，目前人数为负数");
-
+        ((MLVBLiveRoomImpl)mLiveRoom).setCurrentMemberCount(mCurrentMemberCount);
         TCChatEntity entity = new TCChatEntity();
         entity.setSenderName("通知");
         if (TextUtils.isEmpty(userInfo.nickname))
@@ -605,7 +641,7 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
 
         mHeartLayout.addFavor();
         mHeartCount++;
-
+        ((MLVBLiveRoomImpl)mLiveRoom).setHeartCount(mHeartCount);
         //todo：修改显示类型
         entity.setType(TCConstants.PRAISE);
         notifyMsg(entity);
@@ -614,16 +650,17 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     /**
      * 收到礼物消息
      */
-    public void handleGiftMsg(TCSimpleUserInfo userInfo){
+    public void handleGiftMsg(TCSimpleUserInfo userInfo,String message){
         String nickName = "";
         if (TextUtils.isEmpty(userInfo.nickname))
             nickName = userInfo.userid ;
         else
             nickName = userInfo.nickname;
 
-
-        SendGiftBean giftBean = new SendGiftBean(1,1,nickName,"火箭",R.mipmap.hj,2700);
-        rewardLayout.put(giftBean);
+        GiftBean giftBean = FastJsonUtil.getObject(message,GiftBean.class);
+        SendGiftBean sendGiftBean = new SendGiftBean(Integer.parseInt(userInfo.userid),giftBean.getId(),nickName,
+                giftBean.getName(),Constant.IMAGE_BASE+giftBean.getGiftLogo(),2700);
+        rewardLayout.put(sendGiftBean);
     }
 
     /**
@@ -756,7 +793,11 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
         args.putString("time", TCUtils.formattedTime(mSecond));
         args.putString("heartCount", String.format(Locale.CHINA, "%d", mHeartCount));
         args.putString("totalMemberCount", String.format(Locale.CHINA, "%d", mTotalMemberCount));
-        upLoadPlayInfo(mHeartCount,mTotalMemberCount);
+        if(getIntent().hasExtra(TCConstants.NOTICE_ID)){
+            upLoadPlayInfo(mHeartCount,mTotalMemberCount);
+        }else{
+            upLoadPlayInfoSingle();
+        }
         dialogFragment.setArguments(args);
         dialogFragment.setCancelable(false);
         if (dialogFragment.isAdded())
@@ -766,7 +807,8 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
     }
 
     /**
-     * 上报直播信息
+     * 直播结束 上报直播信息
+     * 剧场
      */
     private void upLoadPlayInfo(long likeCount,long totalCount){
         UpPlayInfoBean upPlayInfoBean = new UpPlayInfoBean();
@@ -783,7 +825,25 @@ public class TCBaseAnchorActivity extends Activity implements IMLVBLiveRoomListe
                     }
                 });
     }
+    /**
+     * 直播结束 上报直播信息
+     * 艺人直播
+     */
+    private void upLoadPlayInfoSingle(){
+        UpPlayInfoBean upPlayInfoBean = new UpPlayInfoBean();
+        upPlayInfoBean.setLikeCount(mHeartCount);
+        upPlayInfoBean.setWatchCount(mTotalMemberCount);
+        upPlayInfoBean.setArtistLiveId(TCApplication.Companion.getCurrentPlayId());
+        upPlayInfoBean.setTheaterLiveId(TCApplication.Companion.getCurrentPlayId());
+        OkGo.<BaseResponse<String>>put(Constant.ARTIST_FINISH)
+                .upJson(FastJsonUtil.createJsonString(upPlayInfoBean))
+                .execute(new JsonCallBack<BaseResponse<String>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<String>> response) {
 
+                    }
+                });
+    }
     /**
      * 显示确认消息
      *

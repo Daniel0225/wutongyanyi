@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gif_name">
+        <item>night.gif</item>
+        <item>sunset.gif</item>
+        <item>test.gif</item>
+        <item>watermark.gif</item>
+    </string-array>
+    <string-array name="banner_url">
+        <item>https://www.qiniu.com/products/plsv</item>
+        <item>https://mp.weixin.qq.com/s?__biz=MjM5NzAwNDI4Mg==&amp;mid=2652197155&amp;idx=1&amp;sn=5b98396dea26d50d05bc7c496aaaca76&amp;chksm=bd0167b68a76eea0e83d973eba38cc820abe54497de2c996bcb629b8cb9e524125fc0c088da4&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1573799071092&amp;sharer_shareid=075391af76ee582c2f3d042327abb408&amp;rd2werd=1#wechat_redirect</item>
+    </string-array>
+
+    <string-array name="workTypes">
+        <item>影视/娱乐</item>
+        <item>文化/艺术</item>
+        <item>金融/投资</item>
+        <item>IT/互联网</item>
+        <item>医药/健康</item>
+        <item>健身/美容</item>
+        <item>媒体/公关</item>
+        <item>商业/零售</item>
+        <item>工业/制造业</item>
+        <item>教育/科研</item>
+        <item>自由职业者</item>
+        <item>模特</item>
+        <item>学生</item>
+    </string-array>
+
+    <string-array name="heights">
+        <item>155cm</item>
+        <item>156cm</item>
+        <item>157cm</item>
+        <item>158cm</item>
+        <item>159cm</item>
+        <item>160cm</item>
+        <item>161cm</item>
+        <item>162cm</item>
+        <item>163cm</item>
+        <item>164cm</item>
+        <item>165cm</item>
+        <item>166cm</item>
+        <item>167cm</item>
+        <item>168cm</item>
+        <item>169cm</item>
+        <item>170cm</item>
+        <item>171cm</item>
+        <item>172cm</item>
+        <item>173cm</item>
+        <item>174cm</item>
+        <item>175cm</item>
+        <item>176cm</item>
+        <item>177cm</item>
+        <item>178cm</item>
+        <item>179cm</item>
+        <item>180cm</item>
+        <item>181cm</item>
+        <item>182cm</item>
+        <item>183cm</item>
+        <item>184cm</item>
+        <item>185cm</item>
+        <item>186cm</item>
+        <item>187cm</item>
+    </string-array>
+
+    <string-array name="weights">
+        <item>40kg</item>
+        <item>41kg</item>
+        <item>42kg</item>
+        <item>43kg</item>
+        <item>44kg</item>
+        <item>45kg</item>
+        <item>46kg</item>
+        <item>47kg</item>
+        <item>48kg</item>
+        <item>49kg</item>
+        <item>50kg</item>
+        <item>51kg</item>
+        <item>52kg</item>
+        <item>53kg</item>
+        <item>54kg</item>
+        <item>55kg</item>
+        <item>56kg</item>
+        <item>57kg</item>
+        <item>58kg</item>
+        <item>59kg</item>
+        <item>60kg</item>
+        <item>61kg</item>
+        <item>62kg</item>
+        <item>63kg</item>
+        <item>64kg</item>
+        <item>65kg</item>
+        <item>66kg</item>
+        <item>67kg</item>
+        <item>68kg</item>
+        <item>69kg</item>
+        <item>70kg</item>
+        <item>71kg</item>
+        <item>72kg</item>
+        <item>73kg</item>
+        <item>74kg</item>
+        <item>75kg</item>
+    </string-array>
+</resources>

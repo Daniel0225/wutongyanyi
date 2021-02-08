@@ -40,6 +40,11 @@ public class TimeUtil {
         SimpleDateFormat format = new SimpleDateFormat("MM月dd");
         return format.format(new Date(time));
     }
+    @SuppressLint("SimpleDateFormat")
+    public static String getMonthAndDay2(long time) {
+        SimpleDateFormat format = new SimpleDateFormat("MM/dd日");
+        return format.format(new Date(time));
+    }
 
     @SuppressLint("SimpleDateFormat")
     public static String getDateFormat(long time) {
@@ -55,7 +60,7 @@ public class TimeUtil {
 
     @SuppressLint("SimpleDateFormat")
     public static String getMonthAndDayWithHour(long time) {
-        SimpleDateFormat format = new SimpleDateFormat("MM-dd HH:mm");
+        SimpleDateFormat format = new SimpleDateFormat("MM月dd日 HH:mm");
         return format.format(new Date(time));
     }
 
@@ -194,12 +199,12 @@ public class TimeUtil {
     }
 
     /**
-     * 判断菜盒日期是否是当前前一天
+     * 判断是否是明日
      */
-    public static boolean isBeforeDay(String dayString){
+    public static boolean isBeforeDay(long millis){
         long dayMillis = 24 * 60 * 60 * 1000;
-        String currentDay = getYearMonthAndDay(System.currentTimeMillis() - dayMillis);
-        dayString = dayString.replace("/","-");
+        String currentDay = getYearMonthAndDay(System.currentTimeMillis() + dayMillis);
+        String dayString = getYearMonthAndDay(millis);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd",Locale.getDefault());
         try {
             Date date = simpleDateFormat.parse(dayString);

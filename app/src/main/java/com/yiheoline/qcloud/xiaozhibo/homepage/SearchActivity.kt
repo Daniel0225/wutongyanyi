@@ -49,7 +49,7 @@ class SearchActivity : BaseActivity() {
         searchAdapter = SearchAdapter(R.layout.search_item_layout, arrayListOf())
         recyclerView.adapter = searchAdapter
         searchAdapter?.setOnItemClickListener { _, _, position ->
-            startActivity<NoticeDetailActivity>("noticeBean" to searchAdapter!!.data[position])
+            startActivity<NoticeDetailActivity>("noticeId" to searchAdapter!!.data[position].noticeId.toString())
         }
 
         keyWordsInputView.addTextChangedListener(object : TextWatcher{

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="45dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headerView"
+        android:scaleType="centerCrop"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杨丽萍"
+        android:layout_toEndOf="@+id/headerView"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/likeBtn"
+        android:src="@mipmap/weiguanzhu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

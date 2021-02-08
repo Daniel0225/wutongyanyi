@@ -9,6 +9,15 @@ public class VideoChoiceResponse {
     private List<AdBean> advertList;
     private List<VideoBean> hotList;
     private List<VideoBean> latelyList;
+    private List<VideoBean> freeList;
+
+    public List<VideoBean> getFreeList() {
+        return freeList;
+    }
+
+    public void setFreeList(List<VideoBean> freeList) {
+        this.freeList = freeList;
+    }
 
     public List<AdBean> getAdvertList() {
         return advertList;

@@ -125,22 +125,32 @@
         android:layout_height="220dp"
         android:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/backView"
+        android:src="@mipmap/back2"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/warmText"
-        android:text="试看6分钟"
+        android:text="试看中，购买观看完整版"
         android:textColor="#ffffff"
-        android:textSize="12sp"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:visibility="visible"
+        android:background="@drawable/bg_black"
         android:layout_marginTop="170dp"
         android:layout_marginStart="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="25dp"/>
     <RelativeLayout
         android:id="@+id/finishContain"
         android:layout_width="match_parent"
         android:visibility="gone"
         android:background="#55333333"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_height="180dp">
         <TextView
             android:id="@+id/finishText"
@@ -157,7 +167,6 @@
             android:layout_below="@id/finishText"
             android:layout_width="140dp"
             android:layout_height="30dp"
-            android:text="5元购买"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:textColor="#ffffffff"
@@ -186,16 +195,18 @@
             android:id="@+id/collectBtn"
             android:src="@mipmap/shoucang"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
             android:id="@+id/likeBtn"
             android:src="@mipmap/dianzan"
             android:layout_toStartOf="@+id/collectBtn"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="13dp"
+            android:paddingStart="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
@@ -203,7 +214,7 @@
             android:layout_toStartOf="@+id/likeBtn"
             android:layout_marginTop="10dp"
             android:drawableTop="@mipmap/play_num"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="13dp"
             android:drawablePadding="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -217,7 +228,7 @@
             android:layout_toStartOf="@+id/playNumView"
             android:layout_marginTop="10dp"
             android:drawableTop="@mipmap/recommend"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="26dp"
             android:gravity="center"
             android:drawablePadding="2dp"
             android:layout_width="wrap_content"

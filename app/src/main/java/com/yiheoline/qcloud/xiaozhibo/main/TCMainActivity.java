@@ -1,6 +1,8 @@
 package com.yiheoline.qcloud.xiaozhibo.main;
 
 import android.Manifest;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -21,16 +23,17 @@ import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoom;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
+import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
 import com.yiheoline.qcloud.xiaozhibo.homepage.HomePageFragment;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
-import com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.TCVideoListFragment;
-import com.yiheoline.qcloud.xiaozhibo.profile.TCUserInfoFragment;
+import com.yiheoline.qcloud.xiaozhibo.profile.ProfileFragment;
 import com.yiheoline.qcloud.xiaozhibo.show.ShowFragment;
-import com.yiheoline.qcloud.xiaozhibo.utils.StatusBarUtil;
 import com.yiheoline.qcloud.xiaozhibo.video.VideoFragment;
 import com.yiheoline.qcloud.xiaozhibo.widgets.NoAnimationViewPager;
 import com.yiheonline.qcloud.xiaozhibo.R;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,28 +44,22 @@ import java.util.List;
  *  Function: 主界面：直播列表、回放列表、个人信息页
  *
  */
-public class TCMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class TCMainActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = TCMainActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
     private NoAnimationViewPager viewPager;
     private List<Fragment> fragments = new ArrayList();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+    protected void initView() {
+        super.initView();
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottomNavigationView);
         viewPager = (NoAnimationViewPager)findViewById(R.id.viewPager);
         initViews();
 
-
-        StatusBarUtil.setRootViewFitsSystemWindows(this,true);
-        StatusBarUtil.setTranslucentStatus(this);
-
         if (Build.VERSION.SDK_INT >= 23) {
             int REQUEST_CODE_CONTACT = 101;
-            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
+            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA};
             //验证是否许可权限
             for (String str : permissions) {
                 if (this.checkSelfPermission(str) != PackageManager.PERMISSION_GRANTED) {
@@ -89,7 +86,7 @@ public class TCMainActivity extends AppCompatActivity implements BottomNavigatio
         fragments.add(HomePageFragment.newInstance("1","2"));
         fragments.add(VideoFragment.newInstance("1","2"));
         fragments.add(ShowFragment.newInstance("1","2"));
-        fragments.add(new TCUserInfoFragment());
+        fragments.add(new ProfileFragment());
         viewPager.setAdapter(new ViewPageAdapter(getSupportFragmentManager()));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener(){
 
@@ -108,6 +105,17 @@ public class TCMainActivity extends AppCompatActivity implements BottomNavigatio
 
             }
         });
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @NotNull
+    @Override
+    public String getLoggerTag() {
+        return null;
     }
 
     class ViewPageAdapter extends FragmentPagerAdapter {
@@ -234,4 +242,5 @@ public class TCMainActivity extends AppCompatActivity implements BottomNavigatio
         }
         return false;
     }
+
 }

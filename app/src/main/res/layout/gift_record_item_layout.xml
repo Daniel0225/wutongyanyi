@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.RoundImageView
+        android:id="@+id/headerView"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_btn"
+        android:layout_centerVertical="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_alignTop="@id/headerView"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杨丽萍"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-12-31"
+        android:layout_toEndOf="@+id/headerView"
+        android:layout_below="@+id/nameView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/showNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三生三世"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/nameView"
+        android:textColor="#ff999999"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/typeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赠送"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/showNameView"
+        android:layout_marginTop="3dp"
+        android:textColor="#fffd8318"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

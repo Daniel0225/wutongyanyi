@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.util.Log
 import com.alipay.sdk.app.PayTask
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
@@ -17,6 +18,7 @@ import com.yiheoline.qcloud.xiaozhibo.bean.PayResult
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeDetailBean
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
+import com.yiheoline.qcloud.xiaozhibo.utils.GlideRoundTransform
 import com.yiheoline.qcloud.xiaozhibo.utils.TimeUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_confirm_order.*
@@ -46,7 +48,9 @@ class ConfirmOrderActivity : BaseActivity() {
         noticeTitleView.text = noticeDetailBean?.title
         dateView.text = TimeUtil.getYearMonthAndDayWithHour(noticeDetailBean!!.liveTime.toLong())
         priceView.text = noticeDetailBean?.price.toString()
-        Glide.with(this).load(Constant.IMAGE_BASE+noticeDetailBean?.cover).into(coverImage)
+        Glide.with(this).load(Constant.IMAGE_BASE+noticeDetailBean?.cover)
+                .transform(CenterCrop(this), GlideRoundTransform(this,5))
+                .into(coverImage)
     }
 
     override fun initListener() {

@@ -3,15 +3,14 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_marginTop="20dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
+    android:layout_marginBottom="15dp"
     android:layout_height="wrap_content">
     <com.yiheoline.qcloud.xiaozhibo.utils.AutoAdjustHeightImageView
         android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher"
         android:scaleType="centerCrop"
-        app:aspectRatio="0.8"
+        app:aspectRatio="1.6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -19,18 +18,17 @@
         android:id="@+id/titleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="国家话剧院-《四世同堂》"
         android:textColor="#ff333333"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:layout_marginTop="10dp"
         />
     <TextView
         android:id="@+id/descView"
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="老戏骨隐退作品"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:textColor="#ff999999"
-        android:textSize="12sp"
+        android:textSize="10sp"
         />
 </LinearLayout>

@@ -14,7 +14,16 @@ public class ShowNoticeDetailBean implements Serializable {
     private double price;
     private String cover;
     private int liveState;
-    private int isIntent;
+    private String isIntent;
+    private int isNeedPay;//是否需要付费, 0:不需要 1:需要付费
+
+    public int getIsNeedPay() {
+        return isNeedPay;
+    }
+
+    public void setIsNeedPay(int isNeedPay) {
+        this.isNeedPay = isNeedPay;
+    }
 
     public int getLiveState() {
         return liveState;
@@ -24,11 +33,11 @@ public class ShowNoticeDetailBean implements Serializable {
         this.liveState = liveState;
     }
 
-    public int getIsIntent() {
+    public String getIsIntent() {
         return isIntent;
     }
 
-    public void setIsIntent(int isIntent) {
+    public void setIsIntent(String isIntent) {
         this.isIntent = isIntent;
     }
 

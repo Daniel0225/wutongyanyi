@@ -4,10 +4,10 @@
     android:padding="15dp"
     android:layout_height="wrap_content">
 
-    <com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.RoundImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/headerView"
-        android:src="@mipmap/ic_launcher"
         android:layout_width="30dp"
+        android:scaleType="centerCrop"
         android:layout_marginEnd="10dp"
         android:layout_height="30dp"/>
 

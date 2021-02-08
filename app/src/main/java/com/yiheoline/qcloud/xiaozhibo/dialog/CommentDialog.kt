@@ -13,6 +13,7 @@ object CommentDialog {
     var publishCommentListener : PublishCommentListener? = null
     fun onCreateDialog(
         context: Context,
+        hintText:String,
         publishCommentListener : PublishCommentListener
     ) {
         this.publishCommentListener = publishCommentListener
@@ -28,9 +29,12 @@ object CommentDialog {
         mDialogWindow.setGravity(Gravity.BOTTOM)
         mDialogWindow.setAttributes(lp)
         mDialogWindow.setWindowAnimations(R.style.BottomAnimation)
-
+        var inputView = dialog.findViewById<EditText>(R.id.commentInputView)
+        if(hintText.isNotEmpty()){
+            inputView.hint = hintText
+        }
         dialog.findViewById<RelativeLayout>(R.id.publishBtn).onClick {
-            var inputView = dialog.findViewById<EditText>(R.id.commentInputView)
+
             var content = inputView.text.toString()
             if(content.isEmpty()){
                 Toast.makeText(context, "评论不能为空", Toast.LENGTH_SHORT).show()

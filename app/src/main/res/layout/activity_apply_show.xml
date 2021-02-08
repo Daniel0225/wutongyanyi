@@ -1,314 +1,333 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <include layout="@layout/toolbar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <include layout="@layout/toolbar_layout"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="上传封面海报"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#ff333333"
-            android:textSize="14sp"
-            />
 
-        <RelativeLayout
-            android:id="@+id/addCover"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="20dp"
-            android:layout_width="108dp"
-            android:layout_height="108dp">
-            <ImageView
-                android:id="@+id/coverImage"
-                android:src="@mipmap/cover_bg"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传封面海报"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/addCover"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="108dp"
+                android:layout_height="108dp">
+                <ImageView
+                    android:id="@+id/coverImage"
+                    android:src="@mipmap/cover_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:src="@mipmap/cover_add"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <View
+                android:background="#FCFCFD"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-            <ImageView
-                android:src="@mipmap/cover_add"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-        <View
-            android:background="#FCFCFD"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
 
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="标题"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@null"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center|end"
+                    android:id="@+id/titleInputView"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:hint="请填写标题"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="类型"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="请选择类型"
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@null"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center|end"
+                    android:id="@+id/typeInputView"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="价格"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@null"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center|end"
+                    android:id="@+id/priceInputView"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:hint="若免费输入0元"
+                    android:inputType="numberDecimal"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="开播时间"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@null"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center|end"
+                    android:id="@+id/startTimeInputView"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="请选择开播时间"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="直播时长"
+                    android:textStyle="bold"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginStart="45dp"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:id="@+id/durationInputView"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:inputType="number"
+                    android:hint="输入直播时长"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:text="分钟"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    />
+                <ImageView
+                    android:layout_marginEnd="15dp"
+                    android:src="@mipmap/right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="#FCFCFD"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
             <TextView
-                android:layout_width="86dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingStart="15dp"
-                android:text="标题"
+                android:text="演出详情"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#ff333333"
-                android:textSize="14sp" />
-
+                android:textSize="14sp"
+                />
             <EditText
-                android:layout_weight="1"
-                android:layout_marginStart="45dp"
+                android:id="@+id/detailInput"
                 android:background="@null"
-                android:layout_marginEnd="15dp"
-                android:gravity="center|end"
-                android:id="@+id/titleInputView"
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:hint="请填写标题"
+                android:hint="点击编辑"
+                android:layout_marginTop="10dp"
                 android:textColor="#999999"
                 android:textSize="12sp"
-                />
-            <ImageView
-                android:layout_marginEnd="15dp"
-                android:src="@mipmap/right"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
-
-            <TextView
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:lines="2"
+                android:maxLines="2"
                 android:paddingStart="15dp"
-                android:text="类型"
-                android:textColor="#ff333333"
-                android:textSize="14sp" />
-
-            <TextView
-                android:text="请选择类型"
-                android:layout_weight="1"
-                android:layout_marginStart="45dp"
-                android:background="@null"
-                android:layout_marginEnd="15dp"
-                android:gravity="center|end"
-                android:id="@+id/typeInputView"
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:textColor="#999999"
-                android:textSize="12sp"
-                />
-            <ImageView
-                android:layout_marginEnd="15dp"
-                android:src="@mipmap/right"
-                android:layout_width="wrap_content"
+                android:paddingEnd="15dp"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="#FCFCFD"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
 
             <TextView
-                android:layout_width="86dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingStart="15dp"
-                android:text="价格"
+                android:text="添加标签"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#ff333333"
-                android:textSize="14sp" />
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_marginStart="45dp"
-                android:background="@null"
-                android:layout_marginEnd="15dp"
-                android:gravity="center|end"
-                android:id="@+id/priceInputView"
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:hint="若免费输入0元"
-                android:inputType="numberDecimal"
-                android:textColor="#999999"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 />
-            <ImageView
-                android:layout_marginEnd="15dp"
-                android:src="@mipmap/right"
-                android:layout_width="wrap_content"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tagRecyclerView"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/addCustomBtn"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:paddingEnd="10dp"
+                android:background="@drawable/tag_item_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="自定义添加"
+                    android:drawablePadding="5dp"
+                    android:textColor="#333333"
+                    android:textSize="12sp"
+                    android:drawableStart="@mipmap/add_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
         </LinearLayout>
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
-
-            <TextView
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingStart="15dp"
-                android:text="开播时间"
-                android:textColor="#ff333333"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_weight="1"
-                android:layout_marginStart="45dp"
-                android:background="@null"
-                android:layout_marginEnd="15dp"
-                android:gravity="center|end"
-                android:id="@+id/startTimeInputView"
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:text="请选择开播时间"
-                android:textColor="#999999"
-                android:textSize="12sp"
-                />
-            <ImageView
-                android:layout_marginEnd="15dp"
-                android:src="@mipmap/right"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
-
-            <TextView
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:paddingStart="15dp"
-                android:text="直播时长"
-                android:textColor="#ff333333"
-                android:textSize="14sp" />
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_marginStart="45dp"
-                android:background="@null"
-                android:gravity="center|end"
-                android:id="@+id/durationInputView"
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:inputType="number"
-                android:hint="输入直播时长"
-                android:layout_marginEnd="5dp"
-                android:textColor="#999999"
-                android:textSize="12sp"
-                />
-            <TextView
-                android:text="分钟"
-                android:background="@null"
-                android:gravity="center|end"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_marginEnd="15dp"
-                android:textColor="#999999"
-                android:textSize="12sp"
-                />
-            <ImageView
-                android:layout_marginEnd="15dp"
-                android:src="@mipmap/right"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <View
-            android:background="#FCFCFD"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="演出详情"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#ff333333"
-            android:textSize="14sp"
-            />
-        <EditText
-            android:id="@+id/detailInput"
-            android:background="@null"
-            android:hint="点击编辑"
-            android:layout_marginTop="10dp"
-            android:textColor="#999999"
-            android:textSize="12sp"
-            android:lines="2"
-            android:maxLines="2"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:ellipsize="end"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <View
-            android:background="#FCFCFD"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="添加标签"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#ff333333"
-            android:textSize="14sp"
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/tagRecyclerView"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:overScrollMode="never"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <RelativeLayout
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"
-            android:paddingEnd="10dp"
-            android:background="@drawable/tag_item_bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                android:text="自定义添加"
-                android:drawablePadding="5dp"
-                android:textColor="#333333"
-                android:textSize="12sp"
-                android:drawableStart="@mipmap/add_tag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-
-        <ImageView
-            android:id="@+id/insertNoticeBtn"
-            android:src="@mipmap/apply_btn"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:text="确认提交"
+        android:id="@+id/insertNoticeBtn"
+        android:src="@mipmap/start_btn"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

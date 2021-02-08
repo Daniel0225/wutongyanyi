@@ -28,6 +28,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 import com.tencent.liteav.demo.beauty.view.BeautyPanel;
@@ -38,9 +39,12 @@ import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AnchorInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.AudienceInfo;
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.commondef.MLVBCommonDef;
 import com.yiheoline.qcloud.xiaozhibo.Constant;
+import com.yiheoline.qcloud.xiaozhibo.TCApplication;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
+import com.yiheoline.qcloud.xiaozhibo.anchor.TCBaseAnchorActivity;
 import com.yiheoline.qcloud.xiaozhibo.anim.AnimUtils;
 import com.yiheoline.qcloud.xiaozhibo.anim.NumAnim;
+import com.yiheoline.qcloud.xiaozhibo.bean.GiftBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.GiftUpBean;
 import com.yiheoline.qcloud.xiaozhibo.bean.SendGiftBean;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
@@ -57,6 +61,7 @@ import com.yiheoline.qcloud.xiaozhibo.common.widget.like.TCHeartLayout;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatEntity;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCChatMsgListAdapter;
 import com.yiheoline.qcloud.xiaozhibo.common.msg.TCSimpleUserInfo;
+import com.yiheoline.qcloud.xiaozhibo.dialog.GiftDialog;
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr;
@@ -190,13 +195,18 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         mPusherNickname = intent.getStringExtra(TCConstants.PUSHER_NAME);
         mPusherAvatar = intent.getStringExtra(TCConstants.PUSHER_AVATAR);
         mHeartCount = Long.decode(intent.getStringExtra(TCConstants.HEART_COUNT));
-        mCurrentAudienceCount = Long.decode(intent.getStringExtra(TCConstants.MEMBER_COUNT));
+        String count = intent.getStringExtra(TCConstants.MEMBER_COUNT);
+        if(count.isEmpty()){
+            mCurrentAudienceCount = 0L;
+        }else{
+            mCurrentAudienceCount = Long.decode(intent.getStringExtra(TCConstants.MEMBER_COUNT));
+        }
         mFileId = intent.getStringExtra(TCConstants.FILE_ID);
         mTimeStamp = intent.getStringExtra(TCConstants.TIMESTAMP);
         mTitle = intent.getStringExtra(TCConstants.ROOM_TITLE);
-        mUserId = TCUserMgr.getInstance().getUserId();
-        mNickname = TCUserMgr.getInstance().getNickname();
-        mAvatar = TCUserMgr.getInstance().getAvatar();
+        mUserId = TCApplication.Companion.getLoginInfo().getUserId();
+        mNickname = TCApplication.Companion.getLoginInfo().getNickname();
+        mAvatar = Constant.IMAGE_BASE+TCApplication.Companion.getLoginInfo().getAvatar();
         mCoverUrl = getIntent().getStringExtra(TCConstants.COVER_PIC);
         liveId = intent.getIntExtra("LIVE_ID",0);
         mVideoViewMgr = new TCVideoViewMgr(this, null);
@@ -215,7 +225,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         //初始化礼物控件
         rewardLayout = findViewById(R.id.giftContent);
         initGiftContent();
-
+        getGiftList();
         //在这里停留，让列表界面卡住几百毫秒，给sdk一点预加载的时间，形成秒开的视觉效果
         try {
             Thread.sleep(500);
@@ -330,7 +340,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
                 // 初始化数据
                 giftNum.setText("x" + bean.getTheSendGiftSize());
                 bean.setTheGiftCount(bean.getTheSendGiftSize());
-                giftImage.setImageResource(bean.getGiftImg());
+                Glide.with(TCAudienceActivity.this).load(bean.getGiftImg()).into(giftImage);
                 userName.setText(bean.getUserName());
                 giftName.setText("送出 " + bean.getGiftName());
                 return view;
@@ -344,7 +354,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
                 int showNum = (Integer) o.getTheGiftCount() + o.getTheSendGiftSize();
                 // 刷新已存在的giftview界面数据
                 giftNum.setText("x" + showNum);
-                giftImage.setImageResource(o.getGiftImg());
+                Glide.with(TCAudienceActivity.this).load(o.getGiftImg()).into(giftImage);
                 // 数字刷新动画
                 new NumAnim().start(giftNum);
                 // 更新累计礼物数量
@@ -422,14 +432,36 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     /**
      * 送礼物 上报给服务器
      */
-    private void sendGift(int giftId){
-        GiftUpBean giftUpBean = new GiftUpBean(giftId,liveId);
+    private void sendGift(int position){
+        GiftBean giftBean = giftBeanList.get(position);
+        GiftUpBean giftUpBean = new GiftUpBean(giftBean.getId(),liveId);
         OkGo.<BaseResponse<String>>post(Constant.SEND_GIFT)
                 .upJson(FastJsonUtil.createJsonString(giftUpBean))
                 .execute(new JsonCallBack<BaseResponse<String>>() {
                     @Override
                     public void onSuccess(Response<BaseResponse<String>> response) {
+                        if(response.body().getRes() == 0){
+                            mLiveRoom.sendRoomCustomMsg(String.valueOf(TCConstants.IMCMD_GIFT),FastJsonUtil.createJsonString(giftBean) , null);
+                        }else{
+                            Toast.makeText(TCAudienceActivity.this,response.body().getMsg(),Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+    }
+    private List<GiftBean> giftBeanList;
+    /**
+     * 获取礼物列表
+     */
+    private void getGiftList(){
+        OkGo.<BaseResponse<List<GiftBean>>>get(Constant.GIFT_ALL)
+                .execute(new JsonCallBack<BaseResponse<List<GiftBean>>>() {
+                    @Override
+                    public void onSuccess(Response<BaseResponse<List<GiftBean>>> response) {
+                        if(response.body().getRes() == 0){
+                            giftBeanList = response.body().data;
+                        }else{
 
+                        }
                     }
                 });
     }
@@ -805,7 +837,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
                 handleDanmuMsg(userInfo, message);
                 break;
             case TCConstants.IMCMD_GIFT:
-                handleGiftMsg(userInfo);
+                handleGiftMsg(userInfo,message);
                 break;
             default:
                 break;
@@ -929,14 +961,16 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
     /**
      * 收到礼物消息
      */
-    public void handleGiftMsg(TCSimpleUserInfo userInfo){
+    public void handleGiftMsg(TCSimpleUserInfo userInfo,String message){
         String nickName = "";
         if (TextUtils.isEmpty(userInfo.nickname))
             nickName = userInfo.userid ;
         else
             nickName = userInfo.nickname;
-        SendGiftBean giftBean = new SendGiftBean(1,1,nickName,"火箭",R.mipmap.hj,2700);
-        rewardLayout.put(giftBean);
+        GiftBean giftBean = FastJsonUtil.getObject(message,GiftBean.class);
+        SendGiftBean sendGiftBean = new SendGiftBean(Integer.parseInt(userInfo.userid),giftBean.getId(),nickName,
+                giftBean.getName(),Constant.IMAGE_BASE+giftBean.getGiftLogo(),2700);
+        rewardLayout.put(sendGiftBean);
     }
 
     /**
@@ -1060,7 +1094,7 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
             case R.id.btn_share:
                 break;
             case R.id.btn_log://发送礼物
-                showLog();
+                showGiftDialog();
                 break;
             case R.id.record:
                 break;
@@ -1073,10 +1107,15 @@ public class TCAudienceActivity extends Activity implements IMLVBLiveRoomListene
         }
     }
 
-    private void showLog() {
-        mLiveRoom.setCustomInfo(MLVBCommonDef.CustomFieldOp.INC, "gift", 1, null);
-        //向ChatRoom发送点赞消息
-        mLiveRoom.sendRoomCustomMsg(String.valueOf(TCConstants.IMCMD_GIFT), "32323", null);
+    private void showGiftDialog() {
+
+        GiftDialog.INSTANCE.onCreateDialog(TCAudienceActivity.this, giftBeanList,
+                new GiftDialog.SelectGiftListener() {
+                    @Override
+                    public void select(int position) {
+                        sendGift(position);
+                    }
+                });
     }
 
 

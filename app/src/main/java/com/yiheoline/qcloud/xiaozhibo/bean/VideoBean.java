@@ -4,11 +4,22 @@ public class VideoBean {
     private int catId;
     private String desc;
     private String duration;
-    private String imgPath;
-    private String name;
+    private String firstCover;//4：3的封面
+    private String secondCover;//16:9的封面 横的
+    private String title;
+    private String subtitle;
     private double price;
     private int videoId;
     private String videoPath;
+    private String cover;
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
 
     public int getCatId() {
         return catId;
@@ -34,20 +45,36 @@ public class VideoBean {
         this.duration = duration;
     }
 
-    public String getImgPath() {
-        return imgPath;
+    public String getFirstCover() {
+        return firstCover;
     }
 
-    public void setImgPath(String imgPath) {
-        this.imgPath = imgPath;
+    public void setFirstCover(String firstCover) {
+        this.firstCover = firstCover;
     }
 
-    public String getName() {
-        return name;
+    public String getSecondCover() {
+        return secondCover;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSecondCover(String secondCover) {
+        this.secondCover = secondCover;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSubtitle() {
+        return subtitle;
+    }
+
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
     }
 
     public double getPrice() {

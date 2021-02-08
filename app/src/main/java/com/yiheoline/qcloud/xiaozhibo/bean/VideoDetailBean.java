@@ -9,7 +9,8 @@ public class VideoDetailBean {
     private int isNeedPay;
     private int likes;
     private String isLike;
-    private String name;
+    private String title;
+    private String subtitle;
     private double price;
     private int videoId;
     private String videoPath;
@@ -83,12 +84,20 @@ public class VideoDetailBean {
         this.likes = likes;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSubtitle() {
+        return subtitle;
+    }
+
+    public void setSubtitle(String subtitle) {
+        this.subtitle = subtitle;
     }
 
     public double getPrice() {

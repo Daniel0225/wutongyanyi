@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.yiheonline.qcloud.xiaozhibo">
 
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -38,7 +42,28 @@
         android:largeHeap="true"
         android:resizeableActivity="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoRecordActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.PhoneActivity"></activity>
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.CustomTagActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.OneKeyLoginActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.LikeActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.ChangeAccountActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.show.TCVodPlayerActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.CashOutActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.OrderListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.MessageActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.AnchorCenterActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.RechargeRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.AccountActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.SettingActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.FansListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.EditUserInfoActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.SeeRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.CompanyAuthActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.UpLoadRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.ShowerInfoActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.SeeVideoRecordActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.BuyResultActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ConfirmOrderActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.SearchActivity" />
@@ -48,7 +73,7 @@
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowSettingActivity" />
         <activity
-            android:name="com.yiheoline.qcloud.xiaozhibo.main.splash.TCSplashActivity"
+            android:name="com.yiheoline.qcloud.xiaozhibo.main.SplashActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -110,9 +135,6 @@
             android:exported="false" />
 
         <activity
-            android:name="com.yiheoline.qcloud.xiaozhibo.profile.TCEditUseInfoActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
             android:theme="@android:style/Theme.Translucent" />
 
@@ -151,7 +173,24 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.LoginActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.LoginActivity" /> <!-- 联通电信授权页 -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/authsdk_activity_dialog" /> <!-- 协议页面webview -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" /> <!-- 移动授权页 -->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>

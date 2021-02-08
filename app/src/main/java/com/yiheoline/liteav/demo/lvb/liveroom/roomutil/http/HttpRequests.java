@@ -458,8 +458,8 @@ public class HttpRequests {
                         setToken(data.token);
                         if(data.token != null)
                             TCApplication.Companion.setMlvbToken(data.token);
-                        if(data.userID != null)
-                            TCApplication.Companion.setUserId(data.userID);
+//                        if(data.userID != null)
+//                            TCApplication.Companion.setUserId(data.userID);
                     }
                     if (callback != null) {
                         callback.onResponse(retcode, retmsg, data);

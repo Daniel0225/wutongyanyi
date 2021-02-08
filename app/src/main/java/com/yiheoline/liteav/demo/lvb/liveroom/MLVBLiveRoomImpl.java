@@ -38,9 +38,13 @@ import com.tencent.rtmp.TXLivePlayer;
 import com.tencent.rtmp.TXLivePushConfig;
 import com.tencent.rtmp.TXLivePusher;
 import com.tencent.rtmp.ui.TXCloudVideoView;
+import com.yiheoline.qcloud.xiaozhibo.Constant;
+import com.yiheoline.qcloud.xiaozhibo.TCApplication;
+import com.yiheoline.qcloud.xiaozhibo.bean.HeartBean;
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse;
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack;
 import com.yiheoline.qcloud.xiaozhibo.http.response.CreateRoomResponse;
+import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -121,6 +125,10 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
     private int                             mMixMode = STREAM_MIX_MODE_JOIN_ANCHOR;
 
     private long                            mTimeDiff = 0; //客户端和服务器时间差，用户连麦和PK请求超时处理
+
+    private long mTotalMemberCount = 0;  // 总进房观众数量
+    private long mCurrentMemberCount = 0;// 当前观众数量
+    private long mHeartCount = 0;        // 点赞数量
 
     public static MLVBLiveRoom sharedInstance(Context context) {
         synchronized (MLVBLiveRoomImpl.class) {
@@ -3086,6 +3094,7 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
 
     protected class HeartBeatThread {
         private Handler handler;
+        private HeartBean heartBean;
 
         public HeartBeatThread() {
         }
@@ -3100,6 +3109,20 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
                 if (mSelfAccountInfo != null && mSelfAccountInfo.userID != null && mSelfAccountInfo.userID.length() > 0 && mCurrRoomID != null && mCurrRoomID.length() > 0) {
                     if (mHttpRequest != null) {
                         mHttpRequest.heartBeat(mSelfAccountInfo.userID, mCurrRoomID, mRoomStatusCode);
+                        if(heartBean == null){
+                            heartBean = new HeartBean();
+                        }
+                        heartBean.setLikeCount(mHeartCount);
+                        heartBean.setWatchCount(mTotalMemberCount);
+                        heartBean.setLiveId(TCApplication.Companion.getCurrentPlayId());
+                        OkGo.<BaseResponse<String>>put(Constant.HEART_BEAT)
+                                .upJson(FastJsonUtil.createJsonString(heartBean))
+                                .execute(new JsonCallBack<BaseResponse<String>>() {
+                                    @Override
+                                    public void onSuccess(Response<BaseResponse<String>> response) {
+
+                                    }
+                                });
                     }
                     localHander.postDelayed(heartBeatRunnable, 5000);
                 }
@@ -3317,5 +3340,29 @@ public class MLVBLiveRoomImpl extends MLVBLiveRoom implements HttpRequests.Heart
 
     protected interface UpdateAnchorsCallback {
         void onUpdateAnchors(int errcode, List<AnchorInfo> addAnchors, List<AnchorInfo> delAnchors, HashMap<String, AnchorInfo> mergedAnchors, AnchorInfo roomCreator);
+    }
+
+    public long getTotalMemberCount() {
+        return mTotalMemberCount;
+    }
+
+    public void setTotalMemberCount(long mTotalMemberCount) {
+        this.mTotalMemberCount = mTotalMemberCount;
+    }
+
+    public long getCurrentMemberCount() {
+        return mCurrentMemberCount;
+    }
+
+    public void setCurrentMemberCount(long mCurrentMemberCount) {
+        this.mCurrentMemberCount = mCurrentMemberCount;
+    }
+
+    public long getHeartCount() {
+        return mHeartCount;
+    }
+
+    public void setHeartCount(long mHeartCount) {
+        this.mHeartCount = mHeartCount;
     }
 }

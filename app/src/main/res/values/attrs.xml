@@ -12,6 +12,13 @@
         <attr name="moreText" format="string"/>
     </declare-styleable>
 
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
     <!-- 条形控制控件自定义属性 -->
     <declare-styleable name="TCLineView">
         <!-- 名称 -->
@@ -64,5 +71,48 @@
     </declare-styleable>
     <declare-styleable name="AutoAdjustHeightImageView">
         <attr name="aspectRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSlider">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="tickCount" format="integer" />
+        <attr name="leftThumbIndex" format="integer" />
+        <attr name="rightThumbIndex" format="integer" />
+        <attr name="leftThumbDrawable" format="reference" />
+        <attr name="rightThumbDrawable" format="reference" />
+        <attr name="midThumbDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRoundImageView">
+        <attr name="type" />
+        <attr name="scale2" />
+        <attr name="borderRadius" />
+        <attr name="top_left" />
+        <attr name="top_right" />
+        <attr name="bottom_left" />
+        <attr name="bottom_right" />
+        <attr name="aspectRatio2" format="float" />
+    </declare-styleable>
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="scale2">
+        <enum name="crop" value="0" />
+        <enum name="fit" value="1" />
+    </attr>
+
+    <attr name="top_left" format="boolean" />
+    <attr name="top_right" format="boolean" />
+    <attr name="bottom_left" format="boolean" />
+    <attr name="bottom_right" format="boolean" />
+
+    <declare-styleable name="RotatingSkip">
+        <attr name="circleColor" format="color"/>
+        <attr name="angleOffset" format="integer"/>
     </declare-styleable>
 </resources>

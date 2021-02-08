@@ -8,6 +8,7 @@ import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeBean
 import com.yiheoline.qcloud.xiaozhibo.utils.GlideRoundTransform
+import com.yiheoline.qcloud.xiaozhibo.utils.TimeUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 
 class PreListAdapter(layoutId:Int, data:MutableList<ShowNoticeBean>): BaseQuickAdapter<ShowNoticeBean, BaseViewHolder>(layoutId,data){
@@ -17,7 +18,7 @@ class PreListAdapter(layoutId:Int, data:MutableList<ShowNoticeBean>): BaseQuickA
                 GlideRoundTransform(context,5)).into(holder.getView(R.id.image))
         holder.setText(R.id.priceView,item.price.toString())
         holder.setText(R.id.titleView,item.title)
-        holder.setText(R.id.dateView,item.liveTime)
+        holder.setText(R.id.dateView,"${TimeUtil.getMonthAndDay2(item.liveTime.toLong())} 直播")
         var imageView = holder.getView<RelativeLayout>(R.id.coverContain)
         if(getItemPosition(item) == selectPosition){
             imageView.setBackgroundResource(R.mipmap.pre1)

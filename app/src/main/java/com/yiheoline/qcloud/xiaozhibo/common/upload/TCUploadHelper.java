@@ -118,7 +118,8 @@ public class TCUploadHelper {
                 }
 
                 final TCUserMgr.CosInfo cosInfo = TCUserMgr.getInstance().getCosInfo();
-                final String accessUrl = "http://" + cosXmlRequest.getHost(cosInfo.appID, cosInfo.region) + cosXmlRequest.getPath();
+//                final String accessUrl = "http://" + cosXmlRequest.getHost(cosInfo.appID, cosInfo.region) + cosXmlRequest.getPath();
+                String accessUrl = "不知道怎么弄";
                 Log.d(TAG,"uploadPic do upload sucess, url:" + accessUrl);
                 mMainHandler.post(new Runnable() {
                     @Override

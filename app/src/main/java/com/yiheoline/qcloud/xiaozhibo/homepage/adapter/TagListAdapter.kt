@@ -10,14 +10,13 @@ class TagListAdapter(layoutId:Int, data:MutableList<TagBean>): BaseQuickAdapter<
     override fun convert(holder: BaseViewHolder, item: TagBean) {
         holder.setText(R.id.tagTextView,item.name)
         if(item.isChecked){
-            holder.setBackgroundColor(R.id.tagTextView,Color.parseColor("#FD8318"))
+            holder.setBackgroundResource(R.id.tagTextView,R.drawable.tag_item_select_bg)
             holder.setTextColor(R.id.tagTextView,Color.parseColor("#FFFFFF"))
         }else{
-            holder.setBackgroundColor(R.id.tagTextView,Color.parseColor("#FFF2E7"))
+            holder.setBackgroundResource(R.id.tagTextView,R.drawable.tag_item_bg)
             holder.setTextColor(R.id.tagTextView,Color.parseColor("#333333"))
         }
 
     }
-
 
 }

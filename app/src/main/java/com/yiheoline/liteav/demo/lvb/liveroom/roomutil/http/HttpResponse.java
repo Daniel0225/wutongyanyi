@@ -33,6 +33,7 @@ public class HttpResponse {
         public String roomID;
         public String roomInfo;
         public String roomCreator;
+        public int audienceCount;
         public String mixedPlayURL;
         public int roomStatusCode;
         public List<AnchorInfo> pushers;

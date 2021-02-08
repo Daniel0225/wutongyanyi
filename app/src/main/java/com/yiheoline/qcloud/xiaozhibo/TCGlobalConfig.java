@@ -23,7 +23,8 @@ public class TCGlobalConfig {
     public static final String LICENCE_URL = "http://license.vod2.myqcloud.com/license/v1/429f9aca3b66ee055b976f888eecc87c/TXLiveSDK.licence";
     public static final String LICENCE_KEY = "96d2384a49f47f69855a0d38923d495d";
 
-
+    public static final String LICENCE_URL_VIDEO = "http://license.vod2.myqcloud.com/license/v1/429f9aca3b66ee055b976f888eecc87c/TXUgcSDK.licence";
+    public static final String LICENCE_KEY_VIDEO = "96d2384a49f47f69855a0d38923d495d";
     /**
      * 2.1 腾讯云 SDKAppId，需要替换为您自己账号下的 SDKAppId。
      *

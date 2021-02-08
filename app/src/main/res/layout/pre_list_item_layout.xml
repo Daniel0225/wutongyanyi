@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:layout_marginStart="5dp"
-    android:layout_marginEnd="5dp"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginEnd="2.5dp"
     android:layout_width="90dp"
     android:layout_height="wrap_content">
     <RelativeLayout
@@ -13,6 +12,11 @@
         <ImageView
             android:id="@+id/image"
             android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_width="89dp"
+            android:layout_height="119dp"/>
+        <ImageView
+            android:src="@mipmap/home_pre_bg"
             android:layout_width="89dp"
             android:layout_height="119dp"/>
         <TextView
@@ -38,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="2"
+        android:lines="2"
         android:ellipsize="end"
         android:layout_marginTop="9dp"
         android:text="预告·京昆折子戏「新白娘子在锅里"
@@ -46,7 +51,7 @@
         />
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
@@ -67,11 +72,12 @@
             />
     </LinearLayout>
     <TextView
+        android:id="@+id/toDetailBtn"
         android:text="去预约"
         android:textColor="#ffffff"
         android:gravity="center"
         android:textSize="10sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@mipmap/btn_bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
