@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:text="发现新版本"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <View
+            android:background="#CFD3DE"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <TextView
+            android:id="@+id/update_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center|start"
+            android:text="1.新增xxx功能"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+
+        <View
+            android:background="#CFD3DE"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:id="@+id/controller"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/updateCancel"
+                android:text="忽略"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/colorAccent"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/updateNow"
+                android:text="立即更新"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

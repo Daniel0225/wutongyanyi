@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.umeng.umsdk:agoo_tnet4android:3.1.14.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tnet4android/3.1.14.9/8ca19f6041a446965075045d977fa1199196fdac/agoo_tnet4android-3.1.14.9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tnet4android/3.1.14.9/47f84e13126012b2e016fc5907a9782145f4391c/agoo_tnet4android-3.1.14.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tnet4android/3.1.14.9/47f84e13126012b2e016fc5907a9782145f4391c/agoo_tnet4android-3.1.14.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

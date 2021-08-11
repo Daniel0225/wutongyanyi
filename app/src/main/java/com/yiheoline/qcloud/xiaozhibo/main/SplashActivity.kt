@@ -23,6 +23,7 @@ import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_splash.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.toast
 
 class SplashActivity : BaseActivity() {
     override fun getLayoutId(): Int {
@@ -99,6 +100,11 @@ class SplashActivity : BaseActivity() {
                         }
                     }
 
+                    override fun onError(response: Response<BaseResponse<APPidResponse>>?) {
+                        super.onError(response)
+                        toast("连接服务器失败，请稍后再试")
+                    }
+
                 })
     }
 
@@ -116,7 +122,7 @@ class SplashActivity : BaseActivity() {
         var mlvbLiveRoomImpl = MLVBLiveRoomImpl.sharedInstance(this)
         mlvbLiveRoomImpl.initMlvb(loginInfo)
 
-        val intent = Intent(this@SplashActivity, TCMainActivity::class.java)
+        val intent = Intent(this@SplashActivity, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
         finish()

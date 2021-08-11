@@ -6,6 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XiaoZhiBo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XiaoZhiBo.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/audioeffectsettingkit/XiaoZhiBo.audioeffectsettingkit.iml" filepath="$PROJECT_DIR$/.idea/modules/audioeffectsettingkit/XiaoZhiBo.audioeffectsettingkit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/beautysettingkit/XiaoZhiBo.beautysettingkit.iml" filepath="$PROJECT_DIR$/.idea/modules/beautysettingkit/XiaoZhiBo.beautysettingkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/superplayerdemo/XiaoZhiBo.superplayerdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/superplayerdemo/XiaoZhiBo.superplayerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/superplayerkit/XiaoZhiBo.superplayerkit.iml" filepath="$PROJECT_DIR$/.idea/modules/superplayerkit/XiaoZhiBo.superplayerkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ugckit/XiaoZhiBo.ugckit.iml" filepath="$PROJECT_DIR$/.idea/modules/ugckit/XiaoZhiBo.ugckit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ugcvideoeditdemo/XiaoZhiBo.ugcvideoeditdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ugcvideoeditdemo/XiaoZhiBo.ugcvideoeditdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ugcvideojoindemo/XiaoZhiBo.ugcvideojoindemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ugcvideojoindemo/XiaoZhiBo.ugcvideojoindemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ugcvideorecorddemo/XiaoZhiBo.ugcvideorecorddemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ugcvideorecorddemo/XiaoZhiBo.ugcvideorecorddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ugcvideouploaddemo/XiaoZhiBo.ugcvideouploaddemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ugcvideouploaddemo/XiaoZhiBo.ugcvideouploaddemo.iml" />
     </modules>
   </component>
 </project>

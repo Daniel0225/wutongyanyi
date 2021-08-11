@@ -11,7 +11,6 @@
 
     <com.yiheoline.qcloud.xiaozhibo.widgets.AutoAdjustHeightImageView
         android:id="@+id/adImageView"
-        android:src="@mipmap/default_ad"
         android:scaleType="centerCrop"
         app:aspectRatio="1.8"
         android:layout_width="match_parent"
@@ -34,7 +33,7 @@
         android:layout_marginTop="10dp"
         android:text="星巴克年末大促销，全场辈子一元抢购"
         android:textColor="#ff333333"
-        android:textSize="12sp"
+        android:textSize="14sp"
         />
     <TextView
         android:layout_below="@id/adTitleView"
@@ -42,6 +41,6 @@
         android:layout_height="wrap_content"
         android:text="拼多多"
         android:textColor="#ff999999"
-        android:textSize="10sp"
+        android:textSize="12sp"
         />
 </RelativeLayout>

@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.1002326270xc:LayoutManager-FlowLayout:v1.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d14266a0754de9af9de59e24e0c123b/jetified-LayoutManager-FlowLayout-v1.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b3f4aed73386835a716b57aa012e683/jetified-LayoutManager-FlowLayout-v1.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b3f4aed73386835a716b57aa012e683/jetified-LayoutManager-FlowLayout-v1.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b3f4aed73386835a716b57aa012e683/jetified-LayoutManager-FlowLayout-v1.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30a65a10264e6948013c8775dc3a0a67/jetified-LayoutManager-FlowLayout-v1.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30a65a10264e6948013c8775dc3a0a67/jetified-LayoutManager-FlowLayout-v1.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30a65a10264e6948013c8775dc3a0a67/jetified-LayoutManager-FlowLayout-v1.8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

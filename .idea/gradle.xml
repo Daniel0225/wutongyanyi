@@ -14,6 +14,13 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/audioeffectsettingkit" />
             <option value="$PROJECT_DIR$/beautysettingkit" />
+            <option value="$PROJECT_DIR$/superplayerdemo" />
+            <option value="$PROJECT_DIR$/superplayerkit" />
+            <option value="$PROJECT_DIR$/ugckit" />
+            <option value="$PROJECT_DIR$/ugcvideoeditdemo" />
+            <option value="$PROJECT_DIR$/ugcvideojoindemo" />
+            <option value="$PROJECT_DIR$/ugcvideorecorddemo" />
+            <option value="$PROJECT_DIR$/ugcvideouploaddemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

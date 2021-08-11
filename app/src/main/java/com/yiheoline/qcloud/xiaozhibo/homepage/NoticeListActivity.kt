@@ -50,10 +50,11 @@ class NoticeListActivity : BaseActivity() {
     /**
      * 获取预告列表
      */
-    fun searchNotice(){
+    private fun searchNotice(){
         var params = HttpParams()
         params.put("pageNum",pageNum)
         params.put("pageSize", Constant.PAGE_SIZE)
+        params.put("lately",1)
         OkGo.post<BaseResponse<HomePageResponse>>(Constant.HOME_PAGE_LIST)
                 .params(params)
                 .execute(object : JsonCallBack<BaseResponse<HomePageResponse>>(){

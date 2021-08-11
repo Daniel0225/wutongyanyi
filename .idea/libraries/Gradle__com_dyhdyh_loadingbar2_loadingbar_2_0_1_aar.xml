@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.dyhdyh.loadingbar2:loadingbar:2.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b32b3d95dd63443386987d0db365d79/jetified-loadingbar-2.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b32b3d95dd63443386987d0db365d79/jetified-loadingbar-2.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3b32b3d95dd63443386987d0db365d79/jetified-loadingbar-2.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b4370841d17602e518a5f14942dfd42f/jetified-loadingbar-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b4370841d17602e518a5f14942dfd42f/jetified-loadingbar-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b4370841d17602e518a5f14942dfd42f/jetified-loadingbar-2.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e4bac6865473de1ae029e4eef6e3985/jetified-loadingbar-2.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e4bac6865473de1ae029e4eef6e3985/jetified-loadingbar-2.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e4bac6865473de1ae029e4eef6e3985/jetified-loadingbar-2.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.dyhdyh.loadingbar2/loadingbar/2.0.1/5842ca8898a9134612b9b4440f5610709feb60a0/loadingbar-2.0.1-javadoc.jar!/" />

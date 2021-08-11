@@ -2,11 +2,11 @@ package com.yiheoline.qcloud.xiaozhibo.homepage
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.animation.AnimationUtils
+import android.view.animation.Animation
+import android.view.animation.CycleInterpolator
+import android.view.animation.RotateAnimation
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bilibili.boxing.Boxing
@@ -14,6 +14,7 @@ import com.bilibili.boxing.BoxingMediaLoader
 import com.bilibili.boxing.model.config.BoxingConfig
 import com.bilibili.boxing_impl.ui.BoxingActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
@@ -30,7 +31,6 @@ import com.yiheoline.qcloud.xiaozhibo.TCApplication
 import com.yiheoline.qcloud.xiaozhibo.base.BaseFragment
 import com.yiheoline.qcloud.xiaozhibo.bean.TypeBean
 import com.yiheoline.qcloud.xiaozhibo.dialog.ConfirmDialog
-import com.yiheoline.qcloud.xiaozhibo.dialog.StartPlayDialog
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.CatTabAdapter
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.NearShowListAdapter
 import com.yiheoline.qcloud.xiaozhibo.homepage.adapter.PreListAdapter
@@ -44,13 +44,11 @@ import com.yiheoline.qcloud.xiaozhibo.profile.CompanyAuthActivity
 import com.yiheoline.qcloud.xiaozhibo.show.TCVodPlayerActivity
 import com.yiheoline.qcloud.xiaozhibo.show.adapter.ShowListAdapter
 import com.yiheoline.qcloud.xiaozhibo.utils.BoxingGlideLoader
+import com.yiheoline.qcloud.xiaozhibo.utils.GlideRoundTransform
 import com.yiheoline.qcloud.xiaozhibo.video.VideoDetailActivity
 import com.yiheoline.qcloud.xiaozhibo.video.adapter.VideoListAdapter
 import com.yiheonline.qcloud.xiaozhibo.R
-import kotlinx.android.synthetic.main.activity_edit_user_info2.*
 import kotlinx.android.synthetic.main.fragment_home_page.*
-import kotlinx.android.synthetic.main.fragment_home_page.recyclerView
-import kotlinx.android.synthetic.main.fragment_show.*
 import kotlinx.android.synthetic.main.home_ad_layout.*
 import kotlinx.android.synthetic.main.home_short_item_layout.*
 import kotlinx.android.synthetic.main.home_video_item_layout.*
@@ -149,7 +147,7 @@ class HomePageFragment : BaseFragment() {
         selectAdapter = SelectListAdapter(R.layout.home_select_item_layout, arrayListOf())
         selectRecycler.adapter = selectAdapter
         selectAdapter?.setOnItemClickListener { _, _, position ->
-            startActivity<NoticeDetailActivity>("noticeId" to nearShowListAdapter!!.data[position].noticeId.toString())
+            startActivity<NoticeDetailActivity>("noticeId" to selectAdapter!!.data[position].noticeId.toString())
         }
 
         //初始化分类列表RV
@@ -187,10 +185,18 @@ class HomePageFragment : BaseFragment() {
             startActivityForResult(intent, 2000)
         }
 
-        Glide.with(context).load(R.mipmap.start_btn_gif).asGif().crossFade().into(startPlay)
+//        Glide.with(context).load(R.mipmap.start_btn_gif).asGif().fitCenter().into(startPlay)
 
         isPrepared = true
 
+        Glide.with(context).load(R.mipmap.default_ad).transform(CenterCrop(context),
+                GlideRoundTransform(context,5)).into(adImageView)
+
+        val rotateAnimation: Animation = RotateAnimation(0f, 20f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)
+        rotateAnimation.interpolator = CycleInterpolator(2f)
+        rotateAnimation.repeatCount = -1
+        rotateAnimation.duration = 3000
+        startPlay.startAnimation(rotateAnimation)
     }
 
     override fun lazyLoad() {
@@ -277,13 +283,15 @@ class HomePageFragment : BaseFragment() {
         openMusicView.onClick {
             if(GSYVideoManager.instance().isNeedMute){
                 GSYVideoManager.instance().isNeedMute = false
-                openMusicView.setImageResource(R.mipmap.close_music)
+                openMusicView.setImageResource(R.mipmap.open_music)
             }else{
                 GSYVideoManager.instance().isNeedMute = true
-                openMusicView.setImageResource(R.mipmap.open_music)
+                openMusicView.setImageResource(R.mipmap.close_music)
             }
 
         }
+
+        selectBtn.onClick { startActivity<NoticeSelectActivity>() }
     }
 
     /**

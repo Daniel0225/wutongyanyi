@@ -9,7 +9,6 @@
         android:id="@+id/productImage"
         android:scaleType="fitXY"
         app:aspectRatio="0.7"
-        android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <ImageView

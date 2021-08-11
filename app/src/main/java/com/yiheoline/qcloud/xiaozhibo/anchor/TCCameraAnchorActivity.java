@@ -490,9 +490,6 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
                     mLinearToolBar.setVisibility(View.GONE);
                 }
                 break;
-            case R.id.btn_log:
-                showLog();
-                break;
             default:
                 super.onClick(v);
                 break;
@@ -506,22 +503,6 @@ public class TCCameraAnchorActivity extends TCBaseAnchorActivity {
         super.showErrorAndQuit(errorCode, errorMsg);
     }
 
-
-    private void showLog() {
-        mShowLog = !mShowLog;
-        if (mTXCloudVideoView != null) {
-            mTXCloudVideoView.showLog(mShowLog);
-        }
-        ImageView liveLog = (ImageView) findViewById(R.id.btn_log);
-        if (mShowLog) {
-            if (liveLog != null) liveLog.setBackgroundResource(R.drawable.icon_log_on);
-
-        } else {
-            if (liveLog != null) liveLog.setBackgroundResource(R.drawable.icon_log_off);
-        }
-
-        mPlayerVideoViewList.showLog(mShowLog);
-    }
 
     /**
      * /////////////////////////////////////////////////////////////////////////////////

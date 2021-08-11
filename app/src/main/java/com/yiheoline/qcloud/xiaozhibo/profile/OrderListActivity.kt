@@ -16,7 +16,6 @@ import com.yiheoline.qcloud.xiaozhibo.http.response.VideoOrderResponse
 import com.yiheoline.qcloud.xiaozhibo.profile.adapter.OrderListAdapter
 import com.yiheoline.qcloud.xiaozhibo.profile.adapter.VideoOrderListAdapter
 import com.yiheoline.qcloud.xiaozhibo.video.VideoDetailActivity
-import com.yiheoline.qcloud.xiaozhibo.video.adapter.VideoListAdapter
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_fans_list.playContain
 import kotlinx.android.synthetic.main.activity_fans_list.playLineView
@@ -28,7 +27,6 @@ import kotlinx.android.synthetic.main.activity_fans_list.singleShowText
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.support.v4.startActivity
 import org.jetbrains.anko.textColor
 
 class OrderListActivity : BaseActivity() {

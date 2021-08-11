@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import anet.channel.util.Utils.context
+import com.umeng.message.PushAgent
 import org.jetbrains.anko.AnkoLogger
 import com.yiheoline.qcloud.xiaozhibo.utils.StatusBarUtil
 
@@ -16,6 +18,7 @@ abstract class BaseActivity : AppCompatActivity(),AnkoLogger {
         mContext = this
         savedInstanceState = savedInstanceState1
         setContentView(getLayoutId())
+        PushAgent.getInstance(context).onAppStart()
         StatusBarUtil.setRootViewFitsSystemWindows(this,getFitSystemWindows())
         StatusBarUtil.setTranslucentStatus(this)
         if(!StatusBarUtil.setStatusBarDarkTheme(this,true)){

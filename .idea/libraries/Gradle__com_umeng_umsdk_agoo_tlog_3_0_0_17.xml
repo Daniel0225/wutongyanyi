@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.umeng.umsdk:agoo_tlog:3.0.0.17">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tlog/3.0.0.17/a85b3ac878ae23d39de550e88c2642401a135135/agoo_tlog-3.0.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tlog/3.0.0.17/ce0e7728ef4fa3368d2f7e477586f0a9f9b4dc93/agoo_tlog-3.0.0.17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umeng.umsdk/agoo_tlog/3.0.0.17/ce0e7728ef4fa3368d2f7e477586f0a9f9b4dc93/agoo_tlog-3.0.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

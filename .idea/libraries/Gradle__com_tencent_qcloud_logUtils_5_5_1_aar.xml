@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.qcloud:logUtils:5.5.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16df97b1abfa982243d74857115e5fdb/jetified-logUtils-5.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16df97b1abfa982243d74857115e5fdb/jetified-logUtils-5.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16df97b1abfa982243d74857115e5fdb/jetified-logUtils-5.5.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1ee7a2a9548a895cc5c63d451888842/jetified-logUtils-5.5.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1ee7a2a9548a895cc5c63d451888842/jetified-logUtils-5.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1ee7a2a9548a895cc5c63d451888842/jetified-logUtils-5.5.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.qcloud/logUtils/5.5.1/66731dc9a1f9111175163862a0e415dde1664480/logUtils-5.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.qcloud/logUtils/5.5.1/4549faaf7e3a44aa70ac9794ff9bdf87cfd1a050/logUtils-5.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

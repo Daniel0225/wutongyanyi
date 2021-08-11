@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.yiheoline.qcloud.xiaozhibo.TCGlobalConfig;
 import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
-import com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity;
+import com.yiheoline.qcloud.xiaozhibo.main.MainActivity;
 import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
@@ -165,7 +165,7 @@ public class TCLoginActivity extends Activity {
      * 登录成功后被调用，跳转至TCMainActivity
      */
     private void jumpToHomeActivity() {
-        Intent intent = new Intent(this, TCMainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }

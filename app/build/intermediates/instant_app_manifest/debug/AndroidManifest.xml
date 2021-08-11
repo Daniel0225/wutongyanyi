@@ -9,6 +9,9 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -27,6 +30,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- IMSDK 权限 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -45,6 +52,8 @@
         android:resizeable="true"
         android:smallScreens="true" />
 
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
     <application
         android:name="com.yiheoline.qcloud.xiaozhibo.TCApplication"
         android:allowBackup="true"
@@ -58,17 +67,41 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeSelectActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.PhoneActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.CustomTagActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.OneKeyLoginActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.LikeActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.ChangeAccountActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.show.TCVodPlayerActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.CashOutActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.OrderListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.MessageActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.AnchorCenterActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.RechargeRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.AccountActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.SettingActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.FansListActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.EditUserInfoActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.SeeRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.CompanyAuthActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.UpLoadRecordActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.profile.ShowerInfoActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.SeeVideoRecordActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.BuyResultActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ConfirmOrderActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.SearchActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.video.VideoSearchActivity" />
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeDetailActivity" />
+        <activity
+            android:name="com.yiheoline.qcloud.xiaozhibo.homepage.NoticeDetailActivity"
+            android:launchMode="singleTask" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowerPlayStartActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ApplyShowActivity" />
         <activity android:name="com.yiheoline.qcloud.xiaozhibo.homepage.ShowSettingActivity" />
         <activity
-            android:name="com.yiheoline.qcloud.xiaozhibo.main.splash.TCSplashActivity"
+            android:name="com.yiheoline.qcloud.xiaozhibo.main.SplashActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme" >
@@ -88,6 +121,10 @@
             android:theme="@style/RegisterTheme" />
         <activity
             android:name="com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yiheoline.qcloud.xiaozhibo.main.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
@@ -130,9 +167,6 @@
             android:exported="false" />
 
         <activity
-            android:name="com.yiheoline.qcloud.xiaozhibo.profile.TCEditUseInfoActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
             android:theme="@android:style/Theme.Translucent" />
 
@@ -171,7 +205,163 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.LoginActivity" />
+        <activity android:name="com.yiheoline.qcloud.xiaozhibo.login.LoginActivity" /> <!-- 联通电信授权页 -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/authsdk_activity_dialog" /> <!-- 协议页面webview -->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" /> <!-- 移动授权页 -->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:process=":channel" />
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:exported="true"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.XiaomiIntentService"
+            android:exported="true"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="com.yiheonline.qcloud.xiaozhibo.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":channel" >
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.sendmessage.action" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengDownloadResourceService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="com.umeng.message.provider.MessageProvider"
+            android:authorities="com.yiheonline.qcloud.xiaozhibo.umeng.message"
+            android:exported="false" >
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+
         <activity
             android:name="com.bilibili.boxing_impl.ui.BoxingActivity"
             android:launchMode="singleTop"
@@ -188,6 +378,139 @@
             android:name="com.bilibili.boxing_impl.ui.BoxingBottomSheetActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Boxing.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tencent.liteav.demo.videorecord.TCVideoRecordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/UGCRecordRecordActivityTheme" />
+        <activity
+            android:name="com.tencent.liteav.demo.videorecord.TCVideoRecordSmartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.tencent.liteav.demo.videorecord.TCVideoSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videorecord.TCRecordPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCVideoPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCVideoEditerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/UGCEditEditerActivityTheme" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.videoediter" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCVideoCutActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/UGCEditEditerActivityTheme" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.videocut" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCVideoEffectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UGCEditEditerActivityTheme" />
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCPictureJoinActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/UGCEditPictureTransitionActivityStyle" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.picturejoin" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.liteav.demo.videoediter.TCEditPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videojoiner.ui.TCVideoJoinerActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.videojoiner" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.liteav.demo.videojoiner.ui.TCVideoJoinerPreviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videojoiner.ui.TCVideoJoinChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videojoiner.ui.TCVideoPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.ugckit.module.effect.bgm.TCMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.liteav.demo.videouploader.ui.TCVideoPublishActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.tencent.liteav.demo.videouploader.ui.TCCompressActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.videocompress" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.tencent.liteav.demo.videouploader.model.impl.TVCNetWorkStateReceiver" >
+            <intent-filter>
+
+                <!-- 检测网络变化的action -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.tencent.liteav.demo.player.demo.SuperPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/superplayer_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.demo.play.action.float.click" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.liteav.demo.player.demo.QRCodeScanActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.tencent.liteav.demo.player.expand.webdata.reveiver.WebDataReceiver" >
+            <intent-filter>
+                <action android:name="com.tencent.liteav.action.WED_DATA" />
+            </intent-filter>
+        </receiver>
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -195,23 +518,20 @@
 
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false" >
         </activity>
         <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false" >
         </activity>
         <activity
             android:name="com.alipay.sdk.app.PayResultActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="true"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.alipay.sdk.app.AlipayResultActivity"
@@ -226,6 +546,32 @@
             android:screenOrientation="behind"
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
+        <activity
+            android:name="com.alipay.sdk.app.APayEntranceActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.tencent.bugly.beta.ui.BetaActiveAlertActivity" /> <!-- Beta Activity -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" /> <!-- Custom FileProvider for 7.x -->
+        <provider
+            android:name="com.tencent.bugly.beta.utils.BuglyFileProvider"
+            android:authorities="com.yiheonline.qcloud.xiaozhibo.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- 配置tinker合成结果service -->
+        <service
+            android:name="com.tencent.bugly.beta.tinker.TinkerResultService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name="com.tencent.qcloud.logutils.LogActivity" />
     </application>
 
 </manifest>

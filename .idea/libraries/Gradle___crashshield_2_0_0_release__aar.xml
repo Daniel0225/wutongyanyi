@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :crashshield-2.0.0-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/467cca8bef46438ac91583c10c632c0a/jetified-crashshield-2.0.0-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/467cca8bef46438ac91583c10c632c0a/jetified-crashshield-2.0.0-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/467cca8bef46438ac91583c10c632c0a/jetified-crashshield-2.0.0-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

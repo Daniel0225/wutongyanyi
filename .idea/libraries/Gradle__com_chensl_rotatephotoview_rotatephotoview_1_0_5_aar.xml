@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.chensl.rotatephotoview:rotatephotoview:1.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/274acfe01fed49f450c6c44449434e85/jetified-rotatephotoview-1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/274acfe01fed49f450c6c44449434e85/jetified-rotatephotoview-1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/274acfe01fed49f450c6c44449434e85/jetified-rotatephotoview-1.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa3b3b2794cc4f2ddbead574c79edfd5/jetified-rotatephotoview-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa3b3b2794cc4f2ddbead574c79edfd5/jetified-rotatephotoview-1.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fa3b3b2794cc4f2ddbead574c79edfd5/jetified-rotatephotoview-1.0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/401e9a6a67d9b648e4eaaa4e16c46ed5/jetified-rotatephotoview-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/401e9a6a67d9b648e4eaaa4e16c46ed5/jetified-rotatephotoview-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/401e9a6a67d9b648e4eaaa4e16c46ed5/jetified-rotatephotoview-1.0.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.chensl.rotatephotoview/rotatephotoview/1.0.5/712974e443787755c9159da5751a43915fce7a50/rotatephotoview-1.0.5-javadoc.jar!/" />

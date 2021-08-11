@@ -2,7 +2,6 @@ package com.yiheoline.qcloud.xiaozhibo.homepage
 
 import android.content.Intent
 import android.graphics.Color
-import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -11,9 +10,7 @@ import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
 import com.shuyu.gsyvideoplayer.GSYVideoManager
-import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoomImpl
 import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.http.HttpRequests
-import com.yiheoline.liteav.demo.lvb.liveroom.roomutil.http.HttpResponse
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.TCApplication
 import com.yiheoline.qcloud.xiaozhibo.audience.TCAudienceActivity
@@ -27,7 +24,6 @@ import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil
 import com.yiheoline.qcloud.xiaozhibo.utils.GlideRoundTransform
 import com.yiheoline.qcloud.xiaozhibo.utils.TimeUtil
 import com.yiheonline.qcloud.xiaozhibo.R
-import kotlinx.android.synthetic.main.activity_fans_list.*
 import kotlinx.android.synthetic.main.activity_notice_detail.*
 import kotlinx.android.synthetic.main.activity_notice_detail.playContain
 import kotlinx.android.synthetic.main.activity_notice_detail.playLineView
@@ -36,8 +32,6 @@ import kotlinx.android.synthetic.main.activity_notice_detail.singleShowContain
 import kotlinx.android.synthetic.main.activity_notice_detail.singleShowLine
 import kotlinx.android.synthetic.main.activity_notice_detail.singleShowText
 import kotlinx.android.synthetic.main.activity_notice_detail.videoPlayer
-import kotlinx.android.synthetic.main.activity_video_detail.*
-import kotlinx.android.synthetic.main.fragment_home_page.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import kotlinx.android.synthetic.main.toolbar_layout.backView
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -55,19 +49,11 @@ class NoticeDetailActivity : BaseActivity() {
         super.initView()
         titleView.text = "直播预告"
         backView.onClick { finish() }
-
-        var noticeId = intent.getStringExtra("noticeId")
-
-
-
         wantSeeBtn.onClick {
             if(noticeDetailBean?.isIntent == null){
                 likeNotice()
             }
         }
-
-        getNoticeDetail(noticeId)
-
         startNow.onClick {
             if(noticeDetailBean?.isNeedPay == 0){
                 getOnLine(noticeDetailBean?.noticeId.toString())
@@ -80,7 +66,25 @@ class NoticeDetailActivity : BaseActivity() {
 
     override fun onResume() {
         super.onResume()
+        var noticeId = ""
+        if(intent.hasExtra("noticeId")){
+            noticeId = intent.getStringExtra("noticeId")
+        }else{
+            var bun = intent.extras
+            if (bun !=null) {
+                var keySet = bun.keySet()
+                for(key in keySet) {
+                    noticeId = bun.getString("noticeId")
+                }
+            }
+        }
+        getNoticeDetail(noticeId)
         videoPlayer.onVideoResume()
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        setIntent(intent)
     }
 
     override fun onPause() {

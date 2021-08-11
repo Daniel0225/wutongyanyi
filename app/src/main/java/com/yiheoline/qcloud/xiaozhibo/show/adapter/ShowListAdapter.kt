@@ -14,7 +14,7 @@ class ShowListAdapter(layoutId:Int, data:MutableList<ShortVideoBean>): BaseQuick
         Glide.with(context).load(Constant.IMAGE_BASE+item.avatar).into(holder.getView(R.id.headerView))
         holder.setText(R.id.titleView,item.title)
         holder.setText(R.id.nameView,item.nickname)
-        holder.setText(R.id.likeNumView,item.likes.toString())
+//        holder.setText(R.id.likeNumView,item.likes.toString())
         if(item.isLike == null){
             holder.setImageResource(R.id.likeImageView,R.mipmap.xin)
         }else{

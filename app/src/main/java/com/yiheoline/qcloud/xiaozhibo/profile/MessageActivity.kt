@@ -2,18 +2,18 @@ package com.yiheoline.qcloud.xiaozhibo.profile
 
 import android.graphics.Color
 import android.view.View
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.HttpParams
 import com.lzy.okgo.model.Response
 import com.yiheoline.qcloud.xiaozhibo.Constant
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
+import com.yiheoline.qcloud.xiaozhibo.homepage.NoticeDetailActivity
 import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
 import com.yiheoline.qcloud.xiaozhibo.http.response.LetterListResponse
 import com.yiheoline.qcloud.xiaozhibo.profile.adapter.LetterListAdapter
+import com.yiheoline.qcloud.xiaozhibo.video.VideoDetailActivity
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_fans_list.playContain
 import kotlinx.android.synthetic.main.activity_fans_list.playLineView
@@ -24,6 +24,7 @@ import kotlinx.android.synthetic.main.activity_fans_list.singleShowText
 import kotlinx.android.synthetic.main.activity_message.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.textColor
 import org.jetbrains.anko.toast
 
@@ -45,6 +46,23 @@ class MessageActivity : BaseActivity() {
         letterListAdapter?.loadMoreModule?.isEnableLoadMore = true
         letterListAdapter?.loadMoreModule?.isAutoLoadMore = true
         letterListAdapter?.loadMoreModule?.isEnableLoadMoreIfNotFullPage = false
+
+        letterListAdapter?.setOnItemClickListener { _, _, position ->
+            var letter = letterListAdapter?.data!![position]
+            when(letter.type){
+                2 ->{
+                    var activityName = letter.activity
+                    if(activityName.contains("NoticeDetailActivity")){
+                        startActivity<NoticeDetailActivity>("noticeId" to letter.param)
+                    }else if(activityName.contains("VideoDetailActivity")){
+                        startActivity<VideoDetailActivity>("videoId" to letter.param)
+                    }
+                }
+                3 ->{
+                    startActivity<WebViewActivity>("url" to letter.param)
+                }
+            }
+        }
     }
 
     override fun initData() {

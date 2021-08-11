@@ -35,6 +35,7 @@ import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_edit_user_info2.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.support.v4.toast
 import org.jetbrains.anko.toast
 import top.zibin.luban.Luban
 import top.zibin.luban.OnCompressListener
@@ -53,11 +54,19 @@ class EditUserInfoActivity : BaseActivity() {
         BoxingMediaLoader.getInstance().init(BoxingGlideLoader()) // 需要实现IBoxingMediaLoader
         backView.onClick { finish() }
         titleView.text = "编辑资料"
-        userInfo = intent.getSerializableExtra("userInfo") as UserInfo
 
+        if(intent.hasExtra("userInfo")){
+            userInfo = intent.getSerializableExtra("userInfo") as UserInfo
+            setUi()
+        }else{
+            getUerInfo()
+        }
+    }
+
+    private fun setUi(){
         if(userInfo!!.avatar != null && userInfo!!.avatar.isNotEmpty())
-        Glide.with(this).load("${Constant.IMAGE_BASE}${userInfo?.avatar}")
-                .into(userHeader)
+            Glide.with(this).load("${Constant.IMAGE_BASE}${userInfo?.avatar}")
+                    .into(userHeader)
 
         nickView.text = userInfo?.nickname
         sexView.text = typeList[userInfo?.gender!!]
@@ -277,6 +286,23 @@ class EditUserInfoActivity : BaseActivity() {
                                 "weight" -> weightView.text = changeBean.value
                                 "introduction" ->descView.text = changeBean.value
                             }
+                        }else{
+                            toast(response?.body()?.msg.toString())
+                        }
+                    }
+
+                })
+    }
+    /**
+     * 获取个人信息
+     */
+    private fun getUerInfo(){
+        OkGo.post<BaseResponse<UserInfo>>(Constant.PERSONAL_CENTER)
+                .execute(object : JsonCallBack<BaseResponse<UserInfo>>(){
+                    override fun onSuccess(response: Response<BaseResponse<UserInfo>>?) {
+                        if(response?.body()?.res == 0){
+                            userInfo = response.body()?.data!!
+                            setUi()
                         }else{
                             toast(response?.body()?.msg.toString())
                         }

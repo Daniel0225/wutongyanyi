@@ -10,6 +10,12 @@ android {
     compileSdkVersion = rootProject.ext.compileSdkVersion
     buildToolsVersion = rootProject.ext.buildToolsVersion
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     compileOptions {
         sourceCompatibility 1.8
         targetCompatibility 1.8
@@ -26,8 +32,11 @@ android {
         renderscriptSupportModeEnabled = true
         multiDexEnabled = true
 
+//        ndk {
+//            abiFilters rootProject.ext.ndkAbi
+//        }
         ndk {
-            abiFilters rootProject.ext.ndkAbi
+            abiFilters  "armeabi", "armeabi-v7a"
         }
     }
 
@@ -41,10 +50,16 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
-            storePassword "android"
-            keyAlias "androiddebugkey"
-            keyPassword "android"
+            keyAlias 'key0'
+            keyPassword 'yihe2020'
+            storeFile file('online.jks')
+            storePassword 'yihe2020'
+        }
+        release {
+            keyAlias 'key0'
+            keyPassword 'yihe2020'
+            storeFile file('online.jks')
+            storePassword 'yihe2020'
         }
     }
     configurations {
@@ -64,14 +79,14 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
     implementation "org.jetbrains.anko:anko-design:$anko_version"
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 //  COS 上传需要依赖的jar
     implementation fileTree(include: ['*.jar'], dir: 'libs/upload')
-    implementation rootProject.ext.liteavSdk
+//    implementation rootProject.ext.liteavSdk
 //  MLVB 需要依赖 okhttp 拦截器
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
 //  MLVB 需要使用 gson 进行 json 解析
@@ -79,18 +94,18 @@ dependencies {
 //  MLVB 需要依赖腾讯云 IM 服务
     implementation 'com.tencent.imsdk:imsdk:4.5.45'
 //  弹幕功能需要依赖此库
-    implementation 'com.github.ctiao:dfm:0.4.4'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
 //  Demo 依赖的图片加载库
     implementation 'com.github.bumptech.glide:glide:3.7.0'
 //  Dex 多分包依赖
-    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
     // 美颜面板
     implementation project(':beautysettingkit')
     // 音效面板
     implementation project(':audioeffectsettingkit')
+    implementation project(':ugcvideorecorddemo')
     implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.shuyu:GSYVideoPlayer:8.0.0'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
     implementation 'com.tencent:mmkv:1.0.18'
@@ -108,7 +123,32 @@ dependencies {
         exclude module: 'recyclerview-v7'
     }
     implementation 'top.zibin:Luban:1.1.8'
-    implementation(name: 'alipaySdk-15.7.4-20200228192259', ext: 'aar')
+    implementation(name: 'alipaysdk-noutdid-15.8.01.201215151847', ext: 'aar')
+    implementation(name: 'phoneNumber-L-AuthSDK-2.12.0', ext: 'aar')
+    implementation(name: 'crashshield-2.0.0-release', ext: 'aar')
+    implementation(name: 'logger-2.0.0-release', ext: 'aar')
+    implementation(name: 'main-2.0.0-release', ext: 'aar')
     implementation 'com.youth.banner:banner:1.4.10'
     implementation 'com.github.Yuphee:RewardLayout:1.0.6.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(':superplayerdemo')
+    implementation project(':ugcvideouploaddemo')
+    implementation files('libs\\upload\\okhttp-3.11.0.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    implementation 'com.github.sundeepk:compact-calendar-view:3.0.0'
+
+    //友盟基础库相关依赖（必须）
+    implementation 'com.umeng.umsdk:common:9.3.8'
+    implementation 'com.umeng.umsdk:asms:1.2.2'
+    implementation 'com.umeng.umsdk:utdid:1.5.2.1'
+    //友盟Push相关依赖（必须）
+    implementation 'com.umeng.umsdk:push:6.3.3'
+    implementation 'com.umeng.umsdk:alicloud-httpdns:1.3.2.3'
+    implementation 'com.umeng.umsdk:alicloud-utils:2.0.0'
+    implementation 'com.umeng.umsdk:alicloud_beacon:1.0.5'
+    implementation 'com.umeng.umsdk:agoo-accs:3.3.9.7-open'
+    implementation 'com.umeng.umsdk:agoo_networksdk:3.5.8'
+    implementation 'com.umeng.umsdk:agoo_tlog:3.0.0.17'
+    implementation 'com.umeng.umsdk:agoo_tnet4android:3.1.14.9'
+    implementation files('libs\\aranger-1.0.6.jar')
 }

@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.Yuphee:RewardLayout:1.0.6.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d55a291554167c93096753b52b2885f/jetified-RewardLayout-1.0.6.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d55a291554167c93096753b52b2885f/jetified-RewardLayout-1.0.6.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d55a291554167c93096753b52b2885f/jetified-RewardLayout-1.0.6.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db88aecd6fd7e9d8ed148e264450861a/jetified-RewardLayout-1.0.6.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db88aecd6fd7e9d8ed148e264450861a/jetified-RewardLayout-1.0.6.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db88aecd6fd7e9d8ed148e264450861a/jetified-RewardLayout-1.0.6.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bc99f966e95aaed392ee618f993d1d2/jetified-RewardLayout-1.0.6.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bc99f966e95aaed392ee618f993d1d2/jetified-RewardLayout-1.0.6.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0bc99f966e95aaed392ee618f993d1d2/jetified-RewardLayout-1.0.6.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Yuphee/RewardLayout/1.0.6.4/ad8022458e57b74d94f0efb4bc82a2b259c7f5d1/RewardLayout-1.0.6.4-javadoc.jar!/" />

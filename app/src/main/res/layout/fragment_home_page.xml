@@ -1,244 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="#FFFFFF"
     android:scrollbars="none"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="vertical"
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <RelativeLayout
-            android:id="@+id/topView"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:background="@drawable/search_goods_bg"
             android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/selectBtn"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="15dp"
             android:layout_height="wrap_content">
-            <RelativeLayout
-                android:background="@drawable/search_goods_bg"
-                android:layout_width="match_parent"
-                android:layout_toStartOf="@+id/selectBtn"
-                android:layout_marginEnd="12dp"
-                android:layout_marginStart="15dp"
-                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/keyWordsInputView"
-                    android:background="@null"
-                    android:hint="输入关键字"
-                    android:paddingStart="40dp"
-                    android:textSize="14sp"
-                    android:singleLine="true"
-                    android:maxLines="1"
-                    android:gravity="center_vertical"
-                    android:layout_centerVertical="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"/>
-                <ImageView
-                    android:layout_marginStart="13dp"
-                    android:layout_centerVertical="true"
-                    android:src="@mipmap/chazhao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </RelativeLayout>
-            <ImageView
-                android:id="@+id/selectBtn"
-                android:src="@mipmap/select"
-                android:layout_marginEnd="10dp"
+            <TextView
+                android:id="@+id/keyWordsInputView"
+                android:background="@null"
+                android:hint="输入关键字"
+                android:paddingStart="40dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:gravity="center_vertical"
                 android:layout_centerVertical="true"
-                android:layout_toStartOf="@id/startPlay"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:layout_marginStart="13dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/chazhao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/selectBtn"
+            android:src="@mipmap/select"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/startContain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/startContain"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/startPlay"
-                android:src="@mipmap/start_show"
-                android:scaleType="center"
                 android:background="@drawable/start_bg"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="15dp"
                 android:layout_width="45dp"
                 android:layout_height="27dp"/>
+            <ImageView
+                android:id="@+id/startPlay"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/start_show"
+                android:scaleType="center"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </RelativeLayout>
-        <RelativeLayout
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/catRecyclerView"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_marginStart="5dp"
-                android:layout_height="50dp"/>
-            <LinearLayout
-                android:layout_below="@id/catRecyclerView"
-                android:id="@+id/selectContain"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.yiheoline.qcloud.xiaozhibo.widgets.EmptyVideoPlayer
-                        android:id="@+id/videoPlayer"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"/>
-                    <ImageView
-                        android:src="@mipmap/video_cover"
-                        android:scaleType="centerCrop"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerView"
-                        android:layout_width="match_parent"
-                        android:layout_marginStart="12.5dp"
-                        android:layout_marginTop="180dp"
-                        android:layout_height="wrap_content"/>
-                    <ImageView
-                        android:id="@+id/openMusicView"
-                        android:src="@mipmap/open_music"
-                        android:scaleType="center"
-                        android:paddingStart="10dp"
-                        android:paddingTop="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </RelativeLayout>
 
-                <include layout="@layout/near_show_item_layout"/>
-                <include layout="@layout/select_item_layout"/>
-                <include layout="@layout/home_ad_layout"/>
-                <include layout="@layout/home_video_item_layout"/>
-                <include layout="@layout/home_short_item_layout"/>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/topDialogView"
-                android:visibility="gone"
-                android:orientation="vertical"
-                android:background="@drawable/bg_white"
-                android:paddingBottom="15dp"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:id="@+id/closeDialog"
-                    android:layout_marginEnd="20dp"
-                    android:drawableEnd="@mipmap/shouqi"
-                    android:layout_gravity="end"
-                    android:drawablePadding="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="收起"
-                    android:textColor="#ff999999"
-                    android:textSize="12sp"
-                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/catRecyclerView"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="50dp"/>
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/catRecyclerView"
+                    android:id="@+id/selectContain"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <RelativeLayout
-                        android:id="@+id/showPlay"
-                        android:layout_weight="1"
                         android:layout_width="match_parent"
-                        android:layout_height="70dp">
+                        android:layout_height="wrap_content">
+                        <com.yiheoline.qcloud.xiaozhibo.widgets.EmptyVideoPlayer
+                            android:id="@+id/videoPlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"/>
                         <ImageView
-                            android:id="@+id/image"
-                            android:src="@mipmap/start1"
-                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/video_cover"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="12.5dp"
+                            android:layout_marginTop="180dp"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/openMusicView"
+                            android:src="@mipmap/close_music"
+                            android:scaleType="center"
+                            android:paddingStart="10dp"
+                            android:paddingTop="15dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/image"
-                            android:layout_marginTop="11dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="演出直播"
-                            android:textColor="#ff999999"
-                            android:textSize="12sp"
-                            />
                     </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/showerPlayBtn"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp">
-                        <ImageView
-                            android:id="@+id/image2"
-                            android:src="@mipmap/start2"
-                            android:layout_centerHorizontal="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/image2"
-                            android:layout_marginTop="11dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="艺人直播"
-                            android:textColor="#ff999999"
-                            android:textSize="12sp"
-                            />
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/upLoadBtn"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp">
-                        <ImageView
-                            android:id="@+id/image3"
-                            android:src="@mipmap/start3"
-                            android:layout_centerHorizontal="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/image3"
-                            android:layout_marginTop="11dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="上传"
-                            android:textColor="#ff999999"
-                            android:textSize="12sp"
-                            />
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/shotBtn"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp">
-                        <ImageView
-                            android:id="@+id/image4"
-                            android:src="@mipmap/start4"
-                            android:layout_centerHorizontal="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_centerHorizontal="true"
-                            android:layout_below="@+id/image4"
-                            android:layout_marginTop="11dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="拍摄"
-                            android:textColor="#ff999999"
-                            android:textSize="12sp"
-                            />
-                    </RelativeLayout>
+
+                    <include layout="@layout/near_show_item_layout"/>
+                    <include layout="@layout/select_item_layout"/>
+                    <include layout="@layout/home_ad_layout"/>
+                    <include layout="@layout/home_video_item_layout"/>
+                    <include layout="@layout/home_short_item_layout"/>
                 </LinearLayout>
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/topDialogView"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_white"
+                    android:paddingBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/closeDialog"
+                        android:layout_marginEnd="20dp"
+                        android:drawableEnd="@mipmap/shouqi"
+                        android:layout_gravity="end"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收起"
+                        android:textColor="#ff999999"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/showPlay"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+                            <ImageView
+                                android:id="@+id/image"
+                                android:src="@mipmap/start1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/image"
+                                android:layout_marginTop="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="演出直播"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/showerPlayBtn"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:src="@mipmap/start2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/image2"
+                                android:layout_marginTop="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="艺人直播"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/upLoadBtn"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:src="@mipmap/start3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/image3"
+                                android:layout_marginTop="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="上传"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/shotBtn"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp">
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:src="@mipmap/start4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/image4"
+                                android:layout_marginTop="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="拍摄"
+                                android:textColor="#ff999999"
+                                android:textSize="12sp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
 
-        </RelativeLayout>
+            </RelativeLayout>
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/catListRv"
-            android:visibility="gone"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="20dp"/>
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/catListRv"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

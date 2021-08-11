@@ -1,5 +1,8 @@
 package com.yiheoline.qcloud.xiaozhibo
 
+import android.app.Notification
+import android.content.Context
+import android.util.Log
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
 import com.lzy.okgo.OkGo
@@ -8,16 +11,17 @@ import com.lzy.okgo.cookie.CookieJarImpl
 import com.lzy.okgo.cookie.store.SPCookieStore
 import com.lzy.okgo.https.HttpsUtils
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor
-import com.tencent.bugly.crashreport.CrashReport
-import com.tencent.bugly.crashreport.CrashReport.UserStrategy
 import com.tencent.mmkv.MMKV
 import com.tencent.qcloud.ugckit.UGCKit
-import com.tencent.qcloud.ugckit.UGCKitConstants
 import com.tencent.rtmp.TXLiveBase
-import com.tencent.rtmp.TXLog
 import com.tencent.ugc.TXUGCBase
 import com.umeng.analytics.MobclickAgent
 import com.umeng.commonsdk.UMConfigure
+import com.umeng.message.IUmengRegisterCallback
+import com.umeng.message.PushAgent
+import com.umeng.message.UmengMessageHandler
+import com.umeng.message.UmengNotificationClickHandler
+import com.umeng.message.entity.UMessage
 import com.yiheoline.liteav.demo.lvb.liveroom.MLVBLiveRoomImpl
 import com.yiheoline.qcloud.xiaozhibo.http.response.LoginResponse
 import com.yiheoline.qcloud.xiaozhibo.login.TCUserMgr
@@ -57,8 +61,7 @@ class TCApplication : MultiDexApplication() {
         UGCKit.init(this)
         initOkGo()
 
-        UMConfigure.init(this,"6012a32ff1eb4f3f9b7a1dba","Umeng",UMConfigure.DEVICE_TYPE_PHONE, "")
-        MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.AUTO);
+        initPushSDK()
     }
 
     private fun initOkGo(){
@@ -74,6 +77,45 @@ class TCApplication : MultiDexApplication() {
         okGo.okHttpClient = builder.build()
         okGo.cacheMode = CacheMode.NO_CACHE
         okGo.retryCount = 0
+    }
+
+    private fun initPushSDK() {
+        UMConfigure.setLogEnabled(true)
+        UMConfigure.init(applicationContext,"60419eb4d57fee40b0c4b048","Umeng",UMConfigure.DEVICE_TYPE_PHONE,
+                "6d2c72ec50ca9b7e56c8ccbae9b45312")
+        var pushAgent = PushAgent.getInstance(applicationContext)
+        pushAgent.register(object : IUmengRegisterCallback{
+            override fun onSuccess(deviceToken: String?) {
+
+                //注册成功会返回deviceToken deviceToken是推送消息的唯一标志
+                Log.e("Tag", "注册成功：deviceToken：--> $deviceToken")
+                MMKV.defaultMMKV().encode("deviceToken",deviceToken)
+            }
+
+            override fun onFailure(p0: String?, p1: String?) {
+                Log.e("TAG", "注册失败：--> s:$p0,s1:$p1")
+            }
+
+        })
+        var notificationClickHandler = object : UmengNotificationClickHandler(){
+            override fun launchApp(p0: Context?, p1: UMessage?) {
+                super.launchApp(p0, p1)
+            }
+
+            override fun openUrl(p0: Context?, p1: UMessage?) {
+                super.openUrl(p0, p1)
+            }
+
+            override fun openActivity(p0: Context?, p1: UMessage?) {
+                super.openActivity(p0, p1)
+                Log.e("Tag",p1.toString())
+            }
+
+            override fun dealWithCustomAction(p0: Context?, p1: UMessage?) {
+                super.dealWithCustomAction(p0, p1)
+            }
+        }
+        MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.AUTO);
     }
 
     companion object {

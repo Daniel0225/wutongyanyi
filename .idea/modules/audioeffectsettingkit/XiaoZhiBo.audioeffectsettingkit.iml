@@ -34,7 +34,6 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/build/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/src/main/res" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../audioeffectsettingkit/build" />
@@ -48,7 +47,7 @@
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.tencent.liteavsdk:LiteAVSDK_Smart:8.2.9808@aar" level="project" />
+    <orderEntry type="library" name="Gradle: :LiteAVSDK_Professional_8.2.9809:@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />

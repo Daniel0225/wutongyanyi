@@ -1,11 +1,13 @@
 include ':app'
 include ':beautysettingkit'
 include ':audioeffectsettingkit'
-
-
-
-
-
+include ':ugckit'
+include ':ugcvideorecorddemo'
+include ':ugcvideojoindemo'
+include ':ugcvideoeditdemo'
+include ':ugcvideouploaddemo'
+include ':superplayerdemo'
+include ':superplayerkit'
 
 
 

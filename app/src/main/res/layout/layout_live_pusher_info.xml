@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="contentDescription"
-    android:layout_width="110dp"
+    android:layout_width="150dp"
     android:layout_height="35dp"
     android:background="@drawable/pusher_info_background"
     android:orientation="horizontal"
-    android:paddingBottom="1dp"
-    android:paddingLeft="1dp"
-    android:paddingRight="1dp"
-    android:paddingTop="1dp">
+    android:padding="1dp"
+    tools:ignore="contentDescription">
 
     <ImageView
         android:id="@+id/anchor_iv_head_icon"
@@ -22,48 +19,58 @@
         android:id="@+id/anchor_tv_broadcasting_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:singleLine="true"
-        android:maxLines="1"
-        android:textColor="@color/colorTextWhite"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/anchor_iv_record_ball"
+        android:maxLines="1"
         android:paddingTop="2.5dp"
-        android:layout_marginLeft="5dp"
         android:paddingRight="10dp"
-        android:layout_toRightOf="@+id/anchor_iv_record_ball"/>
+        android:singleLine="true"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="10sp" />
 
     <ImageView
-            android:id="@+id/anchor_iv_record_ball"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_toRightOf="@id/anchor_iv_head_icon"
-            android:layout_marginTop="6dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/liveshow_item_dot"
-            android:scaleType="fitXY" />
-
-    <TextView
+        android:id="@+id/anchor_iv_record_ball"
         android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorTextWhite"
-            android:textSize="10sp"
-            android:visibility="gone"
-            android:layout_below="@+id/anchor_iv_record_ball"
-            android:layout_toRightOf="@+id/anchor_iv_head_icon"
-            android:layout_toEndOf="@+id/anchor_iv_head_icon" />
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/anchor_iv_head_icon"
+        android:background="@drawable/liveshow_item_dot"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/anchor_tv_member_counts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/anchor_tv_broadcasting_time"
+        android:layout_alignLeft="@+id/anchor_tv_broadcasting_time"
         android:layout_gravity="center"
         android:drawablePadding="5dp"
-        android:textSize="10sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toStartOf="@+id/likeBtn"
+        android:layout_marginEnd="10dp"
         android:textColor="@color/colorTextWhite"
-        android:layout_below="@+id/anchor_tv_broadcasting_time"
-        android:layout_alignLeft="@+id/anchor_tv_broadcasting_time" />
+        android:textSize="10sp" />
 
-
+    <TextView
+        android:id="@+id/likeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_white_round"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fffbc412"
+        android:textSize="10sp"
+        />
 </RelativeLayout>

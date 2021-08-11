@@ -4,6 +4,7 @@ package com.yiheoline.qcloud.xiaozhibo.common.msg;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -92,37 +93,6 @@ public class TCChatMsgListAdapter extends BaseAdapter implements AbsListView.OnS
         return position;
     }
 
-    /**
-     * 通过名称计算颜色
-     */
-    private int calcNameColor(String strName) {
-        if (strName == null) return 0;
-        byte idx = 0;
-        byte[] byteArr = strName.getBytes();
-        for (int i = 0; i < byteArr.length; i++) {
-            idx ^= byteArr[i];
-        }
-
-        switch (idx & 0x7) {
-            case 1:
-                return mContext.getResources().getColor(R.color.colorSendName1);
-            case 2:
-                return mContext.getResources().getColor(R.color.colorSendName2);
-            case 3:
-                return mContext.getResources().getColor(R.color.colorSendName3);
-            case 4:
-                return mContext.getResources().getColor(R.color.colorSendName4);
-            case 5:
-                return mContext.getResources().getColor(R.color.colorSendName5);
-            case 6:
-                return mContext.getResources().getColor(R.color.colorSendName6);
-            case 7:
-                return mContext.getResources().getColor(R.color.colorSendName7);
-            case 0:
-            default:
-                return mContext.getResources().getColor(R.color.colorSendName);
-        }
-    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -153,7 +123,7 @@ public class TCChatMsgListAdapter extends BaseAdapter implements AbsListView.OnS
             holder.sendContext.setTextColor(mContext.getResources().getColor(R.color.colorSendName1));
         } else {
             // 根据名称计算颜色
-            spanString.setSpan(new ForegroundColorSpan(calcNameColor(item.getSenderName())),
+            spanString.setSpan(new ForegroundColorSpan(Color.parseColor("#FBC412")),
                     0, item.getSenderName().length(), Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
             holder.sendContext.setTextColor(mContext.getResources().getColor(R.color.colorTextWhite));
         }

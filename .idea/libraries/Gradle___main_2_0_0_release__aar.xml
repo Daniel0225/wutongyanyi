@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: :main-2.0.0-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f67145a1854f8fafbc471d2720c334d/jetified-main-2.0.0-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f67145a1854f8fafbc471d2720c334d/jetified-main-2.0.0-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f67145a1854f8fafbc471d2720c334d/jetified-main-2.0.0-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6f67145a1854f8fafbc471d2720c334d/jetified-main-2.0.0-release/jars/libs/r-classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50ae3c4bb707d374285870bd6986e3f4/jetified-main-2.0.0-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50ae3c4bb707d374285870bd6986e3f4/jetified-main-2.0.0-release/jars/libs/r-classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50ae3c4bb707d374285870bd6986e3f4/jetified-main-2.0.0-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50ae3c4bb707d374285870bd6986e3f4/jetified-main-2.0.0-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

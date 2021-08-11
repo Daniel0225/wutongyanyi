@@ -4,7 +4,17 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\12a7a42a8df2d1a3949272a54d449e35\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\ab06c048c54470d7b0af705dcac1a0c8\\core-1.3.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e50c0683c300a0b43a700e875333f9\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\927c034b9dd49f5174e8cb8e412b1c82\\core-1.3.1\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

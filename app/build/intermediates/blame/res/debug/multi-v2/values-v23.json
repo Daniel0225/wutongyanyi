@@ -4,7 +4,7 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\12a7a42a8df2d1a3949272a54d449e35\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e50c0683c300a0b43a700e875333f9\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\59ef8ff78b39f0fed4b156cee58382c6\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f8c8f98ab04ea3d5ef050419726f9aa7\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.qcloud:qcloud-foundation:1.5.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.qcloud/qcloud-foundation/1.5.21/67d2df0255776435fcf258e264d49dda2b977a29/qcloud-foundation-1.5.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.qcloud/qcloud-foundation/1.5.21/8d77da0d061b780aa5cd2bbfcb869bac1f167eff/qcloud-foundation-1.5.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.qcloud/qcloud-foundation/1.5.21/40e251c1f3f1369bf46d305d4597282d24942af1/qcloud-foundation-1.5.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

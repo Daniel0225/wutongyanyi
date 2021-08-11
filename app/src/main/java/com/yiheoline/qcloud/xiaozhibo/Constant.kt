@@ -3,7 +3,7 @@ package com.yiheoline.qcloud.xiaozhibo
 class Constant {
     companion object {
         //基础地址
-//        private const val BASE_URL: String = "http://192.168.0.3:8085/"
+//        private const val BASE_URL: String = "http://192.168.2.10:8085/"
       const val BASE_URL: String = "https://test.api.air.yihenst.com/"
 //        const val BASE_URL: String = "http://192.168.0.85:8085/"
         const val IMAGE_BASE = "http://test.img.yihenst.com/"
@@ -14,7 +14,10 @@ class Constant {
         const val WX_APP_ID = "wxc6349999acb1d5c0"
         const val PAGE_SIZE = 20
 
+        const val APP_UPDATE: String = BASE_URL + "appUpdateInfo/latest"
+
         const val CODE_LOGIN = BASE_URL + "codeLogin"
+            const val LOGIN_OUT = BASE_URL + "loginOut"
         const val SEND_CODE = BASE_URL + "sendCode"
         const val SDK_INFO = BASE_URL + "mlvb/user/info"
         const val HOME_PAGE_LIST = BASE_URL + "notice/queryNoticeList"

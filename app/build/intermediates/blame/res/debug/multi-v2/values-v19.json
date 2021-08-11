@@ -4,6 +4,25 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
             "map": [
                 {
+                    "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\ugckit\\build\\intermediates\\packaged_res\\debug\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "140",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "1007"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "1412",
+                        "endLines": "35",
+                        "endColumns": "12",
+                        "endOffsets": "2279"
+                    }
+                },
+                {
                     "source": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\src\\main\\res\\values-v19\\styles.xml",
                     "from": {
                         "startLines": "4,19,24",

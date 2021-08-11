@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: :LiteAVSDK_Professional_8.2.9809:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a3688963a2f47ef64127eb3c606ee1d/jetified-LiteAVSDK_Professional_8.2.9809/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a3688963a2f47ef64127eb3c606ee1d/jetified-LiteAVSDK_Professional_8.2.9809/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a3688963a2f47ef64127eb3c606ee1d/jetified-LiteAVSDK_Professional_8.2.9809/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a3688963a2f47ef64127eb3c606ee1d/jetified-LiteAVSDK_Professional_8.2.9809/jars/libs/LiteAVSDK_Professional-0.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e4b8974669c1e718c0aaac127566aef/jetified-LiteAVSDK_Professional_8.2.9809/jars/libs/LiteAVSDK_Professional-0.0.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e4b8974669c1e718c0aaac127566aef/jetified-LiteAVSDK_Professional_8.2.9809/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e4b8974669c1e718c0aaac127566aef/jetified-LiteAVSDK_Professional_8.2.9809/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1e4b8974669c1e718c0aaac127566aef/jetified-LiteAVSDK_Professional_8.2.9809/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

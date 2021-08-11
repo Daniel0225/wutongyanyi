@@ -4,7 +4,17 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\12a7a42a8df2d1a3949272a54d449e35\\appcompat-1.2.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\3d7d1f21fc4eab055d8742e24af123b6\\jetified-core-1.8.4\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e50c0683c300a0b43a700e875333f9\\appcompat-1.2.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -12,6 +22,14 @@
                         "endLines": "6",
                         "endColumns": "13",
                         "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "169",
+                        "endLines": "8",
+                        "endColumns": "13",
+                        "endOffsets": "441"
                     }
                 }
             ]

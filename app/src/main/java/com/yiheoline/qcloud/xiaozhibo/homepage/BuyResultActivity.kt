@@ -2,7 +2,7 @@ package com.yiheoline.qcloud.xiaozhibo.homepage
 
 import com.yiheoline.qcloud.xiaozhibo.base.BaseActivity
 import com.yiheoline.qcloud.xiaozhibo.bean.ShowNoticeDetailBean
-import com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity
+import com.yiheoline.qcloud.xiaozhibo.main.MainActivity
 import com.yiheoline.qcloud.xiaozhibo.utils.TimeUtil
 import com.yiheonline.qcloud.xiaozhibo.R
 import kotlinx.android.synthetic.main.activity_buy_result.*
@@ -30,7 +30,7 @@ class BuyResultActivity : BaseActivity() {
         durationView.text = "${noticeDetailBean?.duration.toString()}分钟"
 
         backHomeView.onClick {
-            startActivity<TCMainActivity>()
+            startActivity<MainActivity>()
         }
     }
 }

@@ -62,13 +62,37 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_detail)
         StatusBarUtil.setStatusBarColor(this,Color.parseColor("#000000"))
-        val videoId = intent.getIntExtra("videoId",0)
+
         currentPosition = intent.getLongExtra("currentPosition",0L)
         initViews()
-        getData(videoId)
+
     }
+
+    override fun onResume() {
+        super.onResume()
+        var videoId = 0
+        if(intent.hasExtra("videoId")){
+            videoId = intent.getIntExtra("videoId",0)
+        }else{
+            var bun = intent.extras
+            if (bun !=null) {
+                var keySet = bun.keySet()
+                for(key in keySet) {
+                    videoId = bun.getInt("id")
+                }
+            }
+        }
+        getData(videoId)
+
+        if(!isNeedPay){
+            detailPlayer?.onVideoPause()
+        }
+
+    }
+
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
+        setIntent(intent)
         val videoId = intent!!.getIntExtra("videoId",0)
         getDetail(videoId)
     }
@@ -177,15 +201,6 @@ class VideoDetailActivity : GSYBaseADActivityDetail<NormalGSYVideoPlayer, GSYADV
         super.onPause()
         detailPlayer?.onVideoPause()
     }
-
-    override fun onResume() {
-        super.onResume()
-        if(!isNeedPay){
-            detailPlayer?.onVideoPause()
-        }
-
-    }
-
 
     private fun initViews(){
         detailPlayer.titleTextView.visibility = View.GONE

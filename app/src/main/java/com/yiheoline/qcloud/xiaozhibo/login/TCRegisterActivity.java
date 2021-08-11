@@ -16,7 +16,7 @@ import com.yiheoline.qcloud.xiaozhibo.common.net.TCHTTPMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.report.TCELKReportMgr;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCConstants;
 import com.yiheoline.qcloud.xiaozhibo.common.utils.TCUtils;
-import com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity;
+import com.yiheoline.qcloud.xiaozhibo.main.MainActivity;
 import com.yiheonline.qcloud.xiaozhibo.R;
 
 import org.json.JSONObject;
@@ -184,7 +184,7 @@ public class TCRegisterActivity extends Activity  {
     }
 
     private void jumpToHomeActivity () {
-        Intent intent = new Intent(this, TCMainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();

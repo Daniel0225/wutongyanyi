@@ -21,7 +21,7 @@ import com.yiheoline.qcloud.xiaozhibo.http.BaseResponse
 import com.yiheoline.qcloud.xiaozhibo.http.JsonCallBack
 import com.yiheoline.qcloud.xiaozhibo.http.response.APPidResponse
 import com.yiheoline.qcloud.xiaozhibo.http.response.LoginResponse
-import com.yiheoline.qcloud.xiaozhibo.main.TCMainActivity
+import com.yiheoline.qcloud.xiaozhibo.main.MainActivity
 import com.yiheoline.qcloud.xiaozhibo.utils.FastJsonUtil
 import com.yiheoline.qcloud.xiaozhibo.widgets.MyCountDownTimer
 import com.yiheonline.qcloud.xiaozhibo.R
@@ -102,6 +102,7 @@ class LoginActivity : BaseActivity() {
         params.put("platform", 1)
         params.put("loginName",loginName)
         params.put("code",code)
+        params.put("umengDeviceToken",MMKV.defaultMMKV().decodeString("deviceToken"))
         OkGo.post<BaseResponse<LoginResponse>>(Constant.CODE_LOGIN)
             .params(params)
             .execute(object : JsonCallBack<BaseResponse<LoginResponse>>(){
@@ -133,7 +134,7 @@ class LoginActivity : BaseActivity() {
                         headers.put("token", loginInfo.token)
                         OkGo.getInstance().addCommonHeaders(headers)
                         getAppId(response.body().data!!)
-                        startActivity<TCMainActivity>()
+                        startActivity<MainActivity>()
                         finish()
                     }else{
                         toast(response?.body()?.msg+"")

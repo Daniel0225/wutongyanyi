@@ -4,7 +4,7 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\12a7a42a8df2d1a3949272a54d449e35\\appcompat-1.2.0\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e50c0683c300a0b43a700e875333f9\\appcompat-1.2.0\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

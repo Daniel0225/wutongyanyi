@@ -4,17 +4,7 @@
             "outputFile": "D:\\QMDownload\\MLVBSDK-master\\Android\\XiaoZhiBo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\12a7a42a8df2d1a3949272a54d449e35\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\421d31ee971c76ac1a6a5c2b52e41d47\\media-1.0.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e2702bc90338936ce0c286fc1efade\\media-1.0.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\54755\\.gradle\\caches\\transforms-2\\files-2.1\\f9e50c0683c300a0b43a700e875333f9\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]

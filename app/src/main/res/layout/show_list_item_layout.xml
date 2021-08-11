@@ -12,8 +12,6 @@
         android:scaleType="centerCrop"
         app:aspectRatio2="0.7"
         app:type="round"
-        app:bottom_left="false"
-        app:bottom_right="false"
         app:borderRadius="5dp"
         android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
@@ -27,22 +25,22 @@
         android:maxLines="2"
         android:ellipsize="end"
         android:textColor="#ff333333"
-        android:layout_marginStart="7.5dp"
+        android:paddingEnd="15dp"
         android:layout_marginEnd="7.5dp"
-        android:layout_marginTop="10dp"
-        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
         />
 
     <RelativeLayout
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.yiheoline.qcloud.xiaozhibo.main.videolist.ui.RoundImageView
             android:id="@+id/headerView"
             android:scaleType="centerCrop"
             android:src="@mipmap/default_header"
-            android:layout_marginStart="5dp"
             android:layout_width="16dp"
             android:layout_height="16dp"/>
         <TextView
@@ -53,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="手撕包菜"
             android:textColor="#ff999999"
-            android:textSize="10sp"
+            android:textSize="12sp"
             />
         <ImageView
             android:id="@+id/likeImageView"
@@ -72,7 +70,7 @@
             android:layout_height="wrap_content"
             android:text="99.9万"
             android:textColor="#ff999999"
-            android:textSize="10sp"
+            android:textSize="12sp"
             />
     </RelativeLayout>
 </LinearLayout>

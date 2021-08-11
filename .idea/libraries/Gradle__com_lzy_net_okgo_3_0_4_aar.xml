@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.lzy.net:okgo:3.0.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9dc32d15db32ab7bc3abff231d65285/jetified-okgo-3.0.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9dc32d15db32ab7bc3abff231d65285/jetified-okgo-3.0.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9dc32d15db32ab7bc3abff231d65285/jetified-okgo-3.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b14b74cbfe3375425d9ac0a0188230a8/jetified-okgo-3.0.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b14b74cbfe3375425d9ac0a0188230a8/jetified-okgo-3.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b14b74cbfe3375425d9ac0a0188230a8/jetified-okgo-3.0.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
